@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Benjamini Mpinga</title>
+<link>https://benjamini-mpinga.netlify.app/blog.html</link>
+<atom:link href="https://benjamini-mpinga.netlify.app/blog.xml" rel="self" type="application/rss+xml"/>
+<description>Coding for all for better today and tommorow</description>
+<generator>quarto-1.2.269</generator>
+<lastBuildDate>Thu, 09 Mar 2023 21:00:00 GMT</lastBuildDate>
+<item>
+  <title>Tamisemi: The curent transfer process, by a public servant’s application</title>
+  <dc:creator>Benjamini Mpinga</dc:creator>
+  <link>https://benjamini-mpinga.netlify.app/posts/tamisemi/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="procedures" class="level3">
+<h3 class="anchored" data-anchor-id="procedures">Procedures</h3>
+<p>Tamisemi Procedures to follow when a public servant seek to shift from one Municipal to another Municipal. Here below are the current steps a public servant should get prepared to go through during the process.</p>
+<p><img src="https://benjamini-mpinga.netlify.app/posts/tamisemi/benja.jpg" class="img-fluid"></p>
+<p>The process are usual performed by the Local Government officials, this means a public servant only initiate the process, and after the submission of document at <strong>DED’S OFFICE</strong> of his/her working station, then the public servant has no roll to next process until it’s done.</p>
+<p>If the process follows its regulations may take a bit while, this is due to government process server, mainly government usually uses Posters to deliver its documents, since the process is done manual.</p>
+</section>
+<section id="advantages-of-the-process" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-of-the-process">ADVANTAGES OF THE PROCESS**</h3>
+<p>Firstly, the current process is absolutely fit to the government’s concept of preserving its documents. Preservation of government’s document is very important in order to avoid linkage of classified information. Therefor the Public Servant’s information is of one of the very important document to both government and Servant.</p>
+<p>Secondly, the current process offers great chance to the Government’s department to measure and crosscheck the validity and legality of the process, this method helps officials not to work under pressure of pushing things without close observation.</p>
+<p>Thirdly, the current process support the system of governance to keep working normal while it’s in execution. this helps to not frustrate the working shifts at work palaces, as well as extra cost that can be spend by the Public servant during the process.</p>
+<p>Fourthly, the current process cutoff corruption attempt during the process, because the document shall go under the very systematic stages before its approval, during this process no one can absolutely know who to deal with or who to cooperate with to speedup of maneuver the process.</p>
+<p>Fifthly, the process saves government’s money (Public Servant’s Transfer payment), since the Servant shall bear the whole transfer expenses him/her self.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart TB
+  A(Public &lt;/br&gt; Servant) -- MOI -- DMO -- DED -- 1st --&gt; B[DED &lt;/br&gt;New Municipal]
+  B -- 2nd --&gt; C[DED &lt;/br&gt;Current Municipal]
+  C -- 3rd --&gt; D[RAS &lt;/br&gt;Current region]
+  D -- 4th --&gt; E{CS &lt;/br&gt;TAMISEMI For approvall}
+  E -- 5th --&gt; F[(CS &lt;/br&gt;UTUMISHI for execution)]
+  F -- 6th --&gt; C
+  C -- 7th --&gt; A 
+  A -- REPORT--&gt; B 
+  B -- DED --8th --&gt; F
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<p><strong>A flowchart above shows the current shifting process.</strong></p>
+</section>
+<section id="descriptions." class="level3">
+<h3 class="anchored" data-anchor-id="descriptions.">DESCRIPTIONS.**</h3>
+<p><strong>Step 1.</strong></p>
+<p>As we can see the above chart, the process begins with the <strong>“Request latter for a vacancy”</strong> from a public servant to a <strong>DED</strong> of the Municipal he/she want to go, but this latter must pass through Medical officer In charge <strong>(MOI)</strong>, District Medical Officer <strong>(DMO</strong>)and District Executive Director <strong>(DED)</strong> of his/her current work station, for authorization.</p>
+<p><strong>Step 2.</strong></p>
+<p>District Executive Director <strong>(DED)</strong> of his/her current work station, shall authorize the latter and send it to the <strong>DED</strong> of the Municipal that the public servant want to go and that latter shall go through Medical officer In charge <strong>(DMO)</strong> of that new Municipal for confirmation of vacancy in health department.</p>
+<p><strong>Step 3.</strong></p>
+<p><strong>DED</strong> of the Municipal that the public servant want to go, shall confirm request latter and write a confirmation latter and shall be sent to a public servant through his/her <strong>DED</strong> for further procedures.</p>
+<p><strong>Step 4.</strong></p>
+<p>District Executive Director <strong>(DED)</strong> of his/her current work station shall write to a Regional Administration Secretary <strong>(RAS),</strong> to notify the provision of a vacancy as well as asking to proceed the process to the Ministry <strong>(TAMISEMI)</strong>, after that, the <strong>Ras</strong> office shall write to Tamisemi’s Cabinet Secretary <strong>(CS)</strong> to approve the process.</p>
+<p><strong>Step 5.</strong></p>
+<p><strong>CS</strong> for Tamisemi shall approve and send the letter to <strong>CS</strong> responsible for PUBLIC SERVICE for Execution. And after the process done at Utumishi, <strong>UTUMISHI CS</strong> shall send the Permission latter to both <strong>Public servant</strong> and Municipal Council through <strong>DED</strong> of the current working station.</p>
+<p><strong>Step 6.</strong></p>
+<p>District Executive Director <strong>(DED)</strong> of his/her current work station shall, write a <strong>permission latter to a public servant to permit him/her to move to the new work station (NEW MUNICIPAL),</strong> and attach that latter with the latter from <strong>Utumishi’s CS</strong> that shows the requirement to be done soon after reporting to a new Municipal.</p>
+<p><strong>Step 7.</strong></p>
+<p>The last step is the Public servant report to the New working station, this is done after receiving the permission latter from Both Utumishi and DED. Soon after his/her report the public servant is required to inform the <strong>Utumishi CS</strong> through <strong>New Municipal</strong> <strong>DED</strong>, that he/she has already report.</p>
+</section>
+<section id="disadvantages-of-the-process." class="level3">
+<h3 class="anchored" data-anchor-id="disadvantages-of-the-process.">DISADVANTAGES OF THE PROCESS.</h3>
+<ul>
+<li><p><strong>Time and material cost;</strong> this is due to fact that a public servant need to bear some material cost when shifting even if sometimes there are genuine reasons for his/her request.</p></li>
+<li><p><strong>Bureaucracy;</strong> this is due to fact that, the latter fo permission to shift is passing through people’s hands, so it is possible to be blocked somewhere within a chain of process.</p></li>
+<li><p><strong>Cheating;</strong> this is due to fact that , there no roll a public servant can play legally to speed up the process, so some unfaithful servant within the administration can make some deliberate mistake to frustrate/sabot the process.</p></li>
+<li><p><strong>Less efficiency;</strong> this is due to fact that, a public servant must concentrate much of his/her time to seek feedback of for followup of his/her request, this reduces concentration to work.</p></li>
+</ul>
+<p><img src="https://benjamini-mpinga.netlify.app/posts/tamisemi/bwz.jpg" class="img-fluid"></p>
+</section>
+<section id="proposed-procedures." class="level3">
+<h3 class="anchored" data-anchor-id="proposed-procedures.">PROPOSED PROCEDURES.</h3>
+<p>Although there are many advantages and some disadvantages on the current shifting process, there few things must be taken into consideration as we move forward, we must put in place some useful measures to improve the current system.</p>
+<ol type="1">
+<li><strong>Integrate online system:</strong> this method can improve the system in many ways such as, Unnecessary delay of report, Cost during the process, simplifying the feedback to both A public servant as well as Municipal authority, Easy method to be accessed by the whole chain in government sectors. This type of system will also reduces the possibility of lost of document during the process.</li>
+<li><strong>Discourage personal choice:</strong> the current method allows a public servant to seek a vacancy directly to a specific Municipal, but sometimes this may cause one to cooperate with another administrator to get chance in that Municipal , here is when you can smell the corruption rumors. So to tackle this i suggest that, Tamisemi after reception of a shifting latter from RAC office, it must play a roll to decide as follow.</li>
+</ol>
+<p>Every public servant shall be required to have a Government service account accessible via his/her cheque number, employee account shall be accessible by both all above authorities of the Local Government Ministry <strong>From Servant to CS,</strong> and a servant shall use that account for three main reasons.</p>
+<ul>
+<li><p>To file Leave letters</p></li>
+<li><p>To claim servant’s rights at work as well as social security services.</p></li>
+<li><p>To file transfer and shift letters and similar reports.</p></li>
+</ul>
+<p>Therefor every letter together with all necessary attachment shall be filled <strong>online</strong> through that employee account, and it will be accessible by <strong>MOI</strong>, <strong>DMO</strong> and <strong>DED</strong>. After all mention authorities approve the form then a servant shall push that form to <strong>TAMISEMI</strong> through <strong>RAS</strong> office for determination of mentioned grounds for transfer/shift.</p>
+<p>This process will allow a servant to followup the progress of his/her request directly and if any query/comment will be raise from the above authority, a servant will be able to answer or fulfill whatever has been raised through the same platform. This process will end the age of lamentation and doubt from many public servants.</p>
+<p>When a servant request for a vacancy, shall propose three Municipal he/she wants to shift to, then shall be a roll of <strong>TAMISEMI</strong> to decide the Municipal to where a servant shall go. this is due to fact that, some of Municipal have insufficiency workers while others have enough and sometimes excess.</p>
+<p>Tamisemi shall directly notify a New Municipal DED on the shifting process of a servant, as well as determine weather it is reasonable to pay for his or her shift.</p>
+<p>Online submission shall make transparent to the whole system of Government, and during the process every part shall be able to track where the process is being slowed or</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-2">flowchart TB
+  A(Servant &lt;/br&gt;Application) -- MOI -- DMO -- DED -- 1st--&gt; B[Ras]
+  B -- 2nd--&gt; C{CS &lt;/br&gt;Tamisemi}
+  C -- 3rd --&gt; D[(CS&lt;/br&gt;UTUMISHI)]
+  D -- 4TH --&gt; A
+  D --&gt; E[New municipal]
+  A -- Report --&gt;E
+</pre>
+<div id="mermaid-tooltip-2" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<p>The flowchart above shows the proposed system.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>legal</category>
+  <guid>https://benjamini-mpinga.netlify.app/posts/tamisemi/index.html</guid>
+  <pubDate>Thu, 09 Mar 2023 21:00:00 GMT</pubDate>
+  <media:content url="https://benjamini-mpinga.netlify.app/posts/tamisemi/benja.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Principles of the common law: Natural justice application</title>
+  <dc:creator>Benjamini Mpinga</dc:creator>
+  <link>https://benjamini-mpinga.netlify.app/posts/naturalJustice/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="common-laws" class="level3">
+<h3 class="anchored" data-anchor-id="common-laws">Common laws</h3>
+<p>This principles are some of the basic laws,they are older than 600 years ago.these laws are world wide recognized.are the fundamental rights to everyone and every situation.</p>
+<p><img src="https://benjamini-mpinga.netlify.app/posts/naturalJustice/court.jpg" class="img-fluid"></p>
+<p><strong>Actio Personalis Mortiur Corn Persona</strong>: A person right of action dies with a parson.</p>
+<p><strong>Actus Nonfacit Reum Nisimens Sit Rea:</strong> A conviction of a crime requires proof of a guilt mind/no criminal conviction until mind is guilt.</p>
+<p><strong>Audi Alterm Parterm</strong>: Justice must heard both/other side.</p>
+<p><strong>Causa Proxima Et Non Renota Spectatur</strong>: The immediate not the remote cause is to be considered.</p>
+<p><strong>Caveat Emptor:</strong> Let the buyer be aware/without consideration no action arise.</p>
+<p><strong>Deminimus Non Curat Lex:</strong> The law does not concern itself with trials.</p>
+<p><strong>Deligatus Non Post Deligare:</strong> A delegate can not delegate.</p>
+<p><strong>Ex NudoPacto Non Oritur Actio:</strong> An agreement without consideration does notarize.</p>
+<p><strong>Exturpi Caus Non Artur Actio:</strong> A court/a law suit should not assist unlawful allegations.</p>
+<p><strong>Ignorantia Facit/Juris Non Excusat:</strong> Ignorance of law is not an excuse.</p>
+<p><strong>Lex Non Cogit Ad Imposibilia:</strong> A law can not compel one to do what he can not possibly do.</p>
+<p><strong>Nasciturus Projam Nato Habetur:</strong> The unborn is deemed to have been born to the extend.</p>
+<p><strong>Nemo Debt Esse Judex In Propria:</strong> No one ought to be judge in his own cause.</p>
+<p><strong>Nemo Det Vexar Pro Uno Et Eadem Causa:</strong> No one should vexed twice/over for the same cause.</p>
+<p><strong>Nemo Det Quad On Habet:</strong> No one give what they do not have.</p>
+<p><strong>Nemo Temetur Scipsum Accusare:</strong> No one is bound to incriminate/accuse him self.</p>
+<p><strong>Novus Actus Intervenious:</strong></p>
+<p><strong>Pendente Lit Nihil Innoveture:</strong> During litigation nothing shall be changed/introduced.</p>
+<p><strong>Qui Facit Peralium Facit Per Se:</strong> He who act through another parson does the act himself.</p>
+<p><strong>Res Ipsa Loquitur:</strong> Things speak for themselves.</p>
+<p><strong>Respondent Superior:</strong> Master liable.</p>
+<p><strong>Solus Populi Supreme Lex:</strong> A welfare of the people shall be supreme law.</p>
+<p><strong>Ubi Jus Ubi Remedium:</strong> For every wrong act the law provide remedy.</p>
+<p><strong>Volent Non Fit Injuria:</strong> To one who is willing no harm is done.</p>
+<p><strong>Related Posts:</strong>:</p>
+
+
+</section>
+
+ ]]></description>
+  <category>legal</category>
+  <guid>https://benjamini-mpinga.netlify.app/posts/naturalJustice/index.html</guid>
+  <pubDate>Mon, 27 Feb 2023 21:00:00 GMT</pubDate>
+  <media:content url="https://benjamini-mpinga.netlify.app/posts/naturalJustice/court.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Human behavior: How human behavior develop to become a character</title>
+  <dc:creator>Benjamini Mpinga</dc:creator>
+  <link>https://benjamini-mpinga.netlify.app/posts/behaviour/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="usawa." class="level3">
+<h3 class="anchored" data-anchor-id="usawa.">Usawa.</h3>
+<p>wanadamu wote tunatokana na mfumo mmoja, tunaanza kwa kutungwa mimba, kisha kupita katika mabadiliko kadhaa na baada ya kukamilika muda wa kukaa ndani ya tumbo la mwanamke, ndipo tunazaliwa katika hali ya uchanga.</p>
+<p><img src="https://benjamini-mpinga.netlify.app/posts/behaviour/kongolo.jpg" class="img-fluid"></p>
+<p>Hatua hii ya awali ya kutungwa mimba hadi kuzaliwa ni hatua tunayoipitia watu wote kwa usawa, kwa sababu hiyo ndiyo maana tunasikia kauli, “Binadamu wote ni sawa.” Usawa wetu unaanzia katika mchakato wa kutungwa mimba na kuishia kuzaliwa, baada ya hapo kila mmoja wetu anaanza kutengeneza “Upekee” au “Uniqueness.”</p>
+<p>Upekee huo mara nyingi unachagizwa na mambo kadhaa</p>
+<ol type="1">
+<li>Tabia ya wazazi</li>
+<li>Tabia ya jamii inayomzunguka</li>
+<li>Hali ya mazingira anayoingiliana nayo</li>
+<li>Taaluma</li>
+<li>Imani nk.</li>
+</ol>
+<p>Mambo hayo ni baadhi ya yale yanayochangia kwa kiasi kikubwa jamii kuwa na watu wenye tabia tofauti tofauti kwa upekee wao. Kwa sababu hiyo inatufanya tuwe tunategemeana kutokana na tofauti zetu.</p>
+</section>
+<section id="uumbaji-wa-mungu." class="level3">
+<h3 class="anchored" data-anchor-id="uumbaji-wa-mungu.">Uumbaji wa Mungu.</h3>
+<p>Kufuatia utofauti wa tabia zetu zinazotengenezwa na baadhi ya mambo niliyoyaorodhesha hapo juu, binadamu tunagawanyika katika nadharia ya Uuumbaji. Naiita nadharia kwa sababu haiwezi kutafsiriwa kwa matendo ya kibinadamu. Katika mgawanyiko huo miongoni mwa watu, kunasababisha kuzaliwa <strong>“Imani”</strong> mbalimbali Ulimwenguni.</p>
+<p>Imani hizi zinatokana na Urithi wa mapokeo kutoka kwa wahenga, uzoefu wa maisha mtu anaoupata kupitia changamoto mbalimbali, maingiliano ya jamii mbalimbali, Taaluma zenye msingi wa Sayansi. Haya yote kwa pamoja yanachangia kuleta mgawanyiko wa kimtizamo miongoni mwa watu, haswa linapokuja suala la Uumbaji wa mwanadamu na Dunia.</p>
+<p>Zifuatazo ni baadhi ya Imani na tofauti zake za kimtizamo juu ya Uweza wa kimungu.</p>
+<ol type="1">
+<li>ATHEISM — NO GOD</li>
+<li>AGNOSTICISM — DO NOT KNOW</li>
+<li>ANIMISM — SPIRITS ARE gods</li>
+<li>POLYTHEISM — Many gods</li>
+<li>DUALISM — two gods (good and bad)</li>
+<li>MONOTHEISM — ONE GOD</li>
+<li>DEISM — CREATOR CAN NOT CONTROL</li>
+<li>THEISM — CREATOR CAN CONTROL</li>
+<li>EXISTENTIALISM — EXPERIENCE IS GOD</li>
+<li>HUMANISM — MAN IS GOD</li>
+<li>RATIONALISM — REASON IS GOD</li>
+<li>MATERIALISM — ONLY MATTER IS REAL</li>
+<li>MYSTICISM — ONLY SPIRITY IS REAL</li>
+<li>MONISM — MATTER &amp; SPIRITY IS ONE</li>
+<li>PANTHEISM — ALL IS GOD</li>
+<li>PANENTHESM — GOD IS IN ALL</li>
+</ol>
+</section>
+<section id="umoja-muungano-mshikamano-ushirikiano." class="level3">
+<h3 class="anchored" data-anchor-id="umoja-muungano-mshikamano-ushirikiano.">Umoja, Muungano, Mshikamano, Ushirikiano.</h3>
+<p>Jamii za ulimwengu zimepitia vipindi tofauti tofauti hadi kufikia nyakati hizi za sasa, Nyakati nyingi zilikuwa ngumu na zenye maumivu makubwa kwa baadhi ya jamii, Kufuatia uzoefu tunaojifunza kutokana na matukio, tunajikuta inabidi tutengeneze Mtindo wa maisha <strong>(Life Style).</strong> Aidha ni kumbukumbu mbaya au nzuri, zote zinatutengeneza kuwa vile tulivyo. Kwa uzeufu huo jamii zinaingiliana na kujikuta katika mifumo mbalimbali ikiwemo,</p>
+<ol type="1">
+<li>Muungano <strong>(Union)</strong></li>
+<li>umoja <strong>(Unity)</strong></li>
+<li>Mshikamano <strong>(Solidarity)</strong></li>
+<li>Ushirikiano <strong>(Colaboration)</strong></li>
+<li>Shirikisho <strong>(Federation)</strong></li>
+</ol>
+<p>Hizi zote ni jitihada za kuwafanya wanadamu kuishi pamoja kwa Amani na Upendo huku wakuvumiliana kwa tofauti za tabia zao. <strong>(Tolerance)</strong> and remain <strong>(United out of our differences).</strong> katika jitihada hizo za kuifanya dunia sehemu salama kwa kila kiumbe na mazingira, zinaundwa sheria, sera, miongozo na Elimu za aina tofauti tofauti ili kuileta jamii pamoja.</p>
+<p>Hayo niliyoyaeleza hapo juu japo kwa uchahe, ni Mfumo wa jamii kwa ujumla wake, lakini kwa kutambua kwamba jamii inaundwa na mtu mmoja mmoja, basi ndio lengo mahususi la kuandaa makala hii niliyoipa jina la “MAKUNDI YA TABIA.”</p>
+<p>Makundi haya nimeyaweka katika mjumuisho, lakini tabia hizi zinawahusu mtu mmoja mmoja, ili kuweza kustahimili makwazo, furaha na maumivu unayoweza kuyapata kutokana na tabia za watu wengine kwenye jamii yako, Basi hakuna budi kuanza kwa kutambua tabia za watu, kisha kujua mbinu unazoweza kuzitumia kusudi kuweza kuchukuliana nazo.</p>
+<p>Ili uweze kuwa salama katika jamii iliyochanganyika kwa tofauti ya Mila, Desturi na Tamaduni, ni vyema ukapata muda wa kujua njia nyepesi ya kuishi na jamii hiyo kwa kutumia akili kubwa zaidi ya wengine. Hakuna budi kujifunza hayo kwa sababu, hatuwezi kujitenga na jamii tuliyonayo, isipokuwa tunachangia elimu na fikra chanya kusudi kuifanya jamii ibadilike na kuwa njema.</p>
+</section>
+<section id="makundi-ya-tabia-za-watu." class="level3">
+<h3 class="anchored" data-anchor-id="makundi-ya-tabia-za-watu.">Makundi ya Tabia za watu.</h3>
+<ol type="1">
+<li><strong>MELANKOLIKI</strong></li>
+<li><strong>KARELIKI</strong></li>
+<li><strong>SANGWINI</strong></li>
+<li><strong>FLAGMETIKI</strong></li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>Tabia hizo zote zinatofautisha watu katika jamii, na baadhi ya tabia hizo zinageuka kuwa sifa ya upekee kwa baadhi ya watu katika jamii zetu. aidha ni sifa hitajika au ni sifa mbaya.lakini kwa ujumla tabia zote zina pande zote mbili (Uzuri/Uimara na Ubaya/udhaifu wake).</strong></p>
+</blockquote>
+<p><strong>Je, tunajuaje tabia ya mtu kwa sifa zilizoorodheshwa.?</strong></p>
+<p>Mfano:</p>
+<p><strong><em>katika matukio, Safarini au Sherehe au Msiba. Ili kuweza kumtambua mtu kwa aina ya tabia yake, ni vigumu kidogo, kwa sababu hupaswi kuwa mwepesi wa kutoa hitimisho juu ya tendo au matendo na maneno ya Mtu kwa kutegemea tukio moja. hivyo yakubidi upate muda wa kutosha kukaa na mtu ndipo utagundua kwa undani tabia yake ni ya aina gani.</em></strong></p>
+<p>Katika jamii tunayoishi tumezungukwa na watu pamoja na vitu mbalimbali. kila kimoja kikiwa na umuhimu wa kipekee kwa kingine. yaani maingiliano au mategemeano ya watu,nvitu na viumbe hai vingine. Japo kuna masomo mengi yanayohusu maingiliano au mategemeano kati ya viumbe hai na mazingira, ila leo nataka tujifunze kidogo kuhusu tabia kuu nne(4) za wanadamu. namna gani ya kuzigundua/kuzitambua na jinsi gani ya kuchukulina/kuishi nao, hao watu wenye tabia hizo.</p>
+<p>Watu wengi tumekuwa wepesi kutengeneza marafiki bila kujali tunataka marafiki wa aina gani, tumejikuta tukiingia katika uhasama, uadui mkubwa na walewale tuliotengeneza nao urafiki. hii inatokana na uelewa mdogo wa tabia na mtindo wa maisha yetu sisi wenyewe na maisha ya wengine pia. kwa sababu huwezi ukajua tabia za watu kama wewe mwenyewe hujijui ni mtu wa tabia ya aina gani.</p>
+<p>hivyo kupitia somo hili tutajifunza kitu cha muhimu sana kuhusu aina za tabia ili kwanza tujitambue sisi wenyewe tuna tabia zipi, ili tuweze kujua na tabia za wengine, kisha kutambua huko kutuwezeshe kutupa/kutujengea namna bora ya kuchagua marafiki au jinsi ya kuishi/kuchukuliana na marafiki tulionao.</p>
+<p>Nikufahamishe pia kuwa katika wanadamu takribani wote, wana tabia kuu nne(4), hata wale wenye maradhi ya akili na watoto wadogo ambao bado hawajafikia viwango vya kuzifikirisha akili zao katika mambo ya kijamii kwa ujumla, wote wanaingia katika makundi haya.</p>
+<p><img src="https://benjamini-mpinga.netlify.app/posts/behaviour/family2.jpg" class="img-fluid"></p>
+<ol type="1">
+<li><strong>Melankoliki:</strong></li>
+</ol>
+<p>Watu hawa mimi binafsi napenda kuwaita <strong>(Makamanda)</strong>. kwa hakika ni watu imara. kuanzia mitizamo mpaka matendo. Hodari katika kazi na wachangiaji mahiri wa mabadiliko ya kijamii. Hawapendi mizaha, na ni watu wenye hasira sana pale unapokwenda kinyume na maatakwa yao, wanajiamini sana na ni watendaji wazuri, wanapenda kuwa maarufu kwa mambo wanayoyafanya. kiufupi watu hawa wakitaka lao basi lazima litimie, iwe kwa nguvu au hiyari, ni watu wa maamuzi, wana tamaa ya mafanikio ya haraka. ni waaminifu sana kwa vitu vyao na vya wengine haswa mali za jumuiya, wanaweza kufanya lolote ilimradi tu watimize malengo yao, watu hawa ukiwapa kazi basi ni majembe haswa.</p>
+<p><strong>Udhaifu wa Melankoliki:</strong></p>
+<p>Shida ya watu hawa kubwa ya kwanza ni kwamba hawakubali kosa kirahisi, hata kama ni la dhahiri, mara nyingi hujiona ni wakamilifu wa tabia na matendo. pia hawapendi sana kusikiliza wengine, wanaamini wao pekee ndo wapo sahihi, huwa wanabeba vinyongo/visasi endapo ukiwakosea, si wepesi kusamehe, mara nyingi wanapenda kulazimisha watu wafuate mambo/mawazo yao, hawapendi kushindwa, ni wepesi kukurupukia mambo bila kujali madhara yake, hivyo hujikuta wakipata hasara kubwa. kiufupi hawaambiliki, huwa hawana marafiki wengi, na wakipata rafiki ni rahisi kupishana na kuachana kabisa, wanapenda ushindani, kwa mapungufu yao hayo hujikuta wakitengwa au kuchukiwa na watu wenye tabia zingine, wanatabia ya uchoyo, ni wagumu sana kukabiliana na ukweli unaohusu mapungufu yao.</p>
+<p><strong>Jinsi ya kuchukuliana na Melankoliki:</strong></p>
+<p>Ukitaka kuishi na watu hawa kwa amani na upendo basi wewe penda kuwasikiliza zaidi wao na kukubaliana nao hata kama hutatenda wanavyotaka ila wape nafasi pindi wanapotaka kusema au kutenda mambo yao, usiwakosoe hadharani mtajenga uadui, wanapenda kujua mipango ya watu na malengo ya watu wengine kwa sababu wanapenda ushindani, hivyo ukiwa unampa mipango ya wengine anafurahi sana, lakini pia usiwakosoe mara kwa kwa mara huwa hawawezi kukabiliana na ukweli kwa sababu ya mapungufu yao, waheshimu usifanye ushindani nao huwa wana visasi na hasira za haraka, ni watu wa kupenda sifa hivyo ukiwasifia huwa wanapenda sana, mara nyingi waunge mkono katika mambo yao, basi mtaishi kwa amani sana.</p>
+<ol type="1">
+<li><strong>Sangwini:</strong></li>
+</ol>
+<p>Watu hawa huitwa <strong>(komedi).</strong> Wanapenda masihara sana, yaani kama sangwini akikutana na melankoliki basi hapo hakuna maisha, watu hawa wanapenda michezo, utani mwingi hata katika kazi, ni watu wa mizaha, hata katika mambo ya msingi anaweza akafanya mzaha, mfano mnaweza mkawa katika kikao cha kujadili maendeleo au kusuluhisha watu basi yeye akaleta mizaha tu, ni wacheshi, wanapenda utani sana wana ushawishi, wanapenda kujulikana(umaarufu). hawana hasira za haraka, wana marafiki wengi, mara nyingi jamii inawapenda kwa ucheshi na ushirikiano wao na watu, ni wepesi kupata marafiki.</p>
+<p><strong>Udhaifu wa sangwini:</strong></p>
+<p>watu hawa mara nyingi hawawezi kufanya kazi zinazohitaji umakini, kwa mfano ngazi za maamuzi na uongozi katika mambo yanayohusu maisha ya wau. hawaaminiki sana na jamii katika mambo ya msingi kwa sababu ya tabia yao ya masihara, huwa hawajui mipaka ya utani hivyo wakati mwingine wanajikuta amewakwaza watu, huwa wanatabia ya uongo, ni wazungumzaji kupita kiasi, hawaishiwi maneno ila mengi ni ya mizaha na utani, wachonganishi na umbea.</p>
+<p><strong>Jinsi ya kuchukuliana na Sangwini:</strong></p>
+<p>Penda kumpa sapoti/kumuunga mkono katika mwendelezo wa utani, usimpe nafasi kusimamia mambo yako ya msingi, usijaribu kushindana naye, maana si wepesi wa hasira hivyo utajikuta unakwazika mwenyewe, hivyo pale wanapoleta utani au masihara basi wewe mpuuzie. muoneshe mpo pamoja, washirikishe katika kusherehesha au kukaribisha watu katika sherehe, michezo au hafla za kijamii hapo mtapatana sana.</p>
+<ol type="1">
+<li><strong>Kareliki:</strong></li>
+</ol>
+<p>Watu hawa mara nyingi huitwa <strong>(watu makini, smart people)</strong>. huwa ni watulivu, hawana papara na mambo, hupenda kuyajua mambo kiundani sana kabla hajalifanya au kuzungumza, hawaamini kila jambo, ni watafiti, hata mawazo yao pia hupenda kuyapima kama yaapo sahihi au lah. huwapa watu nafasi ya kuwasikiliza, ni waamuzi wazuri, washauri wazuri, wapangiliaji wa mambo kwa mikakati, mara nyingi hupenda kujifunza, ni waongeaji wazuri sana, ni rahisi kutengeneza marafiki wapya, wanaushawishi katika jamii kwenye mambo yote ya mipango na maamuzi, wana uwezo wa kimasomo, ni watu wa kiasi, hawana makuu, hawapendi sifa, ni watetezi wazuri wa watu, ni waaminifu, huwa wanapata bahati ya kupendwa sana na watu.</p>
+<p><strong>Udhaifu wa Kareliki:</strong></p>
+<p>Kama tulivyoona watu hawa walivyo na sifa nyingi kama malaika, na ukweli ni kwamba wako hivyo, ila wana udhaifu ambao pia ni hatari na mbaya sana, kwanza ni wavivu wa baadhi ya kazi, hawapendi kazi zenye changamoto nyingi, yaani misukosuko, mara nyingi wanajiepusha na changamoto, jambo hilo linawafanya mara nyingi wasifanikiwe sana kimaisha, tofauti na melankoliki ambaye yeye ni <strong>mzee wa sukuma twende litakalotokea na litokee</strong>, pia watu hawa sio wepesi kufanya maamuzi, hivyo jambo linaweza likaharibikia mikononi mwao bila maamuzi ya haraka, lakini pia hawana nguvu sana za mwili, jambo linalowasababishia wakati mwingine kushindwa kukabiliana na changamoto ngumu za maisha, pale wanapokosa nafasi wanazoweza kutenda vizuri, ni wepesi kupoteza marafiki japo wanawapata kirahisi, huwa hawana tabia ya kujali sana watu wanapokuwa nao mbali, yaani kama mawasiliano au kutembeleana.</p>
+<p><strong>Jinsi ya kuchukuliana na Kareliki:</strong></p>
+<p>Watu hawa hawana changamoto sana kuishi nao kwa sababu ya asili ya tabia zao, hivyo wewe penda kuwashauri na kuwasihi wajaribu kufanya vile vitu unavyoona wanaweza kuvifanya kwa usahihi, utakuwa umemsaidia sana, pia penda kuwahimiza maana ni wazito wa mambo mengi haswa maamuzi yanayohitaji uharaka, ila penda sana kuwashauri maana ni wepesi kupokea mawazo yaani ni waelewa, watie moyo pale wanapofeli na kuwasaidia katika zile kazi unazohisi hawezi kuvumilia kuzifanya. Basi hapo utakuwa umempata.</p>
+<p><img src="https://benjamini-mpinga.netlify.app/posts/behaviour/july.jpg" class="img-fluid"></p>
+<ol type="1">
+<li><strong>Flagimetiki:</strong></li>
+</ol>
+<p>Watu hawa wanaitwa <strong>(wandani).</strong> Hawa ni watu wasiri mnooo, yaani unaweza ukaishi naye aidha ni mwanao au mkeo au rafiki au jirani, lakini kitu utaishia kujua ni salamu, anaweza akaumwa asikwambie, akafanikiwa jambo asiseme, akapatwa na tatizo au kheri asikwambie, wanaitwa wandani/wasiri, ni watu wapole, sio wazungumzaji sana hata kwa watu waliowazoea, wakimya, hawana marafiki wengi, hawapendi mijumuiko, huwa wanajiamini peke yao, ni wachapakazi sana, wanakaa wapweke muda mwingi, huwa wanauwezo mzuri kimasomo, huwa wanapenda ukweli, ni watendaji waaminifu katika kazi, hawapendi kabisa mashindano na watu wengine, ni watunzaji wazuri wa siri za watu au ofisi.</p>
+<p><strong>Udhaifu wa Flagimetiki:</strong></p>
+<p>Watu hawa udhaifu wao mkubwa ni siri wanazozibeba, huwa zinawatesa na wakati mwingine kuwaletea madhara makubwa katika maisha, pili upweke wa kuwa peke yao huwapa msongo wa mawazo, ni rahisi kukosea maana hawana mashirikiano mazuri na jamii(umoja), huwa hawaamini watu wengine. wanatabia ya uongo mara nyingi, wanabeba hasira nyingi na visasi, ni wakali sana, anaweza akawa na suluhisho la jambo na asilitoe kwa watu, wana tabia ya uchoyo, wakitaka lao mpaka lifanikiwe ila kwa siri, ni waoga sana.</p>
+<p><strong>Jinsi ya kuchukuliana na Flagimetiki:</strong></p>
+<p>Watu hawa hawapendi kusemeshwa mara kwa mara, hivyo ukiishi naye wewe penda kumpa maelekezo kamili kisha muache aendelee na majukumu yake, ukitaka kujua mambo yake kaa naye kwa muda kidogo usikurupuke kumuuliza subiri mpaka yeye akuambie, usipende kumkwaza maana wanabeba visasi, wanapenda kubembelezwa, usipende kuwaambia habari za wengine hawapendi sana, ukimpa kazi za siri kama za ofisi au serikali basi umempa mtu sahihi, onesha kumjali yeye sio kuliko mtu mwingine ili akuamini, kwa sababu ni wabinafsi.</p>
+<p><strong>Kuzitambua tabia za watu kwa haraka, katika matukio mafupi.</strong></p>
+<p>kawaida yapo mazungumzo yanayoweza kukupa picha ya mtu uliyekutana naye katika hafla au tukio la muda mfupi kupitia mazungumzo ya wakati huo. Kwenye usafiri au sokoni au mikutano ya hadhara, ni sehemu rahisi zaidi kupata watu wenye tabia zote kwa mara moja. Lakini hembu tuangalie wepesi wa kutambua tabia ya mtu kwenye usafiri wa uma (Daladala).</p>
+</section>
+<section id="kisa-cha-kondakta-na-abiria." class="level3">
+<h3 class="anchored" data-anchor-id="kisa-cha-kondakta-na-abiria.">Kisa cha Kondakta na Abiria.</h3>
+<p>Abiria mmoja kapungukuwa nauli, kisha anampa kondakta nauli pungufu,</p>
+<p>kondakta anamwambia <strong><em>“aisee nimalizie nauli yangu mzee baba.”</em></strong></p>
+<p>abiria anajibu <strong><em>“mzee sina nisaidie, nimepungukiwa”</em></strong></p>
+<p>mara ghafla mzozo unaanza ndani ya gari. basi ukiwa makini hapa utagundua tabia za watu kirahisi sana.Kwani sababu</p>
+<p><strong>Melankoliki lazima atasema tu</strong> “Watu wengine bhana kwani mlikotoka hamkujua mtapanda magari? kazi usumbufu tu, lipa nauli ya watu bhana au ushuke, hatutaki usumbufu sisi.”</p>
+<p><strong>Sangwini naye hawezi kupitwa lazima utamsikia tu atasema</strong> “Wewe mtoto wa kiume unapanda gari huna nauli unategemea nini, una nini cha kumpa konda, au unataka ulipiwe.”? Basi hapo kuna mawili aidha watu wacheke au ugomvi uhamie kwa sangwini na abiria aliyepungukiwa naui.</p>
+<p><strong>Kareliki naye lazima achangie mada, maana hawa wote ni waongeaji ila wenye tabia tofauti hivyo utamsikia atasema.</strong> “Konda kwani hiyo nauli yake imepelea kiasi gani.?” kisha kama anayo utaona anaingia mfukoni analipa.</p>
+<p><strong>Flagimetiki,</strong> hutamsikia akichangia mada au hata kucheka, yeye kimyaa kama hayupo vile,</p>
+</section>
+<section id="hitimisho." class="level3">
+<h3 class="anchored" data-anchor-id="hitimisho.">Hitimisho.</h3>
+<p>nadhani kupitia mfano wa kisa hicho cha Kondakta na Abiria, wengi mumeshakutana nayo, na ni dhahiri umepata picha kwa ukubwa zaidi kwa kile nilichokifundisha.</p>
+<p>Tunapaswa kuwajuwa watu kwa makundi ya tabia zao, na sio kuwageuza watu kuwa ndio tabia zao, mwanadamu ni kiumbe pekee anayeweza kubadilika kwa kadiri ya muda unavyoamua na vile utashi wake unavyomuongoza, hivyo watu wanasoma, wanaumizwa, wanajifunza na wanakua kimo na fikra, kisha kupitia hayo wanabadilika.</p>
+<p>Kumfanyia mtu mjumuisho kwamba ni mtu wa tabia fulani na hawezi kubadilika, ni kukosoa au kutilia shaka uwezo wa Mungu aliouweka ndani ya Mtu, na kutokuamini katika mabadiliko ya kimaumbile, Tujifunze zaidi kuliko kusoma, kusudi tuwe mabadiliko tunayoyatamani katika jamii zetu.</p>
+<p><strong>Related Posts:</strong></p>
+
+
+</section>
+
+ ]]></description>
+  <category>social</category>
+  <guid>https://benjamini-mpinga.netlify.app/posts/behaviour/index.html</guid>
+  <pubDate>Sun, 19 Feb 2023 21:00:00 GMT</pubDate>
+  <media:content url="https://benjamini-mpinga.netlify.app/posts/behaviour/kongolo.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Legal governance in Tanzania: How the laws are made, executed and Interpretation</title>
+  <dc:creator>Benjamini Mpinga</dc:creator>
+  <link>https://benjamini-mpinga.netlify.app/posts/armsofGvn/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>A law system is a huge and complex system to understand if not well explained, the system is often well understood by the few individual privileged to serve it.</p>
+<p><img src="https://benjamini-mpinga.netlify.app/posts/armsofGvn/bwz.jpg" class="img-fluid"></p>
+<p>The systems deffer from one place to another (One country to another), but the system is basically built under the principles of common laws. This is to say, many system share some similarities and many values.</p>
+<p>In this session we shall discuss the common law system basically, we shall focus on Tanzania Law and governance system, we shall also look at the Constitution and law making bodies together with their roll. This will help many to simplify the division of power and duties of the government’s arms.</p>
+<section id="tanzania-governance-system." class="level3">
+<h3 class="anchored" data-anchor-id="tanzania-governance-system.">Tanzania Governance system.</h3>
+<p>It is usually to be told that in Tanzania the governance system act on the principle of Division of Power, this is to say, the Government is divided in three Arms, 1. Executive 1. Legislature 1. Judiciary</p>
+<p>These are the arms of the government recognized by the Country’s Constitution of 1977. The constitution further provides general orders. which address the duty and mandate of each arm. Here we shall focus on general provisions.</p>
+</section>
+<section id="general-concept." class="level3">
+<h3 class="anchored" data-anchor-id="general-concept.">General concept.</h3>
+<p>The concept is usually one and the same, that Avery arm has its main roll, and none of it should interfere the other. It is indeed a theory of how to explain the separation of power, but in reality the reverse is the case, all the government’s arms are somewhere connected direct with each other as well as depend on each other practical.</p>
+<p>That each arm should not practice or act the duties of other arm, therefor to avoid the conflict of the law, then each arm shall only execute its mandate in accordance with the Constitution. But practically it is total different, because we shall see how each arm operate and where one arm perform the duty of the other accordance with the laws and even the constitution it self.</p>
+<p><strong>Rolls of the government’s Arms……</strong></p>
+<ul>
+<li>Executive to execute the laws.</li>
+<li>Legislature to Make the Laws.</li>
+<li>Judiciary to Interpreter the laws.</li>
+</ul>
+</section>
+<section id="legislature." class="level3">
+<h3 class="anchored" data-anchor-id="legislature.">Legislature.</h3>
+<p><strong>The law makers, Government’s Adviser and Executive’s Supervisor.</strong></p>
+<p>We are all familiar with legislature, because this class is formed by the most famous individuals (Politicians), this class constitutionally is formed by political parties and through general election.</p>
+<p>Legislature is formed by two parts……</p>
+<ol type="1">
+<li>The President and</li>
+<li>all members of parliament.</li>
+</ol>
+</section>
+<section id="leaders-of-the-legislature" class="level3">
+<h3 class="anchored" data-anchor-id="leaders-of-the-legislature">Leaders of the Legislature</h3>
+<ul>
+<li>Speaker of National Assembly, is elected my members but he/she required to be an elected member of parliament.</li>
+<li>Deputy Speaker, who is elected by members but he/she is not obliged to be a member of parliament.</li>
+<li>Parliament Secretary, who is appointed by a President and</li>
+<li>Parliament’s Chairperson (s).</li>
+</ul>
+<p>Also the Parliament has its traditional and standing orders, which lead it to conduct its daily mandate, the leadership of the parliament is in accordance with the Tanzania constitution of 1977. And in standing orders we find other leaders of the parliament such as parliament chairperson (s), who are elected by members of the parliament and leaders of the committees, who are appointed by Speaker of the national Assembly.</p>
+<p>Among the members of the parliament is where we also get Government’s</p>
+<ul>
+<li>Prime Minister,</li>
+<li>Ministers and</li>
+<li>Deputy Ministers, this is in accordance with the Tanzania Constitution of 1977. The Prime Minister, ministers and deputy ministers are appointed by the President, who is both the part of parliament and the head of government, they serve as top leaders in ministries under an executive arm.</li>
+</ul>
+<p>The president being the part of parliament, means the survival of the parliament is the survival of the president, so in order the Presidency to function it must first open the parliament, as well as the presidency to cease it must cease the parliament. This is what it called SEMI PRESIDENCIAL SYSTEM, (when the parliament cease the President also cease).</p>
+</section>
+<section id="policy-to-laws." class="level3">
+<h3 class="anchored" data-anchor-id="policy-to-laws.">Policy to laws.</h3>
+<p>The parliament make laws by discussing and passing the bills by vote of one third of all attended members of parliament, the bills are prepared by the central government and brought to the parliament by a minister or any member of the parliament. After the bills are passed, require the approval of the President to become a Laws.</p>
+<p>Therefor when we say the Parliament makes Laws, simply means The whole members of the parliament and the President, together they make Laws. The laws made by the parliament are called statutes.</p>
+<ol type="1">
+<li>Statutes (Written Laws). These are the main laws in the land, after the Constitution which is the Supreme Law.</li>
+</ol>
+</section>
+<section id="the-president-as-a-part-of-parliament." class="level3">
+<h3 class="anchored" data-anchor-id="the-president-as-a-part-of-parliament.">The president as a part of parliament.</h3>
+<p>President as a part of the parliament doesn’t means he is supposed to attend all the sessions of the parliament, because the prime minister act as the leader of the government’s activities in the parliament. But we normally see the president participate as a part of parliament in two occasion…….</p>
+<ol type="1">
+<li>During the open and the close of the parliament’s conferences, and<br>
+</li>
+<li>During the approval of the bills to laws,</li>
+</ol>
+<p>in these two occasion is when the president participate and act as a part of the parliament.</p>
+</section>
+<section id="executive." class="level3">
+<h3 class="anchored" data-anchor-id="executive.">Executive.</h3>
+<p><strong>The Presidency and The law executors.</strong></p>
+<p>Many are familiar with the word “Government”, but this is what it called the Executive, this class is also famous, because it is also made up by political class, it is consist of Country’s …..</p>
+<ul>
+<li>President,</li>
+<li>Vice President and</li>
+<li>Prime Minister.</li>
+</ul>
+<p>President is the head of executive with the following functions.</p>
+</section>
+<section id="functions-of-the-president." class="level3">
+<h3 class="anchored" data-anchor-id="functions-of-the-president.">Functions of the President.</h3>
+<ol type="1">
+<li>Head of the State.</li>
+<li>Head of the Government.</li>
+<li>Commander in chief of the armed forces.</li>
+</ol>
+<p>The President act upon those tree mentioned functions, this means, there is a time when the President performs the duties of State, then there is time when the President performs duties of the Government and also the duties of Commander in chief. Through these functions which are provided under the 1977 Constitution of Tanzania, the executive execute its constitutional mandate.</p>
+<p>Laws made by Executives are…….</p>
+<ol type="1">
+<li>Regulations,</li>
+<li>bylaws,</li>
+<li>Instruments and</li>
+<li>Policy</li>
+</ol>
+<p>The cabinet makes Instruments for the Ministries, Ministries make Regulations for its organs, and organs make policy and and Bylaws. This is in accordance with the provision under 1977 constitution where the Parliament delegates some of its power to the Government to act on its behalf in some matters, and on the state of emergency.</p>
+<p>At the end page I’ve shown through flowchart on how these mentioned laws operate. These laws are minor to those of the parliaments, so if those regulations conflicts with the written law, then it must be taken to the parliament for amendment. And the parliament may amend it or make some suggestions to amend or order the government to reverse it.</p>
+</section>
+<section id="judiciary." class="level3">
+<h3 class="anchored" data-anchor-id="judiciary.">Judiciary.</h3>
+<p><strong>The Court and The Laws Interpreters.</strong></p>
+<p>Judiciary is one of the Government’s arm, a Judiciary is headed by His Lordship The Chief Justice. Judiciary legality is under the Tanzania Constitution of 1977. and judicial system is consist of…..</p>
+<ul>
+<li>Chief Justice.</li>
+<li>Justices,</li>
+<li>Magistrates,</li>
+<li>Lawyers</li>
+<li>Court’s Clerks and other administrators</li>
+</ul>
+<p>The head of the judiciary is the Chief justice of Tanzania, who is constitutionally appointed by the President of Tanzania. And once appointed can never be removed, until the retirement.</p>
+<p>In an exercise of their mandate Judiciary enjoys full liberty and <strong>SUO MORTU</strong>. Which is the power to intervene any matter with the public interest, also Judiciary is the last decider of all state affairs, simply the judgement of the court is the last decision.</p>
+<p><img src="https://benjamini-mpinga.netlify.app/posts/armsofGvn/court.jpg" class="img-fluid"></p>
+</section>
+<section id="court-system." class="level3">
+<h3 class="anchored" data-anchor-id="court-system.">Court System.**</h3>
+<ol type="1">
+<li>Primary court. (with limited jurisdiction)</li>
+<li>District Court. (with limited jurisdiction)</li>
+<li>Resident Magistrate Court. (with limited jurisdiction)</li>
+<li>High Courts. (with no jurisdiction)</li>
+<li>Court of appeal. (with no jurisdiction)</li>
+</ol>
+<p>The Laws interpreted/matters decided by Courts are known as……..</p>
+<ul>
+<li>Court’s Rulings/Judgments</li>
+<li>Court’s Orders</li>
+</ul>
+<p>Then these rulings/Judgement are taken back to the Law school, or education institutes for the purpose of case study, simply they are known as Case Laws (Precedents). These Laws when ruled by a Higher Court, then are usually the binding laws to the subordinates court’s decisions. Also When matter taken to court and it involves one/both of the arms, Courts have power to gives Orders to be executed by both The parliament and Executive.</p>
+</section>
+<section id="the-current-system-of-law-making-and-its-execution." class="level3">
+<h3 class="anchored" data-anchor-id="the-current-system-of-law-making-and-its-execution.">The current system of Law making and its Execution.</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart TB
+  A[(The &lt;/br&gt; Republic)] --&gt; B{The &lt;/br&gt; Constitution}
+  B --&gt; C[Legislature]
+  B --&gt; D[Executive]
+  B --&gt; E[Judiciary]
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-2">flowchart TB
+  C[Legislature] --&gt; D[Executive]
+  D -- Bill--&gt; C
+  C --&gt; E{Judiciary's &lt;/br&gt; Decisions}
+  D[Executive's &lt;/br&gt; Instruments] --&gt; F(Ministry's &lt;/br&gt; Regulations and &lt;/br&gt; Rules )
+  F --&gt; G(Ministry's Organs, &lt;/br&gt; Institutes and &lt;/br&gt; Local Governments)
+  G -- Policy --&gt; D
+  G -- Bylaws and guide lines --&gt; A[(The &lt;/br&gt; Republic)]
+  E{Judiciary's &lt;/br&gt; Decisions} -- Rules and Orders --&gt; A[(The &lt;/br&gt; Republic &lt;/br&gt;)]
+  E -- Orders --&gt; C[Legislature's &lt;/br&gt; Statutes]
+  E -- Orders --&gt; D
+</pre>
+<div id="mermaid-tooltip-2" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="general-summary." class="level3">
+<h3 class="anchored" data-anchor-id="general-summary.">General Summary.</h3>
+<p>The concept that Legislature is the only arm that makes Laws, is practically not applicable in common law system, because during the execution, other arms also make some laws to execute both the Mother law as well as other written laws.</p>
+<p><strong>Therefor these are the Executable Laws made under the provision of the constitution of Tanzania of 1977.</strong></p>
+<ul>
+<li>The legislature makes Laws called Statutes/Written Laws.</li>
+<li>The Executive makes Laws called Instruments, Regulations and Bylaws.</li>
+<li>The Judiciary makes Laws called Precedents/Case Laws and Rules.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>legal</category>
+  <guid>https://benjamini-mpinga.netlify.app/posts/armsofGvn/index.html</guid>
+  <pubDate>Fri, 17 Feb 2023 21:00:00 GMT</pubDate>
+  <media:content url="https://benjamini-mpinga.netlify.app/posts/armsofGvn/bwz.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Courts teritorial in Tanzania: Authority to support court’s jurisdiction</title>
+  <dc:creator>Benjamini Mpinga</dc:creator>
+  <link>https://benjamini-mpinga.netlify.app/posts/jurisdition/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>This post is showing the meaning of Jurisdiction, attached with Court’s judgement as reference, it’s useful in legal matters in Tanzania.</p>
+<p><img src="https://benjamini-mpinga.netlify.app/posts/jurisdition/lion.jpg" class="img-fluid"></p>
+<section id="jurisdiction" class="level3">
+<h3 class="anchored" data-anchor-id="jurisdiction">JURISDICTION</h3>
+<p>It is fundamental issue that the Court may raise suo motu whenever appropriate. Hulsbury’s Laws of England, 4th Edition, Reissue Vol. 10, para. 314, defines jurisdiction as follows:</p>
+<p>“By ’jurisdiction: is meant the authority which a court has to decide matters that are litigated before it or to take cognizance of matters presented in a formal way for its decision. The limits of this authority are imposed by the statute, charter or commission under which the court is constituted, and may be extended or restricted by similar means”.</p>
+<p>The case of Bestcom Company Ltd vs.&nbsp;Jacob Mtalitinya t/a IT Farm, High Court of Tanzania at Dar es Salaam Civil Case No.&nbsp;160 of 2012 (unreported) has explained the issues of pecuniary jurisdiction in deep.</p>
+<p>Pecuniary jurisdiction of the High Court of Tanzania It starts where pecuniary jurisdiction of the District Courts and Resident Magistrate’s Courts in respect of movable properties and immovable properties are limited and above indefinitely.</p>
+<p>Pecuniary jurisdiction of the District Courts and Resident Magistrate’s Courts Section 22 of the Written Laws (Miscellaneous Amendments) Act, No.&nbsp;3 of 2016 establishes the pecuniary jurisdiction of the Primary Courts in respect of movable properties is limited to Tshs. 200 Million while for immovable properties is limited to Tshs. 300 Million.</p>
+<p>Pecuniary jurisdiction of the Primary Courts Section 20 of the Written Laws (Miscellaneous Amendments) Act, No.&nbsp;3 of 2016 establishes the pecuniary jurisdiction of the Primary Courts in respect of movable properties is limited to Tshs. 30 Million while for immovable properties is limited to Tshs. 50 Million.</p>
+<p>The Court of Appeal in Tanzania Friendship Textile Mill vs.&nbsp;Our Lady of the Usambara Sisters [2006] TLR 70 held that the High Court did not have jurisdiction to determine civil suits in which the quantum of damages sought fell within the pecuniary jurisdiction of District Courts and Courts of Resident Magistrates.</p>
+</section>
+<section id="subject-matter-jurisdiction" class="level3">
+<h3 class="anchored" data-anchor-id="subject-matter-jurisdiction">Subject matter jurisdiction</h3>
+<p>All land cases now fall under the exclusive jurisdiction of the Land and Housing Tribunals and the Land Division of the High Court, established under the Land Disputes Courts Act [CAP. 216 R.E. 2002].</p>
+<p>“commercial case” is defined under Section 2 of the Magistrates’ Courts Act [CAP. 11 R.E. 2002] means a civil case involving a matter considered to be of commercial significance including but not limited to-</p>
+<p><strong>(i)</strong> the formation of business or commercial organization;</p>
+<p><strong>(ii)</strong> the governance of a business or commercial organization;</p>
+<p><strong>(iii)</strong> the contractual relationship of a business or commercial organization with other bodies or persons outside it;</p>
+<p><strong>(iv)</strong> the liability of a commercial or business organization or its officials arising out of its commercial or business activities;</p>
+<p><strong>(v)</strong> the liabilities of a commercial or business person arising out of that person’s commercial or business activities;</p>
+<p><strong>(vi)</strong> the restructuring or payment of commercial debts by or to business or commercial organization or person;</p>
+<p><strong>(vii)</strong> the winding up or bankruptcy of a commercial or business organization or person;</p>
+<p><strong>(viii)</strong> the enforcement of commercial arbitration award;</p>
+<p><strong>(ix)</strong> the enforcement of awards of a regional court or tribunal of competent jurisdiction made in accordance with a Treaty or Mutual Assistance arrangement to which the United Republic is a signatory and which forms part of the law of the United Republic;</p>
+<p><strong>(x)</strong> admiralty proceedings; and</p>
+<p><strong>(xi)</strong> arbitration proceedings.</p>
+<p><img src="https://benjamini-mpinga.netlify.app/posts/jurisdition/court.jpg" class="img-fluid"></p>
+<p>Writing on such rules in common law jurisdictions, Elmer Driedger, in his Construction of Statutes (Toronto: Butterworths, 1983, p.&nbsp;1), observes:</p>
+<p>“The notion has long prevailed that three different rules or approaches may be employed in ascertaining the meaning of a statute. First, there is said to be the <strong>‘purpose’</strong> <strong>approach</strong> or <strong>‘mischief rule’</strong>…. Then there is said to be the <strong><em>‘literal’</em></strong> approach or <strong><em>‘plain meaning’ rule</em></strong>. Finally there is what is called the <strong><em>‘golden rule’.”</em></strong></p>
+<p>In Renada Minerals Corporation vs.&nbsp;Consolidated Holding Corporation &amp; Anor, High Court of Tanzania at Arusha, Civil Case No.&nbsp;52 of 1999 (unreported). In that case, <strong>Rutakangwa, J.</strong> <strong>(as he then was), held that section 13 of the CPC is a rule of procedure and not of jurisdiction and, as such, cannot be construed to take away the jurisdiction of this court to entertain matters simply because it requires suits to be instituted in the lowest court competent to try it. His Lordship stated as follows (after citing with approval Mulla on The Code of Civil Procedure, 16th edition):</strong></p>
+<blockquote class="blockquote">
+<p>It is my holding therefore, that s. 13 of the CPC 1966 does not oust the jurisdiction of this court in respect of suits of this nature which by their monetary value ought to be commenced in the district or even in the primary courts. If by sheer inadvertence or for the sake of convenience a plaintiff institutes a suit of this nature which by virtue of s. 13 of the CPC 1966 as a matter of procedure and policy ought to have been instituted in one of the two subordinate courts, this court, has the option of either returning the</p>
+</blockquote>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>plaint to the plaintiff under Order VII rule 10 of the CPC 1966 or trying and determining the same.” [emphasis mine]</p>
+</div>
+</div>
+<p>The decision of the Court of Appeal in Tanzania China Friendship Textile Mill vs.&nbsp;Our Lady of the Usambara Sisters [2006] held that, <strong>the High Court did not have jurisdiction to determine civil suits in which the quantum for damages sought fell within the pecuniary jurisdiction of District Courts and Courts of Resident Magistrates.</strong> <strong><em>The effect of that decision is to exclude the option of applying Order VII rule 10 of the CPC, which would have allowed this court to either try the case itself, or return the plaint to the plaintiff for filing in a registry of a competent subordinate court. The only remaining option, following Usambara Sisters, is to strike out the suit.</em></strong></p>
+<p><strong>Related Posts:</strong></p>
+
+
+</section>
+
+ ]]></description>
+  <category>legal</category>
+  <guid>https://benjamini-mpinga.netlify.app/posts/jurisdition/index.html</guid>
+  <pubDate>Tue, 31 Jan 2023 21:00:00 GMT</pubDate>
+  <media:content url="https://benjamini-mpinga.netlify.app/posts/jurisdition/lion.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>

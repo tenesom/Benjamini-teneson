@@ -1,0 +1,22 @@
+[
+  {
+    "listing": "/archive.html",
+    "items": [
+      "/posts/tamisemi/index.html",
+      "/posts/naturalJustice/index.html",
+      "/posts/behaviour/index.html",
+      "/posts/armsofGvn/index.html",
+      "/posts/jurisdition/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/tamisemi/index.html",
+      "/posts/naturalJustice/index.html",
+      "/posts/behaviour/index.html",
+      "/posts/armsofGvn/index.html",
+      "/posts/jurisdition/index.html"
+    ]
+  }
+]
