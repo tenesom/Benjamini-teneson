@@ -1,0 +1,562 @@
+---
+title: "R Programming: World pupulation and most popular countries."
+author: "Benjamini Mpinga"
+date: "2023-04-15"
+categories: [Skills]
+---
+
+**WORLD POPULATION DATA: **This post is the result of R programming analysis, which basically demonstrate the most current world population of each continent and most popular countries within a continental level. R is a powerful language when it comes to analysis and documentation, this post is the one of R's multiple way of communication. i have also generated pdf and word documents through from R Studio editor. 
+
+![](r_studio.jpg)
+
+### WORLD POPULATION DATA.
+
+**Questions.**
+
+1. Find the world's most popular continent.
+1. The most popular country in every continent.
+1. The trend of the world population based on data given. 
+
+The data given is from reliable source, consist of the world's population data from 1970 to 2022.
+
+### Data Summary.
+
+The data below requires, to find the most popular  continent on Earth, the most popular country on Earth and the general population growth trend. So we are going to import our data in R studio then the next step is to look weather the data are tidy or not, if **Yes** then we straight move to answer the question and if **Not** then we need to tidy them so that we are able to use them.
+
+#### Choosen packages.
+
+1. Tidyverse::
+1. readr::
+1. Lubridate::
+1. readxl::
+1. magrittr::
+1. janitor::
+1. dplyr::
+
+**About the chosen package.**
+
+These packages are chosen specifically to handle all activities in this task. Each package functions accordingly. This packages provide several functions that are key tools to facilitate the coding. One can choose the way makes him or her relevant in doing activities in coding. Especially when it comes to package arrangements, firstly understanding of the result required, is usually every coder's concerns. But how one apply the calling of packages differ from one another.
+
+My self i prefer to call all the package in the very first Chunk, this is because i already know all the necessary function() I'll be required to use when coding. So the mentioned package in this assignment are already set in a first chunk.
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+require(tidyverse)
+require(lubridate)
+require(dplyr)
+require(lubridate)
+require(readxl)
+require(janitor)
+require(magrittr)
+require(readr)
+require(readxl)
+```
+
+#### Data Entry.
+
+```{r}
+world = read_csv("e:/Mystafs/blogswebsite/teneson/posts/Current-world-pop/The world population data/world_population.csv") 
+```
+
+The table above has some input that can not be proper managed with R language, so we must clean them and left with what we are going to use to answer the question asked. 
+
+
+```{r}
+pop = world %>% 
+  clean_names() %>% 
+  select(-c(1:2, 4, 7:17)) %>% 
+  rename("population" = 3)
+```
+
+
+```{r}
+con = pop %>% filter(continent == "Asia")
+
+con1 = pop %>% filter(continent == "Africa")
+
+con2 = pop %>% filter(continent == "North America")
+
+con3 = pop %>% filter(continent == "South America")
+
+con4 = pop %>% filter(continent == "Europe")
+
+con5 = pop %>% filter(continent == "Oceania")
+```
+
+
+### CONTINENTS POPULATION.
+
+
+```{r}
+cont = bind_rows(con, con1, con2, con3, con4, con5)
+```
+
+
+```{r}
+ggplot(data = cont, aes(x = continent, y = population))+ 
+  geom_col(fill = "blue")+ 
+  theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16))
+```
+
+
+***Finally a graph above demonstrate the world population by continent, the most to miner populated continent on Earth. Asia is leading the chart followed by Africa.***
+
+### ASIA
+
+The graphs below show Asian continent population from high to low level, graph number one is not well arranged, sample were entered to the database the way they were collected, in fact without consideration of proper arrangement from the highest to the lowest number, it shows the original data, so we had to arranged it in an order that can be proper viewed In graph number two in ascending order. We use the function reorder() of the package tidyverse.
+
+Therefor The Red graph shows countries with population more than Fifty millions, The Blue graph shows countries with population between Ten to Fifty millions, While the green graph shows the countries with less than Ten millions.
+
+The first graph doesn't allow eyes of the reader to relax when reading, So we have to generate another graph by flip our graph so that the names of the countries can be well viewed, we use the function Coord_flip() of the package tidyverse.
+
+
+```{r, echo=FALSE}
+asia = cont %>% filter(continent == "Asia")
+
+```
+
+```{r}
+asia
+```
+
+
+Tidy and Untidy graph.
+
+
+```{r}
+asia %>% 
+  ggplot(aes(x = country, y = population))+
+ geom_col(fill = "dark blue")+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = "dark blue", size = 0.4), 
+        axis.text = element_text(colour = "dark blue", size = 11), 
+        axis.title = element_text(colour = "dark blue", size = 16),
+        legend.key = element_blank())
+asia %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(aes(reorder(x = country, -population)), fill = "blue")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = , size = 0.4), 
+        axis.text = element_text(colour = "blue", size = 11), 
+        axis.title = element_text(colour = "blue", size = 16),
+         legend.position = "non")
+
+
+asia %>% 
+    filter(population >50000000) %>% 
+  ggplot(aes(x = country, y = population))+
+   geom_col(aes(reorder(x = country, -population)), fill = "red")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+asia %>% 
+    filter(population >10000000, population <50000000) %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(aes(reorder(x = country, -population)), fill = "blue")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+asia %>% 
+    filter(population <10000000) %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(aes(reorder(x = country, -population)), fill = "dark green")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+
+```
+
+### AFRICA
+
+The graphs below show Africa continent population from high to low level, graph number one is not well arranged, sample were entered to the database the way they were collected, in fact without consideration of proper arrangement from the highest to the lowest number, it shows the original data, so we had to arranged it in an order that can be proper viewed In graph number two in ascending order. We use the function reorder() of the package tidyverse.
+
+Therefor The Red graph shows countries with population more than Fifty millions, The Blue graph shows countries with population between Ten to Fifty millions, While the green graph shows the countries with less than Ten millions. 
+
+The first graph doesn't allow eyes of the reader to relax when reading, So we have to generate another graph by flip our graph so that the names of the countries can be well viewed, we use the function Coord_flip() of the package tidyverse.
+
+```{r, echo=FALSE}
+africa = bind_rows(con, con1, con2, con3, con4, con5) %>% 
+  filter(continent == "Africa")
+```
+
+```{r}
+africa
+```
+
+
+```{r}
+africa %>% 
+  ggplot(aes(x = country, y = population))+
+ geom_col(fill = "dark blue")+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = "dark blue", size = 0.4), 
+        axis.text = element_text(colour = "dark blue", size = 11), 
+        axis.title = element_text(colour = "dark blue", size = 16),
+        legend.key = element_blank())
+
+africa %>% 
+  ggplot(aes(x = country, y = population))+
+   geom_col(aes(reorder(x = country, -population)), fill = "blue")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = , size = 0.4), 
+        axis.text = element_text(colour = "blue", size = 11), 
+        axis.title = element_text(colour = "blue", size = 16),
+         legend.position = "non")
+
+
+
+africa %>% 
+  filter(population >50000000) %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(aes(reorder(x = country, -population)), fill = "red")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+africa %>% 
+  filter(population >10000000, population <50000000) %>% 
+  ggplot(aes(x = country, y = population))+
+   geom_col(aes(reorder(x = country, -population)), fill = "blue")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+africa %>% 
+  filter(population <10000000) %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(aes(reorder(x = country, -population)), fill = "dark green")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+
+```
+
+### NORTH AMERICA
+
+The graphs below show North America continent population from high to low level, graph number one is not well arranged, sample were entered to the database the way they were collected, in fact without consideration of proper arrangement from the highest to the lowest number, it shows the original data, so we had to arranged it in an order that can be proper viewed In graph number two in ascending order. We use the function reorder() of the package tidyverse.
+
+Therefor The Red graph shows countries with population more than Fifty millions, The Blue graph shows countries with population between Ten to Fifty millions, While the green graph shows the countries with less than Ten millions. 
+
+The first graph doesn't allow eyes of the reader to relax when reading, So we have to generate another graph by flip our graph so that the names of the countries can be well viewed, we use the function Coord_flip() of the package tidyverse.
+
+
+```{r, echo=FALSE}
+notame = bind_rows(con, con1, con2, con3, con4, con5) %>% 
+  filter(continent == "North America")
+```
+
+```{r}
+notame
+```
+
+
+```{r}
+notame %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(fill = "dark blue")+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = "dark blue", size = 0.4), 
+        axis.text = element_text(colour = "dark blue", size = 11), 
+        axis.title = element_text(colour = "dark blue", size = 16),
+        legend.key = element_blank())
+notame %>% 
+  ggplot(aes(x = country, y = population))+
+   geom_col(aes(reorder(x = country, -population)), fill = "blue")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = , size = 0.4), 
+        axis.text = element_text(colour = "blue", size = 11), 
+        axis.title = element_text(colour = "blue", size = 16),
+         legend.position = "non")
+
+notame %>% 
+  filter(population >50000000) %>% 
+  ggplot(aes(x = country, y = population))+
+   geom_col(aes(reorder(x = country, -population)), fill = "red")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+notame %>% 
+  filter(population >1000000, population <50000000) %>% 
+  ggplot(aes(x = country, y = population))+
+   geom_col(aes(reorder(x = country, -population)), fill = "blue")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+notame %>% 
+  filter(population <10000000) %>% 
+  ggplot(aes(x = country, y = population))+
+ geom_col(aes(reorder(x = country, -population)), fill = "dark green")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+```
+
+### EUROPE
+
+The graphs below show Europe continent population from high to low level, graph number one is not well arranged, sample were entered to the database the way they were collected, in fact without consideration of proper arrangement from the highest to the lowest number, it shows the original data, so we had to arranged it in an order that can be proper viewed In graph number two in ascending order. We use the function reorder() of the package tidyverse.
+
+Therefor The Red graph shows countries with population more than Fifty millions, The Blue graph shows countries with population between Ten to Fifty millions, While the green graph shows the countries with less than Ten millions.
+
+The first graph doesn't allow eyes of the reader to relax when reading, So we have to generate another graph by flip our graph so that the names of the countries can be well viewed, we use the function Coord_flip() of the package tidyverse.
+
+```{r, echo=FALSE}
+europe = cont %>% filter(continent == "Europe")
+
+```
+
+```{r}
+europe
+```
+
+
+```{r}
+  europe %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(fill = "dark blue")+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = "dark blue", size = 0.4), 
+        axis.text = element_text(colour = "dark blue", size = 11), 
+        axis.title = element_text(colour = "dark blue", size = 16),
+        legend.key = element_blank())
+
+europe %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(aes(reorder(x = country, -population)), fill = "blue")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = , size = 0.4), 
+        axis.text = element_text(colour = "blue", size = 11), 
+        axis.title = element_text(colour = "blue", size = 16),
+         legend.position = "non")
+
+  europe %>% 
+  filter(population >50000000) %>% 
+  ggplot(aes(x = country, y = population))+
+ geom_col(aes(reorder(x = country, -population)), fill = "red")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+europe %>% 
+  filter(population >10000000, population <50000000) %>% 
+  ggplot(aes(x = country, y = population))+
+ geom_col(aes(reorder(x = country, -population)), fill = "blue")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+europe %>% 
+  filter(population <10000000) %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(aes(reorder(x = country, -population)), fill = "dark green")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+
+```
+
+### SOUTH AMERICA.
+
+The graphs below show South America continent population from high to low level, graph number one is not well arranged, sample were entered to the database the way they were collected, in fact without consideration of proper arrangement from the highest to the lowest number, it shows the original data, so we had to arranged it in an order that can be proper viewed In graph number two in ascending order. We use the function reorder() of the package tidyverse.
+
+Therefor The Red graph shows countries with population more than Fifty millions, The Blue graph shows countries with population between Ten to Fifty millions, While the green graph shows the countries with less than Ten millions.
+
+The first graph doesn't allow eyes of the reader to relax when reading, So we have to generate another graph by flip our graph so that the names of the countries can be well viewed, we use the function Coord_flip() of the package tidyverse.
+
+```{r, echo=FALSE}
+sotame = cont %>% filter(continent == "South America")
+
+```
+
+
+```{r}
+sotame
+```
+
+```{r}
+sotame %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(fill = "dark blue")+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = "dark blue", size = 0.4), 
+        axis.text = element_text(colour = "dark blue", size = 11), 
+        axis.title = element_text(colour = "dark blue", size = 16),
+        legend.key = element_blank())
+
+sotame %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(aes(reorder(x = country, -population)), fill = "blue")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = , size = 0.4), 
+        axis.text = element_text(colour = "blue", size = 11), 
+        axis.title = element_text(colour = "blue", size = 16),
+         legend.position = "non")
+
+sotame %>% 
+  filter(population >50000000) %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(aes(reorder(x = country, -population)), fill = "red")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+sotame %>% 
+  filter(population >10000000, population <50000000) %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(aes(reorder(x = country, -population)), fill = "blue")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+sotame %>% 
+  filter(population <10000000) %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(aes(reorder(x = country, -population)), fill = "dark green")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+```
+
+### OCEANIA.
+
+The graphs below show Oceania continent population from high to low level, graph number one is not well arranged, sample were entered to the database the way they were collected, in fact without consideration of proper arrangement from the highest to the lowest number, it shows the original data, so we had to arranged it in an order that can be proper viewed In graph number two in ascending order. We use the function reorder() of the package tidyverse.
+
+Therefor The Red graph shows countries with population more than Fifty millions, The Blue graph shows countries with population between Ten to Fifty millions, While the green graph shows the countries with less than Ten millions.
+
+The first graph doesn't allow eyes of the reader to relax when reading, So we have to generate another graph by flip our graph so that the names of the countries can be well viewed, we use the function Coord_flip() of the package tidyverse.
+
+
+```{r, echo=FALSE}
+ocean = cont %>% filter(continent == "Oceania")
+
+```
+
+
+```{r}
+ocean
+```
+
+
+```{r}
+ocean %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(fill = "dark blue")+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = "dark blue", size = 0.4), 
+        axis.text = element_text(colour = "dark blue", size = 11), 
+        axis.title = element_text(colour = "dark blue", size = 16),
+        legend.key = element_blank())
+
+ocean %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(aes(reorder(x = country, -population)), fill = "blue")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = , size = 0.4), 
+        axis.text = element_text(colour = "blue", size = 11), 
+        axis.title = element_text(colour = "blue", size = 16),
+         legend.position = "non")
+
+
+ocean %>% 
+  filter(population >50000000) %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(aes(reorder(x = country, -population)), fill = "red")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+ocean %>% 
+  filter(population >10000000, population <50000000) %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(aes(reorder(x = country, -population)), fill = "blue")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+ocean %>% 
+  filter(population <10000000) %>% 
+  ggplot(aes(x = country, y = population))+
+  geom_col(aes(reorder(x = country, -population)), fill = "dark green")+
+  coord_flip()+
+   theme(panel.background = element_rect(fill = 0.4), 
+        axis.line = element_line(colour = 1, size = 0.4), 
+        axis.text = element_text(colour = 1, size = 11), 
+        axis.title = element_text(colour = 17, size = 16),
+         legend.position = "non")
+
+```
+
+
+

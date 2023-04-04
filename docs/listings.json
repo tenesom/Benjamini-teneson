@@ -2,20 +2,30 @@
   {
     "listing": "/archive.html",
     "items": [
+      "/posts/R-introduction/index.html",
+      "/posts/R-2nd-leson/index.html",
+      "/posts/R_introduction_statistics_leson.2/index.html",
+      "/posts/Current-world-pop/index.html",
+      "/posts/soft-skills/index.html",
       "/posts/tamisemi/index.html",
+      "/posts/armsofGvn/index.html",
       "/posts/naturalJustice/index.html",
       "/posts/behaviour/index.html",
-      "/posts/armsofGvn/index.html",
       "/posts/jurisdition/index.html"
     ]
   },
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/R-introduction/index.html",
+      "/posts/R-2nd-leson/index.html",
+      "/posts/R_introduction_statistics_leson.2/index.html",
+      "/posts/Current-world-pop/index.html",
+      "/posts/soft-skills/index.html",
       "/posts/tamisemi/index.html",
+      "/posts/armsofGvn/index.html",
       "/posts/naturalJustice/index.html",
       "/posts/behaviour/index.html",
-      "/posts/armsofGvn/index.html",
       "/posts/jurisdition/index.html"
     ]
   }

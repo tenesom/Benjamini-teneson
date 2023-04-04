@@ -8,35 +8,42 @@ website:
   description: "Coding for all for better today and tommorow"
   
   navbar:
+      background: "darkblue"
       right:
-        - text: Blog
+        - text: Posts
           href: blog.qmd 
         - icon: github
           href: https://github.com/tenesom/
         - icon: twitter
           href: https://twitter.com/benjamini20
-        # - icon: youtube
-        #   href: https://www.youtube.com/user/Alfrodo123
+        - icon: facebook
+          href: https://www.facebook.com/benjamini.mpinga?mibextid=ZbWKwL
+        - icon: tiktok
+          href: https://www.tiktok.com/@mstandrew7?_t=8aghm52NTok&_r=1
+        - icon: youtube
+          href: https://www.youtube.com/@benjamini_mpinga
   #########################
   # You can ignore this part in the first step
-        - icon: rss
-          href: blog.xml
+       # - icon: rss
+        #  href: blog.xml
         - text: Ressources
           menu: 
             - text: R Weekly
               href: https://rweekly.org/
             - text: R Bloggers
               href: https://www.r-bloggers.com/
+            - text: benjamini-blog
+              href: https://tenesom.github.io/Benjamini-mpinga/blog.html
             - text: Semba-blog
               href: https://semba.netlify.app/
             - text: Michi-blog
               href: https://nyamisi.github.io/nyamisi/
-        - text: Archive
-          href: archive.qmd
+            - text: Archive
+              href: archive.qmd
   google-analytics: "14521548"
   cookie-consent: 
-      type: express
-      style: headline
+      type: implied
+      style: simple
       palette: dark
   twitter-card: 
     image: thumbnail_blog.png
@@ -49,7 +56,16 @@ website:
 
 format:
   html:
-    theme: lux
+    highlight-style: arrow  
+    theme: 
+     light: flatly
+     dark: darkly
+     
+      
+     
+      
+      
+      
   
  
 

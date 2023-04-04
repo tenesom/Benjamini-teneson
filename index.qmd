@@ -1,8 +1,8 @@
 ---
 # title: "Benjamini"
-# image: benprofile.jpg
+# image: control.jpg
 about:
-  template: jolla
+  template: marquee
   links:
     - icon: twitter
       text: Twitter
@@ -12,26 +12,26 @@ about:
       href: https://linkedin.com
     - icon: github
       text: Github
-      href: https://github.com/tenesom/
+      href: https://tenesom.github.io/Benjamini-teneson/
 ---
 
 ::: grid
 ::: {.g-col-12 .g-col-md-6}
-![](benprofile.jpg)
+![](control-.jpg)
 :::
 
 ::: {.g-col-12 .g-col-md-6}
-Hi, I'm Benjamini Mpinga. A humble human being, passionate at learning and knowledge shearing, i am a Bible student and a teacher, all times learner of multiple programming language, a lawyer, a husband and a father.
+Hi, I'm Benjamini Mpinga. A humble human being, passionate to learn and sharing knowledge, i am a good student of Bible knowledge and a teacher in different area of experience and professional, skilled in programming language,  Trained in Legal matter as well as Swahili, English and French languages writer and speaker.
 
-I have dedicated my life to serve God and community at large, my ambition is always to do non harm, wish non harm and be an advocate of Justice and Truth. apart from my professional, learner and a Bible teacher. I am also skilled in Swahili, English and French language.
+I dedicated my life to serve God and community, committed to do non harm, wish non harm and be an advocate of Justice and Truth, i am blessed to be a husband and a father.
 
-May Lord God bless us all, and give us a wisdom to know and understand his purpose to create us and allow us to live here on earth, b/coz as long as we live, we are not successful, until the day we die and carry our success to the graves in peace.
+May Lord God bless us all with wisdom to know and understand his purpose of creation and our lives here on earth, as long as we live, we are not successful, until the day we die and carry our success to His glory of peace.
+
+ OPTIMIST FOR THE SECOND COMING OF CHRIST.
 
 :::
 :::
 
 ## References
 
-3.  [Semba, M., Kimirei, I., Kyewalyanga, M., Peter, N., Brendonck, L., & Somers, B. (2016). The decline in phytoplankton biomass and prawn catches in the Rufiji-Mafia Channel, Tanzania. Western Indian Ocean Journal of Marine Science, 15(1), 15-29.](https://www.ajol.info/index.php/wiojms/article/view/138510)
-
-
+1.  [Semba, M., Kimirei, I., Kyewalyanga, M., Peter, N., Brendonck, L., & Somers, B. (2016). The decline in phytoplankton biomass and prawn catches in the Rufiji-Mafia Channel, Tanzania. Western Indian Ocean Journal of Marine Science, 15(1), 15-29.](https://www.ajol.info/index.php/wiojms/article/view/138510)

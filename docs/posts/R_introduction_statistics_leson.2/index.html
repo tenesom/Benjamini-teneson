@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Benjamini Mpinga">
+<meta name="dcterms.date" content="2023-04-20">
+
+<title>Benjamini Mpinga - Statistics in R Programming: How to make analysis in R, by usising statistical evidance.</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=14521548"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '14521548', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"implied",
+  "palette":"dark",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  });
+});
+</script> 
+  
+
+
+<meta name="twitter:title" content="Benjamini Mpinga - Statistics in R Programming: How to make analysis in R, by usising statistical evidance.">
+<meta name="twitter:description" content="Statistics is a branch of Maths that deals with every aspect of the data/ Also Statistics can be refereed as a knowledge for collecting, analyzing and interpreting data.">
+<meta name="twitter:image" content="https://benjamini-mpinga.netlify.app/posts\R_introduction_statistics_leson.2\thumbnail_blog.png">
+<meta name="twitter:creator" content="@rappa753">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Benjamini Mpinga</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html">
+ <span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/tenesom/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/benjamini20"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.facebook.com/benjamini.mpinga?mibextid=ZbWKwL"><i class="bi bi-facebook" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.tiktok.com/@mstandrew7?_t=8aghm52NTok&amp;_r=1"><i class="bi bi-tiktok" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@benjamini_mpinga"><i class="bi bi-youtube" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ressources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Ressources</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-ressources">    
+        <li>
+    <a class="dropdown-item" href="https://rweekly.org/">
+ <span class="dropdown-text">R Weekly</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.r-bloggers.com/">
+ <span class="dropdown-text">R Bloggers</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://tenesom.github.io/Benjamini-mpinga/blog.html">
+ <span class="dropdown-text">benjamini-blog</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://semba.netlify.app/">
+ <span class="dropdown-text">Semba-blog</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://nyamisi.github.io/nyamisi/">
+ <span class="dropdown-text">Michi-blog</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../archive.html">
+ <span class="dropdown-text">Archive</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#statistics" id="toc-statistics" class="nav-link active" data-scroll-target="#statistics">STATISTICS</a></li>
+  <li><a href="#descriptive-statistics." id="toc-descriptive-statistics." class="nav-link" data-scroll-target="#descriptive-statistics.">DESCRIPTIVE STATISTICS.</a></li>
+  <li><a href="#inferential-statistics." id="toc-inferential-statistics." class="nav-link" data-scroll-target="#inferential-statistics.">INFERENTIAL STATISTICS.</a></li>
+  <li><a href="#data-collection-theory." id="toc-data-collection-theory." class="nav-link" data-scroll-target="#data-collection-theory.">DATA COLLECTION THEORY.</a></li>
+  <li><a href="#hypothesis-theory." id="toc-hypothesis-theory." class="nav-link" data-scroll-target="#hypothesis-theory.">HYPOTHESIS THEORY.</a></li>
+  <li><a href="#test-significance." id="toc-test-significance." class="nav-link" data-scroll-target="#test-significance.">TEST SIGNIFICANCE.</a></li>
+  <li><a href="#test-normality-formula." id="toc-test-normality-formula." class="nav-link" data-scroll-target="#test-normality-formula.">TEST NORMALITY FORMULA.</a></li>
+  <li><a href="#test-normality-in-r." id="toc-test-normality-in-r." class="nav-link" data-scroll-target="#test-normality-in-r.">TEST NORMALITY IN R.</a></li>
+  <li><a href="#central-limit-theory-clt" id="toc-central-limit-theory-clt" class="nav-link" data-scroll-target="#central-limit-theory-clt">CENTRAL LIMIT THEORY (CLT)</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Statistics in R Programming: How to make analysis in R, by usising statistical evidance.</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Skills</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Benjamini Mpinga </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 20, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Statistics is a branch of Maths that deals with every aspect of the data/ Also Statistics can be refereed as a knowledge for collecting, analyzing and interpreting data. Statistics can be used to predict the future, determine the probability that a specific event will happen, or help answer questions about a survey. Statistics is used in many different fields such as business, medicine, biology, psychology and social sciences.</p>
+<p><img src="control-.jpg" class="img-fluid"></p>
+<section id="statistics" class="level3">
+<h3 class="anchored" data-anchor-id="statistics">STATISTICS</h3>
+<p>Statistical knowledge helps to choose the proper method of collecting data and employ those samples in the correct analysis process in order to effectively produce the results. In short, statistics is a crucial process which helps to make the decision based on the data.</p>
+<p><strong>What is Statistics in Programming?</strong></p>
+<p>In Mathematics, statistics concerns the collection of data, organisation, interpretation, analysis and data presentation. An example of statistical analysis is when we have to determine the number of people in a town who watch TV out of the total population in the town. The small group of people is called the sample, which data is taken from them.</p>
+<ul>
+<li><strong>descriptive, which focuses on summarizing data.</strong></li>
+<li><strong>Inferential, which focuses on making conclusions about populations based on samples.</strong></li>
+</ul>
+<p>Inferential Statistics – Based on the data sample taken from the population, inferential statistics makes the predictions and inferences. Both types of statistics are equally employed in the field of statistical analysis..</p>
+<p><strong>The characteristics of Statistics are a:</strong></p>
+<ul>
+<li>Statistics are numerically expressed.</li>
+<li>It has an aggregate of facts</li>
+<li>Data are collected in systematic order</li>
+<li>It should be comparable to each other</li>
+<li>Data are collected for a planned purpose</li>
+</ul>
+<p><strong>The importance of statistics are…</strong></p>
+<ul>
+<li>Statistics helps in gathering information about the appropriate quantitative data</li>
+<li>It depicts the complex data in graphical form, tabular form and in diagrammatic representation to understand it easily</li>
+<li>It provides the exact description and a better understanding</li>
+<li>It helps in designing the effective and proper planning of the statistical inquiry in any field</li>
+<li>It gives valid inferences with the reliability measures about the population parameters from the sample data</li>
+<li>It helps to understand the variability pattern through the quantitative observations</li>
+</ul>
+<p><strong>Why is statistics vital?</strong></p>
+<p>Statistics is an important field because it helps us understand the general trends and patterns in a given data set. Statistics can be used for analyzing data and drawing conclusions from it. It can also be used for making predictions about future events and behaviors. Statistics also help us understand how things are changing over time.</p>
+<p>The main purpose of using statistics is to plan the collected data in terms of experimental designs and statistical surveys. Statistics is considered a mathematical science that works with numerical data.</p>
+<p><strong>What are the uses of statistics in real life?</strong></p>
+<p>Statistics is an integral part of our lives. It is used in the workplace and everyday life. In the workplace, statistics are often used to analyse what works best for a company’s marketing strategy or how to distribute work among employees. In daily life, statistics can be used to analyse what food you should buy at the grocery store or how much money you spend on purchasing each week. Statistics are everywhere, and they help us make sense of the world around us.</p>
+<p><strong>Concept covered in Statistics.</strong></p>
+<p>The most important concepts covered in Statistics include <strong><em>mean, median, mode, range, and standard deviation, Normality and Significance.</em></strong> Mean and Median in statistics usually measure the median/mean value, but their application depend on the sample’s nature.</p>
+</section>
+<section id="descriptive-statistics." class="level3">
+<h3 class="anchored" data-anchor-id="descriptive-statistics.">DESCRIPTIVE STATISTICS.</h3>
+<p>Descriptive statistics usually used to describe type of data, by describe Median, Mean, Mode and Range in a particular data.</p>
+<ol type="1">
+<li><strong>The mean is the average of the data set.</strong></li>
+<li><strong>The median is the middle of the set of numbers.</strong></li>
+<li><strong>The mode is the most common number in a data set.</strong></li>
+</ol>
+<p>In these three the mean is the only one that requires formula. Mean in math is what they call Average, they are synonym.</p>
+<section id="how-to-find-median." class="level4">
+<h4 class="anchored" data-anchor-id="how-to-find-median.">How to find Median.</h4>
+<p>To calculate median value when your data values are mostly alike but some few values have big difference from the other either High or Low. The purpose is to avoid the high or low values to affect the result. Basically for numeric data.</p>
+<p>**Eg. (1,2,3,4,5,6,7) to find median ……. you arrange your numbers from the lowest to the highest or from highest to the lowest then you pick the centered number. So in the set 1,2,3,4,5,6,7 the middle number is 4.</p>
+<p>But what happens if the data set is like (1,2,3,4,5,6,7,8)?.** in that case you arrange your data set and then you add the two middle numbers and then you them divide by 2 eg 4+5 = 9/2 = 4.5.</p>
+<p>In most cases the median and the mean are likely to have the same value, even when they differ, it’s not in significance gap.</p>
+</section>
+<section id="how-to-find-mean." class="level4">
+<h4 class="anchored" data-anchor-id="how-to-find-mean.">How to find mean.</h4>
+<p>There are mainly two ways to find mean in a data set, One is by finding the sum of the values by adding them all up, dividing the sum by the number of values in the data set.</p>
+<p><strong>Eg. (1,2,3,4,5,6,7) to find mean …… 1+2+3+4+5+6+7= 28/7 = 4 therefor the mean is 4. Remember the mean in a data set does not have to appear in the data set.</strong></p>
+</section>
+<section id="the-different-between-mean-and-median" class="level4">
+<h4 class="anchored" data-anchor-id="the-different-between-mean-and-median">The different between Mean and Median</h4>
+<ol type="1">
+<li>The median is less affected by outliers and skewed data, is used for skewed distributions.</li>
+<li>Median is Usually the preferred measure of central tendency, when distribution is not symmetrical.</li>
+<li>The mean is usually used for normal distributed data.</li>
+</ol>
+<p><strong>Standard deviation</strong></p>
+<ul>
+<li>You have to calculate the deviation in order to measure where your data deviate from the normal value.</li>
+</ul>
+</section>
+</section>
+<section id="inferential-statistics." class="level3">
+<h3 class="anchored" data-anchor-id="inferential-statistics.">INFERENTIAL STATISTICS.</h3>
+<p>Inferential statistics, basically focus on solution based, due to data problems, or in other word it simply true that, Data always arise either a challenge or a question, so inferential statistic is the type of statistics to solve and answer data challenge and question.</p>
+<p>As we have seen in previous lesson, statistics plays major roll to daily life activities, therefor knowing how to apply statistics in analysis, is not only basic knowledge to acquire but also essential tool to approach and solve some analytic data based problems.</p>
+<p>So in this lesson we shall focus on the second type of statistics, which often used to transform and analyze and give analytic results which is what drive decision making. Inferential statistics help in solving many problems which require analytics approach, and scientific based evidence. So if you want to become a data analyst, researcher, then this angle is where you should focus attentively. We shall highlight the tips used to approach the question, and theory to solve analytics problems.</p>
+</section>
+<section id="data-collection-theory." class="level3">
+<h3 class="anchored" data-anchor-id="data-collection-theory.">DATA COLLECTION THEORY.</h3>
+<p>In sample collection, it is advise to collect at least 10 to 30 percent samples of general population, this is to ensure samples can provide accurate results. This is due to fact that, the less ample you collect the less efficient result you may get, also the more sample you collect might be unnecessary, this means it might not make any change in results. So it is advice to collect a reasonable sample for wise utilization of resources as well as time management but also to get efficient results.</p>
+<p>Often data are collected by researcher(s), who focus on a specific matter or subject, So there some steps to consider before going field. One is to set your project plan, two is to give project a tile, three is to set objectives then finally to rise hypothesis of the project. Now in this lesson shall focus in how to start and conclude the results of your research.</p>
+</section>
+<section id="hypothesis-theory." class="level3">
+<h3 class="anchored" data-anchor-id="hypothesis-theory.">HYPOTHESIS THEORY.</h3>
+<p>One of the sediment in an inferential statistics, is called Hypothesis, which means all the assumption rouse by a researcher or annalist before data collections, usually before data collections there are some basic ground considered to be true or false. those reasonable grounds considered to be true or false are what called Hypothesis (Assumptions). Hypothesis are divided in two types.</p>
+<ol type="1">
+<li><strong>Null Hypothesis – Ho – Negative.</strong></li>
+<li><strong>Alternative Hypothesis – Ha – Positive</strong></li>
+</ol>
+<p>In statistic analysis we use different approach to address solutions to our problems, but most often our approach leads us to either solve or cause more trouble to the problem. In standard approach of statistic data analysis, it is required to approach the data results, by ensuring both the significance and Insignificance of the results, as well as normality of the data. In this step the approach to use is Null Hypothesis theory.</p>
+</section>
+<section id="test-significance." class="level3">
+<h3 class="anchored" data-anchor-id="test-significance.">TEST SIGNIFICANCE.</h3>
+<ol type="1">
+<li>Null hypothesis theory <strong>(NO SIGNIFICANT DIFFERENCE).</strong></li>
+</ol>
+<p>Null hypothesis theory, is usually used to conclude grounds of the research, so every standard research relay on this theory. As i have stated before, in any research there must be some assumptions fore to sample collection. So to make conclusion of your results, to make conclusion we relay on significance level, significant level is measured by P value, so when the <strong>P value = &gt; 0.05 then it’s considered There is No significant difference. And when P value = &lt; 0.05 then it’s considered There is significant difference.</strong></p>
+<ol type="1">
+<li>Alternative Hypothesis Theory. <strong>(THERE IS SIGNIFICANT DIFFERENT).</strong></li>
+</ol>
+<p>Alternative Hypothesis is sometimes used by some statisticians to approach some problems in data, but it’s not recommended in professional conduct, it doesn’t mean this theory has anything wrong, but simply because in concluding our findings in data, we relay on Null Hypothesis. therefor Alternative Hypothesis remains as an opposite of Null Hypothesis.</p>
+</section>
+<section id="test-normality-formula." class="level3">
+<h3 class="anchored" data-anchor-id="test-normality-formula.">TEST NORMALITY FORMULA.</h3>
+<p>Normality refers to the distribution of your collected data, this means after you have describe your data in descriptive type of statistics, then you have to test them, if their normal distributed or not normal distributed. In normality formula we prescribe other way round, which means, <strong>(Null Hypothesis - Ho = Is normal distributed while Alternative Hypothesis - Ha = Is not normal distributed.)</strong></p>
+<p><strong>Normality formula.</strong></p>
+<ul>
+<li>When P value = &gt; 0.05 then you Accept the Null.</li>
+<li>When P value = &lt; 0.05 then you Reject the Null.</li>
+</ul>
+</section>
+<section id="test-normality-in-r." class="level3">
+<h3 class="anchored" data-anchor-id="test-normality-in-r.">TEST NORMALITY IN R.</h3>
+<p>In R, we test the distributions of the data by using the function (shapiro), the below example is how you can test the distribution of the data in R analysis. The data we are using is auto generated from R data base. In R you can find some data to help you improve your analysis practice, in case you don’t have access to acquire data from other source. to generate data in R, just create a chunk then write iris then run the chunk, and data will appear on your R editor. After that you can equate them to another name.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: tidyverse</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+v dplyr     1.1.0     v readr     2.1.4
+v forcats   1.0.0     v stringr   1.5.0
+v ggplot2   3.4.1     v tibble    3.1.8
+v lubridate 1.9.2     v tidyr     1.3.0
+v purrr     1.0.1     
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+i Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sample.iris<span class="ot">=</span>iris</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sample.iris<span class="sc">$</span>Sepal.Length <span class="sc">%&gt;%</span>  <span class="fu">shapiro.test</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Shapiro-Wilk normality test
+
+data:  .
+W = 0.97609, p-value = 0.01018</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> sample.iris, <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length))<span class="sc">+</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="at">fill =</span> <span class="st">"darkred"</span>,<span class="at">alpha =</span> <span class="fl">0.3</span>)<span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">theme</span>(<span class="at">panel.grid.major.x =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"lightgrey"</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>), <span class="at">panel.grid.major.y =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"lightgrey"</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>), <span class="at">panel.grid =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"white"</span>), <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"darkred"</span>, <span class="at">size =</span> <span class="dv">12</span>), <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"darkred"</span>), <span class="at">axis.line.x =</span> <span class="fu">element_line</span>(<span class="at">linewidth =</span> <span class="dv">1</span>), <span class="at">axis.line.y =</span> <span class="fu">element_line</span>(<span class="at">linewidth =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>we have tested Sepal.L data normality in R, and results shows that they are not normal distributed. Then we have tried to plot in order to observe visual distribution, and results still shows that Sepal.Length are not normal distributed.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>sample.iris<span class="sc">$</span>Sepal.Width <span class="sc">%&gt;%</span> <span class="fu">shapiro.test</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Shapiro-Wilk normality test
+
+data:  .
+W = 0.98492, p-value = 0.1012</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> sample.iris, <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Width))<span class="sc">+</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="at">fill=</span><span class="st">"darkred"</span>,<span class="at">alpha =</span> <span class="fl">0.3</span>)<span class="sc">+</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">panel.grid.major.x =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"lightgrey"</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>), <span class="at">panel.grid.major.y =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"lightgrey"</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>), <span class="at">panel.grid =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"white"</span>), <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"darkred"</span>, <span class="at">size =</span> <span class="dv">12</span>), <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"darkred"</span>), <span class="at">axis.line.x =</span> <span class="fu">element_line</span>(<span class="at">linewidth =</span> <span class="dv">1</span>), <span class="at">axis.line.y =</span> <span class="fu">element_line</span>(<span class="at">linewidth =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>we have tested Sepal.Width data normality in R, and results shows that they are normal distributed. Then we have tried to plot in order to observe visual distribution, and results still shows that Sepal.Width are normal distributed.</p>
+<p>This is how we test data in R programming language, it is easier and clear as we have seen. S o working your data in R, is not only a recommended tool but also facilitate mass data solutions.</p>
+</section>
+<section id="central-limit-theory-clt" class="level3">
+<h3 class="anchored" data-anchor-id="central-limit-theory-clt">CENTRAL LIMIT THEORY (CLT)</h3>
+<p>In statistics the central limit theory means the value on which majority of population falls. It simply states that The distribution approaches normal, as the samples get larger. therefor it is recommended that to attain doubtless results you are required to collect at least &gt;/= of 30% samples of the population.</p>
+<p>This theory of central limit usually shown through continuous plots such as Histogram and density. This is due to their nature. On the figure below we are going to see the example of central limit theory in visualization.</p>
+<p>In this study we will see how statistics works in real life, and how useful it is in every day’s decision making. By applying a proper and correct method in collecting/recording samples, analyzing, interpreting and sharing of findings is always a best way to reach the right decisions, especially for decision makers, weather in family level.</p>
+<section id="what-is-the-purpose-of-dispersion" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-the-purpose-of-dispersion">What is the purpose of dispersion</h4>
+<p>The purpose is to find out how spread out the data values are, on the number line, the deference between the maximum and the minimum value is the formula to measure dispersion (Measure of spread).</p>
+</section>
+<section id="what-does-it-mean-by-measure-of-central-tendency" class="level4">
+<h4 class="anchored" data-anchor-id="what-does-it-mean-by-measure-of-central-tendency">What does it mean by Measure of central tendency</h4>
+<p>Simply is defined as A measure that identifies a single value as representative of the entire distribution. It is the single value that is most typical/representative of the collected data.</p>
+<p><strong>Related pots</strong></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<div>
+<hr>
+
+<h3> Stay in touch </h3>
+
+<p> If you enjoyed this post, then don't miss out on any future posts by subscribing to my email newsletter </p>
+
+<iframe src="https://embeds.beehiiv.com/3b8a44f4-200f-4adf-b6a2-f3bc43d6e32c" data-test-id="beehiiv-embed" width="100%" height="320" frameborder="0" scrolling="no" style="border-radius: 4px; border: 2px solid #e5e7eb; margin: 0; background-color: transparent;"></iframe>
+
+<h3> Support my work by sharing the link or by contact through +255 768 596 017.</h3>
+
+
+<script type="text/javascript" src="https://github.com/tenesom/" data-name="bmc-button" data-slug="benjaminindrw@gmail.com" data-color="#06436e" data-emoji="☕" data-font="Lbenjaminindrw@gmail.com " data-text="Support me" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" data-height="40px"></script>
+
+<h3> Share </h3>
+
+<a href="https://twitter.com/benjamini20" class="twitter-share-button" data-size="large" data-hashtags="#rstats" data-show-count="false">Tweet</a><script async="" src="https://twitter.com/benjamini20" charset="utf-8"></script>
+
+<hr>
+</div>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+  </div>
+</footer>
+
+
+
+</body></html>

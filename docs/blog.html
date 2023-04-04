@@ -39,10 +39,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-date','listing-title','listing-reading-time','listing-description','listing-categories','listing-image','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -104,11 +106,11 @@ gtag('config', '14521548', { 'anonymize_ip': true});
 <script type="text/javascript" charset="UTF-8">
 document.addEventListener('DOMContentLoaded', function () {
 cookieconsent.run({
-  "notice_banner_type":"headline",
-  "consent_type":"express",
+  "notice_banner_type":"simple",
+  "consent_type":"implied",
   "palette":"dark",
   "language":"en",
-  "page_load_consent_levels":["strictly-necessary"],
+  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
   "notice_banner_reject_button_hide":false,
   "preferences_center_close_button_hide":false,
   "website_name":""
@@ -143,7 +145,7 @@ cookieconsent.run({
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./blog.html" aria-current="page">
- <span class="menu-text">Blog</span></a>
+ <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/tenesom/"><i class="bi bi-github" role="img">
@@ -156,7 +158,17 @@ cookieconsent.run({
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./blog.xml"><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="https://www.facebook.com/benjamini.mpinga?mibextid=ZbWKwL"><i class="bi bi-facebook" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.tiktok.com/@mstandrew7?_t=8aghm52NTok&amp;_r=1"><i class="bi bi-tiktok" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@benjamini_mpinga"><i class="bi bi-youtube" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -174,6 +186,10 @@ cookieconsent.run({
  <span class="dropdown-text">R Bloggers</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="https://tenesom.github.io/Benjamini-mpinga/blog.html">
+ <span class="dropdown-text">benjamini-blog</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="https://semba.netlify.app/">
  <span class="dropdown-text">Semba-blog</span></a>
   </li>  
@@ -181,13 +197,16 @@ cookieconsent.run({
     <a class="dropdown-item" href="https://nyamisi.github.io/nyamisi/">
  <span class="dropdown-text">Michi-blog</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./archive.html">
+ <span class="dropdown-text">Archive</span></a>
+  </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./archive.html">
- <span class="menu-text">Archive</span></a>
-  </li>  
 </ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -199,7 +218,7 @@ cookieconsent.run({
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="legal">legal <span class="quarto-category-count">(4)</span></div><div class="category" data-category="social">social <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div><div class="category" data-category="Skills">Skills <span class="quarto-category-count">(5)</span></div><div class="category" data-category="legal">legal <span class="quarto-category-count">(4)</span></div><div class="category" data-category="social">social <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -209,197 +228,343 @@ cookieconsent.run({
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="legal" data-listing-date-sort="1678395600000" data-listing-file-modified-sort="1676546887512" data-listing-reading-time-sort="6.92">
-<div class="thumbnail">
-<p><a href="./posts/tamisemi/index.html"> <img src="./posts/tamisemi/benja.jpg" class="thumnail-image"> </a></p>
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<div class="body">
-<a href="./posts/tamisemi/index.html">
-<h3 class="no-anchor listing-title">
-Tamisemi: The curent transfer process, by a public servant’s application
-</h3>
-<div class="listing-subtitle">
-
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Skills" data-listing-date-sort="1682802000000" data-listing-file-modified-sort="1680020676241" data-listing-reading-time-sort="13.67">
+<a href="./posts/R-introduction/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/R-introduction/R_base.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+R Programming: Biginner’s introduction Leson 1.
+</h5>
+<div class="listing-reading-time card-text text-muted">
+13 min
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('legal'); return false;">
-legal
+<div class="listing-category" onclick="window.quartoListingCategory('Skills'); return false;">
+Skills
 </div>
 </div>
-<a href="./posts/tamisemi/index.html">
-<div class="listing-description">
-Tamisemi Procedures to follow…
+<div class="card-text listing-description">
+I might be correct if i say you have heard about R programming language as well as many good tips concerning R experience but i want to share with you some other interesting…<strong></strong><strong></strong>
 </div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/tamisemi/index.html">
-<div class="listing-date">
-Mar 10, 2023
-</div>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Benjamini Mpinga
 </div>
-<div class="listing-reading-time">
-6 min
+<div class="listing-date">
+Apr 30, 2023
+</div>
+</div>
+</div>
 </div>
 </a>
 </div>
+<div class="g-col-1" data-index="1" data-categories="Skills" data-listing-date-sort="1682370000000" data-listing-file-modified-sort="1680382571540" data-listing-reading-time-sort="8.33">
+<a href="./posts/R-2nd-leson/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/R-2nd-leson/r_studio.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+R Programming: Beginner’s introduction on Data manipulation.
+</h5>
+<div class="listing-reading-time card-text text-muted">
+8 min
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="legal" data-listing-date-sort="1677531600000" data-listing-file-modified-sort="1676783845012" data-listing-reading-time-sort="1.53">
-<div class="thumbnail">
-<p><a href="./posts/naturalJustice/index.html"> <img src="./posts/naturalJustice/court.jpg" class="thumnail-image"> </a></p>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Skills'); return false;">
+Skills
 </div>
-<div class="body">
-<a href="./posts/naturalJustice/index.html">
-<h3 class="no-anchor listing-title">
-Principles of the common law: Natural justice application
-</h3>
-<div class="listing-subtitle">
-
+</div>
+<div class="card-text listing-description">
+R without data is just an Application. So to enjoy R programming then you need to deal with data. So in most cases you will be given data from outsource. And most of…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Benjamini Mpinga
+</div>
+<div class="listing-date">
+Apr 25, 2023
+</div>
+</div>
+</div>
 </div>
 </a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Skills" data-listing-date-sort="1681938000000" data-listing-file-modified-sort="1680102801045" data-listing-reading-time-sort="10.975">
+<a href="./posts/R_introduction_statistics_leson.2/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/R_introduction_statistics_leson.2/control-.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Statistics in R Programming: How to make analysis in R, by usising statistical evidance.
+</h5>
+<div class="listing-reading-time card-text text-muted">
+10 min
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Skills'); return false;">
+Skills
+</div>
+</div>
+<div class="card-text listing-description">
+Statistics is a branch of Maths that deals with every aspect of the data/ Also Statistics can be refereed as a knowledge for collecting, analyzing and interpreting data.…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Benjamini Mpinga
+</div>
+<div class="listing-date">
+Apr 20, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Skills" data-listing-date-sort="1681506000000" data-listing-file-modified-sort="1680018918754" data-listing-reading-time-sort="20.895">
+<a href="./posts/Current-world-pop/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/Current-world-pop/r_studio.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+R Programming: World pupulation and most popular countries.
+</h5>
+<div class="listing-reading-time card-text text-muted">
+20 min
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Skills'); return false;">
+Skills
+</div>
+</div>
+<div class="card-text listing-description">
+<strong>WORLD POPULATION DATA: </strong>This post is the result of R programming analysis, which basically demonstrate the most current world population of each continent and most popular countries within a…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Benjamini Mpinga
+</div>
+<div class="listing-date">
+Apr 15, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="Skills" data-listing-date-sort="1681074000000" data-listing-file-modified-sort="1680018694072" data-listing-reading-time-sort="4.73">
+<a href="./posts/soft-skills/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/soft-skills/no-rules.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+GitHub skills: Safeguard your soft properties and be a part of global changer
+</h5>
+<div class="listing-reading-time card-text text-muted">
+4 min
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Skills'); return false;">
+Skills
+</div>
+</div>
+<div class="card-text listing-description">
+The modern world is dominated by people with potential contribution in a community, this is to say that, there are few individual will contribute and many will benefit from…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Benjamini Mpinga
+</div>
+<div class="listing-date">
+Apr 10, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="legal" data-listing-date-sort="1680123600000" data-listing-file-modified-sort="1680019410900" data-listing-reading-time-sort="7.135">
+<a href="./posts/tamisemi/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/tamisemi/benja.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Tamisemi: The curent shifting procedures by request
+</h5>
+<div class="listing-reading-time card-text text-muted">
+7 min
+</div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('legal'); return false;">
 legal
 </div>
 </div>
-<a href="./posts/naturalJustice/index.html">
-<div class="listing-description">
-This principles are some of the basic laws,they are older than 600 years ago.these laws are world wide recognized.are the fundamental rights to everyone and every situation.
+<div class="card-text listing-description">
+TAMISEMI Procedures to follow by a public servant when request to shift from one Municipal to another Municipal for any reasonable ground(s). In this post you will see the…<strong></strong>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Benjamini Mpinga
+</div>
+<div class="listing-date">
+Mar 30, 2023
+</div>
+</div>
+</div>
 </div>
 </a>
 </div>
-<div class="metadata">
-<a href="./posts/naturalJustice/index.html">
+<div class="g-col-1" data-index="6" data-categories="legal" data-listing-date-sort="1679691600000" data-listing-file-modified-sort="1680018449418" data-listing-reading-time-sort="7.695">
+<a href="./posts/armsofGvn/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/armsofGvn/bwz.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Legal governance in Tanzania: How the laws are made, executed and Interpretation
+</h5>
+<div class="listing-reading-time card-text text-muted">
+7 min
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('legal'); return false;">
+legal
+</div>
+</div>
+<div class="card-text listing-description">
+A law system is a huge and complex system to understand if not well explained, the system is often well understood by the few individual privileged to serve it.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Benjamini Mpinga
+</div>
+<div class="listing-date">
+Mar 25, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="legal" data-listing-date-sort="1677531600000" data-listing-file-modified-sort="1676783845012" data-listing-reading-time-sort="1.53">
+<a href="./posts/naturalJustice/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/naturalJustice/court.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Principles of the common law: Natural justice application
+</h5>
+<div class="listing-reading-time card-text text-muted">
+1 min
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('legal'); return false;">
+legal
+</div>
+</div>
+<div class="card-text listing-description">
+This principles are some of the basic laws,they are older than 600 years ago.these laws are world wide recognized.are the fundamental rights to everyone and every situation.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Benjamini Mpinga
+</div>
 <div class="listing-date">
 Feb 28, 2023
 </div>
-<div class="listing-author">
-Benjamini Mpinga
 </div>
-<div class="listing-reading-time">
-1 min
+</div>
 </div>
 </a>
 </div>
+<div class="g-col-1" data-index="8" data-categories="social" data-listing-date-sort="1676840400000" data-listing-file-modified-sort="1680072077834" data-listing-reading-time-sort="12.095">
+<a href="./posts/behaviour/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/behaviour/kongolo.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Human behavior: How human behavior develop and become a character
+</h5>
+<div class="listing-reading-time card-text text-muted">
+12 min
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="social" data-listing-date-sort="1676840400000" data-listing-file-modified-sort="1676784098235" data-listing-reading-time-sort="12.09">
-<div class="thumbnail">
-<p><a href="./posts/behaviour/index.html"> <img src="./posts/behaviour/kongolo.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/behaviour/index.html">
-<h3 class="no-anchor listing-title">
-Human behavior: How human behavior develop to become a character
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('social'); return false;">
 social
 </div>
 </div>
-<a href="./posts/behaviour/index.html">
-<div class="listing-description">
-wanadamu wote tunatokana na mfumo…
+<div class="card-text listing-description">
+wanadamu wote tunatokana na mfumo mmoja, tunaanza kwa kutungwa mimba, kisha kupita katika mabadiliko kadhaa na baada ya kukamilika muda wa kukaa ndani ya tumbo la mwanamke…
 </div>
-</a>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Benjamini Mpinga
 </div>
-<div class="metadata">
-<a href="./posts/behaviour/index.html">
 <div class="listing-date">
 Feb 20, 2023
 </div>
-<div class="listing-author">
-Benjamini Mpinga
 </div>
-<div class="listing-reading-time">
-12 min
+</div>
 </div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="legal" data-listing-date-sort="1676667600000" data-listing-file-modified-sort="1676779821450" data-listing-reading-time-sort="7.695">
-<div class="thumbnail">
-<p><a href="./posts/armsofGvn/index.html"> <img src="./posts/armsofGvn/bwz.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/armsofGvn/index.html">
-<h3 class="no-anchor listing-title">
-Legal governance in Tanzania: How the laws are made, executed and Interpretation
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('legal'); return false;">
-legal
-</div>
-</div>
-<a href="./posts/armsofGvn/index.html">
-<div class="listing-description">
-A law system is a huge and complex system to understand if not well explained, the system is often well understood by the few individual privileged to serve it.
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/armsofGvn/index.html">
-<div class="listing-date">
-Feb 18, 2023
-</div>
-<div class="listing-author">
-Benjamini Mpinga
-</div>
-<div class="listing-reading-time">
-7 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="legal" data-listing-date-sort="1675198800000" data-listing-file-modified-sort="1676783949054" data-listing-reading-time-sort="4.76">
-<div class="thumbnail">
-<p><a href="./posts/jurisdition/index.html"> <img src="./posts/jurisdition/lion.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/jurisdition/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="9" data-categories="legal" data-listing-date-sort="1675198800000" data-listing-file-modified-sort="1676783949054" data-listing-reading-time-sort="4.76">
+<a href="./posts/jurisdition/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/jurisdition/lion.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Courts teritorial in Tanzania: Authority to support court’s jurisdiction
-</h3>
-<div class="listing-subtitle">
-
+</h5>
+<div class="listing-reading-time card-text text-muted">
+4 min
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('legal'); return false;">
 legal
 </div>
 </div>
-<a href="./posts/jurisdition/index.html">
-<div class="listing-description">
+<div class="card-text listing-description">
 This post is showing the meaning of Jurisdiction, attached with Court’s judgement as reference, it’s useful in legal matters in Tanzania.
 </div>
-</a>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Benjamini Mpinga
 </div>
-<div class="metadata">
-<a href="./posts/jurisdition/index.html">
 <div class="listing-date">
 Feb 1, 2023
 </div>
-<div class="listing-author">
-Benjamini Mpinga
 </div>
-<div class="listing-reading-time">
-4 min
+</div>
 </div>
 </a>
-</div>
 </div>
 </div>
 <div class="listing-no-matching d-none">
@@ -426,6 +591,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
