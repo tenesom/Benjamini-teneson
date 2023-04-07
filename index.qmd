@@ -17,7 +17,7 @@ about:
 
 ::: grid
 ::: {.g-col-12 .g-col-md-6}
-![](control-.jpg)
+![](teneson-profile.jpg)
 :::
 
 ::: {.g-col-12 .g-col-md-6}

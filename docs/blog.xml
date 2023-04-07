@@ -1057,14 +1057,14 @@ i Specify the column types or set `show_col_types = FALSE` to quiet this message
 
 <p>Statistics is a branch of Maths that deals with every aspect of the data/ Also Statistics can be refereed as a knowledge for collecting, analyzing and interpreting data. Statistics can be used to predict the future, determine the probability that a specific event will happen, or help answer questions about a survey. Statistics is used in many different fields such as business, medicine, biology, psychology and social sciences.</p>
 <p><img src="https://benjamini-mpinga.netlify.app/posts/R_introduction_statistics_leson.2/control-.jpg" class="img-fluid"></p>
-<section id="statistics" class="level3">
-<h3 class="anchored" data-anchor-id="statistics">STATISTICS</h3>
+<section id="statistics-leson-1." class="level3">
+<h3 class="anchored" data-anchor-id="statistics-leson-1.">Statistics Leson 1.</h3>
 <p>Statistical knowledge helps to choose the proper method of collecting data and employ those samples in the correct analysis process in order to effectively produce the results. In short, statistics is a crucial process which helps to make the decision based on the data.</p>
 <p><strong>What is Statistics in Programming?</strong></p>
 <p>In Mathematics, statistics concerns the collection of data, organisation, interpretation, analysis and data presentation. An example of statistical analysis is when we have to determine the number of people in a town who watch TV out of the total population in the town. The small group of people is called the sample, which data is taken from them.</p>
 <ul>
 <li><strong>descriptive, which focuses on summarizing data.</strong></li>
-<li><strong>Inferential, which focuses on making conclusions about populations based on samples.</strong></li>
+<li><strong>Inferential, which focuses on making conclusions based on samples.</strong></li>
 </ul>
 <p>Inferential Statistics – Based on the data sample taken from the population, inferential statistics makes the predictions and inferences. Both types of statistics are equally employed in the field of statistical analysis..</p>
 <p><strong>The characteristics of Statistics are a:</strong></p>
@@ -1090,29 +1090,40 @@ i Specify the column types or set `show_col_types = FALSE` to quiet this message
 <p><strong>What are the uses of statistics in real life?</strong></p>
 <p>Statistics is an integral part of our lives. It is used in the workplace and everyday life. In the workplace, statistics are often used to analyse what works best for a company’s marketing strategy or how to distribute work among employees. In daily life, statistics can be used to analyse what food you should buy at the grocery store or how much money you spend on purchasing each week. Statistics are everywhere, and they help us make sense of the world around us.</p>
 <p><strong>Concept covered in Statistics.</strong></p>
-<p>The most important concepts covered in Statistics include <strong><em>mean, median, mode, range, and standard deviation, Normality and Significance.</em></strong> Mean and Median in statistics usually measure the median/mean value, but their application depend on the sample’s nature.</p>
+<p>The most important concepts covered in Statistics include - mean, - median - mode - range<br>
+- standard deviation - Normality and - Significance.</p>
+<p>Mean and Median in statistics usually measure the median/mean value, but their application depend on the sample’s nature.</p>
 </section>
 <section id="descriptive-statistics." class="level3">
-<h3 class="anchored" data-anchor-id="descriptive-statistics.">DESCRIPTIVE STATISTICS.</h3>
+<h3 class="anchored" data-anchor-id="descriptive-statistics.">Descriptive Statistics.</h3>
 <p>Descriptive statistics usually used to describe type of data, by describe Median, Mean, Mode and Range in a particular data.</p>
 <ol type="1">
 <li><strong>The mean is the average of the data set.</strong></li>
 <li><strong>The median is the middle of the set of numbers.</strong></li>
 <li><strong>The mode is the most common number in a data set.</strong></li>
 </ol>
-<p>In these three the mean is the only one that requires formula. Mean in math is what they call Average, they are synonym.</p>
-<section id="how-to-find-median." class="level4">
-<h4 class="anchored" data-anchor-id="how-to-find-median.">How to find Median.</h4>
+<p>In these three the mean is the only one that requires formula. Mean in math is what called Average, they are synonym.</p>
+<div class="callout callout callout-style-simple no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+How to find Median.
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>To calculate median value when your data values are mostly alike but some few values have big difference from the other either High or Low. The purpose is to avoid the high or low values to affect the result. Basically for numeric data.</p>
-<p>**Eg. (1,2,3,4,5,6,7) to find median ……. you arrange your numbers from the lowest to the highest or from highest to the lowest then you pick the centered number. So in the set 1,2,3,4,5,6,7 the middle number is 4.</p>
-<p>But what happens if the data set is like (1,2,3,4,5,6,7,8)?.** in that case you arrange your data set and then you add the two middle numbers and then you them divide by 2 eg 4+5 = 9/2 = 4.5.</p>
+<p>(1,2,3,4,5,6,7) to find median ……. you arrange your numbers from the lowest to the highest or from highest to the lowest then you pick the centered number. So in the set 1, 2, 3, 4, 5, 6, 7 the middle number is 4.</p>
+<p>But what happens if the data set is like (1, 2, 3, 4, 5, 6, 7, 8)? in that case you arrange your data set and then you add the two middle numbers and then you them divide by 2, (4 + 5 = 9/2 = 4.5).</p>
 <p>In most cases the median and the mean are likely to have the same value, even when they differ, it’s not in significance gap.</p>
-</section>
 <section id="how-to-find-mean." class="level4">
 <h4 class="anchored" data-anchor-id="how-to-find-mean.">How to find mean.</h4>
 <p>There are mainly two ways to find mean in a data set, One is by finding the sum of the values by adding them all up, dividing the sum by the number of values in the data set.</p>
-<p><strong>Eg. (1,2,3,4,5,6,7) to find mean …… 1+2+3+4+5+6+7= 28/7 = 4 therefor the mean is 4. Remember the mean in a data set does not have to appear in the data set.</strong></p>
+<p>Eg. (1, 2, 3, 4, 5, 6, 7) to find mean …… 1 + 2+ 3 + 4 + 5 + 6 + 7= 28/7 = 4 therefor the mean is 4. Remember the mean in a data set does not have to appear in the data set.**</p>
 </section>
+</div>
+</div>
 <section id="the-different-between-mean-and-median" class="level4">
 <h4 class="anchored" data-anchor-id="the-different-between-mean-and-median">The different between Mean and Median</h4>
 <ol type="1">
@@ -1126,48 +1137,100 @@ i Specify the column types or set `show_col_types = FALSE` to quiet this message
 </ul>
 </section>
 </section>
-<section id="inferential-statistics." class="level3">
-<h3 class="anchored" data-anchor-id="inferential-statistics.">INFERENTIAL STATISTICS.</h3>
-<p>Inferential statistics, basically focus on solution based, due to data problems, or in other word it simply true that, Data always arise either a challenge or a question, so inferential statistic is the type of statistics to solve and answer data challenge and question.</p>
-<p>As we have seen in previous lesson, statistics plays major roll to daily life activities, therefor knowing how to apply statistics in analysis, is not only basic knowledge to acquire but also essential tool to approach and solve some analytic data based problems.</p>
-<p>So in this lesson we shall focus on the second type of statistics, which often used to transform and analyze and give analytic results which is what drive decision making. Inferential statistics help in solving many problems which require analytics approach, and scientific based evidence. So if you want to become a data analyst, researcher, then this angle is where you should focus attentively. We shall highlight the tips used to approach the question, and theory to solve analytics problems.</p>
+<section id="statistics-lesson-2." class="level3">
+<h3 class="anchored" data-anchor-id="statistics-lesson-2.">Statistics lesson 2.</h3>
+<p>As we have seen in previous lesson, statistics plays major roll to daily life activities, therefor knowing how to apply statistics in analysis, is not only basic knowledge to acquire but also essential tool to approach and solve some analytic data based questions.</p>
+<p>So in this lesson we shall focus on the second type of statistics, which often used to transform, analyze and give analytic results, to support decision making. Inferential statistics help to solve many problems which require analytics approach, and scientific based evidence. So if you want to become a data analyst or a good researcher, then this angle is where you should focus attentively.</p>
+</section>
+<section id="inferential-statistics-for-numeric-data." class="level3">
+<h3 class="anchored" data-anchor-id="inferential-statistics-for-numeric-data.">Inferential Statistics for numeric data.</h3>
+<p>While descriptive statistics used to describe type of data, and describe Median, Mean, Mode and Range in a particular data. Then Inferential statistics focus on solutions, or in other word, when Data rise challenges or questions, it’s inferential type of statistic which solve and answer those challenges and questions.</p>
 </section>
 <section id="data-collection-theory." class="level3">
-<h3 class="anchored" data-anchor-id="data-collection-theory.">DATA COLLECTION THEORY.</h3>
-<p>In sample collection, it is advise to collect at least 10 to 30 percent samples of general population, this is to ensure samples can provide accurate results. This is due to fact that, the less ample you collect the less efficient result you may get, also the more sample you collect might be unnecessary, this means it might not make any change in results. So it is advice to collect a reasonable sample for wise utilization of resources as well as time management but also to get efficient results.</p>
-<p>Often data are collected by researcher(s), who focus on a specific matter or subject, So there some steps to consider before going field. One is to set your project plan, two is to give project a tile, three is to set objectives then finally to rise hypothesis of the project. Now in this lesson shall focus in how to start and conclude the results of your research.</p>
+<h3 class="anchored" data-anchor-id="data-collection-theory.">Data collection theory.</h3>
+<p>Begin with sample collection, it is advise to collect at least 10 to 30 percent samples of general population, this is to ensure samples can provide accurate results. This is due to fact that, the less ample you collect the less efficient result you may get, also the more sample you collect might be unnecessary sometimes, this means it might not make any different in results. So it is advice to collect a reasonable sample size for better utilization of resources and time management.</p>
 </section>
 <section id="hypothesis-theory." class="level3">
-<h3 class="anchored" data-anchor-id="hypothesis-theory.">HYPOTHESIS THEORY.</h3>
-<p>One of the sediment in an inferential statistics, is called Hypothesis, which means all the assumption rouse by a researcher or annalist before data collections, usually before data collections there are some basic ground considered to be true or false. those reasonable grounds considered to be true or false are what called Hypothesis (Assumptions). Hypothesis are divided in two types.</p>
+<h3 class="anchored" data-anchor-id="hypothesis-theory.">Hypothesis Theory.</h3>
+<p>Hypothesis means the basic assumptions rouse by a researcher or a data annalist, which support or give reasons for Him/Her to conduct a research, or to collect a particular data to clear His/Her doubt. So every researcher always have most common expected result in His/Her assumptions, But whatever results which are assumed to be true or false, are what called Hypothesis.</p>
+<div class="callout callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>There are two types Hypothesis.</p>
 <ol type="1">
 <li><strong>Null Hypothesis – Ho – Negative.</strong></li>
 <li><strong>Alternative Hypothesis – Ha – Positive</strong></li>
 </ol>
-<p>In statistic analysis we use different approach to address solutions to our problems, but most often our approach leads us to either solve or cause more trouble to the problem. In standard approach of statistic data analysis, it is required to approach the data results, by ensuring both the significance and Insignificance of the results, as well as normality of the data. In this step the approach to use is Null Hypothesis theory.</p>
-</section>
-<section id="test-significance." class="level3">
-<h3 class="anchored" data-anchor-id="test-significance.">TEST SIGNIFICANCE.</h3>
+</div>
+</div>
+</div>
+<p>Often data are collected by researcher(s), who focus on a specific matter or subject, So there are some steps to consider before going field for data collection. Begin by setting your project plan, including project tile and objectives, then finally to rise hypothesis. Now in professional standard, the Hypothesis which used to finalize the research conclusions is <strong>Null Hypothesis – Ho – Negative.</strong></p>
+<p>In statistic analysis, we use different approach to address solutions to our questions, A requires standard approach in statistical analysis, is to test the significance and Insignificance of the data results, and the normality of data distributions. Therefor to be sure about data conclusions, then you have to <strong>test data normality, and the significance and Insignificance of the results.</strong></p>
+<div class="callout callout callout-style-simple no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Test significance and Insignificance.
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ol type="1">
-<li>Null hypothesis theory <strong>(NO SIGNIFICANT DIFFERENCE).</strong></li>
+<li>Null hypothesis theory = No significant difference.</li>
+<li>Alternative Hypothesis Theory = There is significant difference.</li>
 </ol>
-<p>Null hypothesis theory, is usually used to conclude grounds of the research, so every standard research relay on this theory. As i have stated before, in any research there must be some assumptions fore to sample collection. So to make conclusion of your results, to make conclusion we relay on significance level, significant level is measured by P value, so when the <strong>P value = &gt; 0.05 then it’s considered There is No significant difference. And when P value = &lt; 0.05 then it’s considered There is significant difference.</strong></p>
-<ol type="1">
-<li>Alternative Hypothesis Theory. <strong>(THERE IS SIGNIFICANT DIFFERENT).</strong></li>
-</ol>
-<p>Alternative Hypothesis is sometimes used by some statisticians to approach some problems in data, but it’s not recommended in professional conduct, it doesn’t mean this theory has anything wrong, but simply because in concluding our findings in data, we relay on Null Hypothesis. therefor Alternative Hypothesis remains as an opposite of Null Hypothesis.</p>
+</div>
+</div>
+<p>Null hypothesis theory, is usually used to conclude results of the research, and to measure the significance of the results, as well as to measure the normality of data distributions, so many research conclusions are made by using this theory. So the significant level and Normality both are measured by P value.</p>
+<div class="callout callout callout-style-simple no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Formula to measure significance of data results.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In the case of measuring significance of the results we refer to the formula that…</p>
+<ul>
+<li>when the P value = &gt; 0.05 then it’s considered There is No significant difference. And</li>
+<li>when the P value = &lt; 0.05 then it’s considered There is significant difference.</li>
+</ul>
+</div>
+</div>
 </section>
 <section id="test-normality-formula." class="level3">
-<h3 class="anchored" data-anchor-id="test-normality-formula.">TEST NORMALITY FORMULA.</h3>
-<p>Normality refers to the distribution of your collected data, this means after you have describe your data in descriptive type of statistics, then you have to test them, if their normal distributed or not normal distributed. In normality formula we prescribe other way round, which means, <strong>(Null Hypothesis - Ho = Is normal distributed while Alternative Hypothesis - Ha = Is not normal distributed.)</strong></p>
-<p><strong>Normality formula.</strong></p>
+<h3 class="anchored" data-anchor-id="test-normality-formula.">Test Normality Formula.</h3>
+<ol type="1">
+<li>Null Hypothesis - Ho = Is normal distributed. while</li>
+<li>Alternative Hypothesis - Ha = Is not normal distributed.</li>
+</ol>
+<p>Normality refers to the distribution of your collected data, this means after you have describe your data in descriptive type of statistics, then you have to test them, if they are normal distributed or not normal distributed. In normality formula we prescribe the P level formula other way round, which means,</p>
+<div class="callout callout callout-style-simple no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Normality formula.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In the case of measuring normality of data distributions we refer to the formula that…</p>
 <ul>
 <li>When P value = &gt; 0.05 then you Accept the Null.</li>
 <li>When P value = &lt; 0.05 then you Reject the Null.</li>
 </ul>
+</div>
+</div>
 </section>
 <section id="test-normality-in-r." class="level3">
-<h3 class="anchored" data-anchor-id="test-normality-in-r.">TEST NORMALITY IN R.</h3>
+<h3 class="anchored" data-anchor-id="test-normality-in-r.">Test Normality in R.</h3>
 <p>In R, we test the distributions of the data by using the function (shapiro), the below example is how you can test the distribution of the data in R analysis. The data we are using is auto generated from R data base. In R you can find some data to help you improve your analysis practice, in case you don’t have access to acquire data from other source. to generate data in R, just create a chunk then write iris then run the chunk, and data will appear on your R editor. After that you can equate them to another name.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;">require</span>(tidyverse)</span></code></pre></div>
@@ -2429,7 +2492,7 @@ i Please use the `linewidth` argument instead.</code></pre>
 <section id="usawa." class="level3">
 <h3 class="anchored" data-anchor-id="usawa.">Usawa.</h3>
 <p>wanadamu wote tunatokana na mfumo mmoja, tunaanza kwa kutungwa mimba, kisha kupita katika mabadiliko kadhaa na baada ya kukamilika muda wa kukaa ndani ya tumbo la mwanamke, ndipo tunazaliwa katika hali ya uchanga. Hatua hii ya awali ya kutungwa mimba hadi kuzaliwa ni hatua tunayoipitia watu wote kwa usawa, kwa sababu hiyo ndiyo maana tunasikia kauli, “Binadamu wote ni sawa.” Usawa wetu unaanzia katika mchakato wa kutungwa mimba na kuishia kuzaliwa, baada ya hapo kila mmoja wetu anaanza kutengeneza “Upekee” au “Uniqueness.”</p>
-<p><img src="https://benjamini-mpinga.netlify.app/posts/behaviour/kongolo.jpg" class="img-fluid"></p>
+<p><img src="https://benjamini-mpinga.netlify.app/posts/behaviour/sareliben.jpg" class="img-fluid"></p>
 <p>Upekee huo mara nyingi unachagizwa na mambo kadhaa</p>
 <ol type="1">
 <li>Tabia ya wazazi</li>
@@ -2559,7 +2622,7 @@ i Please use the `linewidth` argument instead.</code></pre>
   <category>social</category>
   <guid>https://benjamini-mpinga.netlify.app/posts/behaviour/index.html</guid>
   <pubDate>Sun, 19 Feb 2023 21:00:00 GMT</pubDate>
-  <media:content url="https://benjamini-mpinga.netlify.app/posts/behaviour/kongolo.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://benjamini-mpinga.netlify.app/posts/behaviour/sareliben.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Courts teritorial in Tanzania: Authority to support court’s jurisdiction</title>

@@ -3,146 +3,277 @@ title: "Statistics in R Programming: How to make analysis in R, by usising stati
 author: "Benjamini Mpinga"
 date: "2023-04-20"
 categories: [Skills]
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-Statistics is a branch of Maths that deals with every aspect of the data/ Also Statistics can be refereed as a knowledge for collecting, analyzing and interpreting data. Statistics can be used to predict the future, determine the probability that a specific event will happen, or help answer questions about a survey. Statistics is used in many different fields such as business, medicine, biology, psychology and social sciences.
+Statistics is a branch of Maths that deals with every aspect of the
+data/ Also Statistics can be refereed as a knowledge for collecting,
+analyzing and interpreting data. Statistics can be used to predict the
+future, determine the probability that a specific event will happen, or
+help answer questions about a survey. Statistics is used in many
+different fields such as business, medicine, biology, psychology and
+social sciences.
 
 ![](control-.jpg)
 
-### STATISTICS
+### Statistics Leson 1.
 
-Statistical knowledge helps to choose the proper method of collecting data and employ those samples in the correct analysis process in order to effectively produce the results. In short, statistics is a crucial process which helps to make the decision based on the data.
+Statistical knowledge helps to choose the proper method of collecting
+data and employ those samples in the correct analysis process in order
+to effectively produce the results. In short, statistics is a crucial
+process which helps to make the decision based on the data.
 
 **What is Statistics in Programming?**
 
-In Mathematics, statistics concerns the collection of data, organisation, interpretation, analysis and data presentation.
-An example of statistical analysis is when we have to determine the number of people in a town who watch TV out of the total population in the town. The small group of people is called the sample, which data is taken from them. 
+In Mathematics, statistics concerns the collection of data,
+organisation, interpretation, analysis and data presentation. An example
+of statistical analysis is when we have to determine the number of
+people in a town who watch TV out of the total population in the town.
+The small group of people is called the sample, which data is taken from
+them.
 
+-   **descriptive, which focuses on summarizing data.**
+-   **Inferential, which focuses on making conclusions based on
+    samples.**
 
-- **descriptive, which focuses on summarizing data.**
-- **Inferential, which focuses on making conclusions about populations based on samples.**
-
-Inferential Statistics – Based on the data sample taken from the population, inferential statistics makes the predictions and inferences. Both types of statistics are equally employed in the field of statistical analysis..
+Inferential Statistics -- Based on the data sample taken from the
+population, inferential statistics makes the predictions and inferences.
+Both types of statistics are equally employed in the field of
+statistical analysis..
 
 **The characteristics of Statistics are a:**
 
-- Statistics are numerically expressed.
-- It has an aggregate of facts
-- Data are collected in systematic order
-- It should be comparable to each other
-- Data are collected for a planned purpose
+-   Statistics are numerically expressed.
+-   It has an aggregate of facts
+-   Data are collected in systematic order
+-   It should be comparable to each other
+-   Data are collected for a planned purpose
 
 **The importance of statistics are...**
 
-- Statistics helps in gathering information about the appropriate quantitative data
-- It depicts the complex data in graphical form, tabular form and in diagrammatic representation to understand it easily
-- It provides the exact description and a better understanding
-- It helps in designing the effective and proper planning of the statistical inquiry in any field
-- It gives valid inferences with the reliability measures about the population parameters from the sample data
-- It helps to understand the variability pattern through the quantitative observations
+-   Statistics helps in gathering information about the appropriate
+    quantitative data
+-   It depicts the complex data in graphical form, tabular form and in
+    diagrammatic representation to understand it easily
+-   It provides the exact description and a better understanding
+-   It helps in designing the effective and proper planning of the
+    statistical inquiry in any field
+-   It gives valid inferences with the reliability measures about the
+    population parameters from the sample data
+-   It helps to understand the variability pattern through the
+    quantitative observations
 
 **Why is statistics vital?**
 
-Statistics is an important field because it helps us understand the general trends and patterns in a given data set. Statistics can be used for analyzing data and drawing conclusions from it. It can also be used for making predictions about future events and behaviors. Statistics also help us understand how things are changing over time.
+Statistics is an important field because it helps us understand the
+general trends and patterns in a given data set. Statistics can be used
+for analyzing data and drawing conclusions from it. It can also be used
+for making predictions about future events and behaviors. Statistics
+also help us understand how things are changing over time.
 
-The main purpose of using statistics is to plan the collected data in terms of experimental designs and statistical surveys. Statistics is considered a mathematical science that works with numerical data.
+The main purpose of using statistics is to plan the collected data in
+terms of experimental designs and statistical surveys. Statistics is
+considered a mathematical science that works with numerical data.
 
 **What are the uses of statistics in real life?**
 
-Statistics is an integral part of our lives. It is used in the workplace and everyday life. In the workplace, statistics are often used to analyse what works best for a company’s marketing strategy or how to distribute work among employees. In daily life, statistics can be used to analyse what food you should buy at the grocery store or how much money you spend on purchasing each week. Statistics are everywhere, and they help us make sense of the world around us.
+Statistics is an integral part of our lives. It is used in the workplace
+and everyday life. In the workplace, statistics are often used to
+analyse what works best for a company's marketing strategy or how to
+distribute work among employees. In daily life, statistics can be used
+to analyse what food you should buy at the grocery store or how much
+money you spend on purchasing each week. Statistics are everywhere, and
+they help us make sense of the world around us.
 
 **Concept covered in Statistics.**
 
-The most important concepts covered in Statistics include ***mean, median, mode, range, and standard deviation, Normality and Significance.*** Mean and Median in statistics usually measure the median/mean value, but their application depend on the sample's nature.
+The most important concepts covered in Statistics include - mean, -
+median - mode - range\
+- standard deviation - Normality and - Significance.
 
-### DESCRIPTIVE STATISTICS.
+Mean and Median in statistics usually measure the median/mean value, but
+their application depend on the sample's nature.
 
-Descriptive statistics usually used to describe type of data, by describe Median, Mean, Mode and Range in a particular data.
+### Descriptive Statistics.
 
+Descriptive statistics usually used to describe type of data, by
+describe Median, Mean, Mode and Range in a particular data.
 
-1. **The mean is the average of the data set.**
-1. **The median is the middle of the set of numbers.**
-1. **The mode is the most common number in a data set.**
+1.  **The mean is the average of the data set.**
+2.  **The median is the middle of the set of numbers.**
+3.  **The mode is the most common number in a data set.**
 
-In these three the mean is the only one that requires formula. Mean in math is what they call Average, they are synonym.
+In these three the mean is the only one that requires formula. Mean in
+math is what called Average, they are synonym.
 
-#### How to find Median. 
+::: callout
+#### How to find Median.
 
-To calculate median value when your data values are mostly alike but some few values have big difference from the other either High or Low. The purpose is to avoid the high or low values to affect the result. Basically for numeric data. 
+To calculate median value when your data values are mostly alike but
+some few values have big difference from the other either High or Low.
+The purpose is to avoid the high or low values to affect the result.
+Basically for numeric data.
 
-**Eg. (1,2,3,4,5,6,7) to find median ....... you arrange your numbers from the lowest to the highest or from highest to the lowest then you pick the centered number. So in the set 1,2,3,4,5,6,7 the middle number is 4. 
+(1,2,3,4,5,6,7) to find median ....... you arrange your numbers from
+the lowest to the highest or from highest to the lowest then you pick
+the centered number. So in the set 1, 2, 3, 4, 5, 6, 7 the middle number
+is 4.
 
-But what happens if the data set is like (1,2,3,4,5,6,7,8)?.** in that case you arrange your data set and then you add the two middle numbers and then you them divide by 2 eg 4+5 = 9/2 = 4.5.
+But what happens if the data set is like (1, 2, 3, 4, 5, 6, 7, 8)? in
+that case you arrange your data set and then you add the two middle
+numbers and then you them divide by 2, (4 + 5 = 9/2 = 4.5).
 
-In most cases the median and the mean are likely to have the same value, even when they differ, it's not in significance gap.
+In most cases the median and the mean are likely to have the same value,
+even when they differ, it's not in significance gap.
 
 #### How to find mean.
 
-There are mainly two ways to find mean in a data set, One is by finding the sum of the values by adding them all up, dividing the sum by the number of values in the data set.
+There are mainly two ways to find mean in a data set, One is by finding
+the sum of the values by adding them all up, dividing the sum by the
+number of values in the data set.
 
-**Eg. (1,2,3,4,5,6,7) to find mean ...... 1+2+3+4+5+6+7= 28/7 = 4 therefor the mean is 4. Remember the mean in a data set does not have to appear in the data set.**
+Eg. (1, 2, 3, 4, 5, 6, 7) to find mean ...... 1 + 2+ 3 + 4 + 5 + 6 +
+7= 28/7 = 4 therefor the mean is 4. Remember the mean in a data set does
+not have to appear in the data set.**
+:::
 
 #### The different between Mean and Median
 
-1. The median is less affected by outliers and skewed data, is used for skewed distributions.
-1. Median is Usually the preferred measure of central tendency, when distribution is not symmetrical. 
-1. The mean is usually used for normal distributed data. 
+1.  The median is less affected by outliers and skewed data, is used for
+    skewed distributions.
+2.  Median is Usually the preferred measure of central tendency, when
+    distribution is not symmetrical.
+3.  The mean is usually used for normal distributed data.
 
-**Standard deviation** 
+**Standard deviation**
 
-- You have to calculate the deviation in order to measure where your data deviate from the normal value.
+- You have to calculate the deviation in order to measure where your
+    data deviate from the normal value.
 
-### INFERENTIAL STATISTICS.
+### Statistics lesson 2.
 
-Inferential statistics, basically focus on solution based, due to data problems, or in other word it simply true that, Data always arise either a challenge or a question, so inferential statistic is the type of statistics to solve and answer data challenge and question.
+As we have seen in previous lesson, statistics plays major roll to daily
+life activities, therefor knowing how to apply statistics in analysis,
+is not only basic knowledge to acquire but also essential tool to
+approach and solve some analytic data based questions.
 
-As we have seen in previous lesson, statistics plays major roll to daily life activities, therefor knowing how to apply statistics in analysis, is not only basic knowledge to acquire but also essential tool to approach and solve some analytic data based problems.
+So in this lesson we shall focus on the second type of statistics, which
+often used to transform, analyze and give analytic results, to support
+decision making. Inferential statistics help to solve many problems
+which require analytics approach, and scientific based evidence. So if
+you want to become a data analyst or a good researcher, then this angle
+is where you should focus attentively.
 
-So in this lesson we shall focus on the second type of statistics, which often used to transform and analyze and give analytic results which is what drive decision making. Inferential statistics help in solving many problems which require analytics approach, and scientific based evidence. So if you want to become a data analyst, researcher, then this angle is where you should focus attentively. We shall highlight the tips used to approach the question, and theory to solve analytics problems.
+### Inferential Statistics for numeric data.
 
-### DATA COLLECTION THEORY.
+While descriptive statistics used to describe type of data, and describe
+Median, Mean, Mode and Range in a particular data. Then Inferential
+statistics focus on solutions, or in other word, when Data rise
+challenges or questions, it's inferential type of statistic which solve
+and answer those challenges and questions.
 
-In sample collection, it is advise to collect at least 10 to 30 percent samples of general population, this is to ensure samples can provide accurate results. This is due to fact that, the less ample you collect the less efficient result you may get, also the more sample you collect might be unnecessary, this means it might not make any change in results. So it is advice to collect a reasonable sample for wise utilization of resources as well as time management but also to get efficient results.
+### Data collection theory.
 
-Often data are collected by researcher(s), who focus on a specific matter or subject, So there some steps to consider before going field. One is to set your project plan, two is to give project a tile, three is to set objectives then finally to rise hypothesis of the project. Now in this lesson shall focus in how to start and conclude the results of your research.
+Begin with sample collection, it is advise to collect at least 10 to 30
+percent samples of general population, this is to ensure samples can
+provide accurate results. This is due to fact that, the less ample you
+collect the less efficient result you may get, also the more sample you
+collect might be unnecessary sometimes, this means it might not make any
+different in results. So it is advice to collect a reasonable sample
+size for better utilization of resources and time management.
 
-### HYPOTHESIS THEORY.
+### Hypothesis Theory.
 
-One of the sediment in an inferential statistics, is called Hypothesis, which means all the assumption rouse by a researcher or annalist before data collections, usually before data collections there are some basic ground considered to be true or false. those reasonable grounds considered to be true or false are what called Hypothesis (Assumptions). Hypothesis are divided in two types.
+Hypothesis means the basic assumptions rouse by a researcher or a data
+annalist, which support or give reasons for Him/Her to conduct a
+research, or to collect a particular data to clear His/Her doubt. So
+every researcher always have most common expected result in His/Her
+assumptions, But whatever results which are assumed to be true or false,
+are what called Hypothesis.
+
+::: callout
+There are two types Hypothesis.
 
 1.  **Null Hypothesis -- Ho -- Negative.**
-2.  **Alternative Hypothesis -- Ha -- Positive** 
+2.  **Alternative Hypothesis -- Ha -- Positive**
+:::
 
-In statistic analysis we use different approach to address solutions to our problems, but most often our approach leads us to either solve or cause more trouble to the problem. In standard approach of statistic data analysis, it is required to approach the data results, by ensuring both the significance and Insignificance of the results, as well as normality of the data. In this step the approach to use is Null Hypothesis theory.
+Often data are collected by researcher(s), who focus on a specific
+matter or subject, So there are some steps to consider before going
+field for data collection. Begin by setting your project plan, including
+project tile and objectives, then finally to rise hypothesis. Now in
+professional standard, the Hypothesis which used to finalize the
+research conclusions is **Null Hypothesis -- Ho -- Negative.**
 
-### TEST SIGNIFICANCE.
+In statistic analysis, we use different approach to address solutions to
+our questions, A requires standard approach in statistical analysis, is
+to test the significance and Insignificance of the data results, and the
+normality of data distributions. Therefor to be sure about data
+conclusions, then you have to **test data normality, and the
+significance and Insignificance of the results.**
 
-1. Null hypothesis theory **(NO SIGNIFICANT DIFFERENCE).**
+::: callout
+### Test significance and Insignificance.
 
-Null hypothesis theory, is usually used to conclude grounds of the research, so every standard research relay on this theory. As i have stated before, in any research there must be some assumptions fore to sample collection. So to make conclusion of your results, to make conclusion we relay on significance level, significant level is measured by P value, so when the **P value = > 0.05 then it's considered There is No significant difference. And when P value = < 0.05 then it's considered There is significant difference.**
+1.  Null hypothesis theory = No significant difference.
+2.  Alternative Hypothesis Theory = There is significant difference.
+:::
 
-1. Alternative Hypothesis Theory. **(THERE IS SIGNIFICANT DIFFERENT).**
+Null hypothesis theory, is usually used to conclude results of the
+research, and to measure the significance of the results, as well as to
+measure the normality of data distributions, so many research
+conclusions are made by using this theory. So the significant level and
+Normality both are measured by P value.
 
-Alternative Hypothesis is sometimes used by some statisticians to approach some problems in data, but it's not recommended in professional conduct, it doesn't mean this theory has anything wrong, but simply because in concluding our findings in data, we relay on Null Hypothesis. therefor Alternative Hypothesis  remains as an opposite of Null Hypothesis.
+::: callout
+### Formula to measure significance of data results.
 
-### TEST NORMALITY FORMULA.
+In the case of measuring significance of the results we refer to the
+formula that...
 
-Normality refers to the distribution of your collected data, this means after you have describe your data in descriptive type of statistics, then you have to test them, if their normal distributed or not normal distributed. In normality formula we  prescribe other way round, which means, **(Null Hypothesis - Ho = Is normal distributed while Alternative Hypothesis - Ha = Is not normal distributed.)**
+-   when the P value = > 0.05 then it's considered There is No
+    significant difference. And
+-   when the P value = < 0.05 then it's considered There is significant
+    difference.
+:::
 
-**Normality formula.**
+### Test Normality Formula.
 
-- When P value = > 0.05 then you Accept the Null. 
-- When P value = < 0.05 then you Reject the Null.
+1.  Null Hypothesis - Ho = Is normal distributed. while
+2.  Alternative Hypothesis - Ha = Is not normal distributed.
 
-### TEST NORMALITY IN R.
+Normality refers to the distribution of your collected data, this means
+after you have describe your data in descriptive type of statistics,
+then you have to test them, if they are normal distributed or not normal
+distributed. In normality formula we prescribe the P level formula other
+way round, which means,
 
-In R, we test the distributions of the data by using the function (shapiro), the below example is how you can test the distribution of the data in R analysis. The data we are using is auto generated from R data base. In R you can find some data to help you improve your analysis practice, in case you don't have access to acquire data from other source. to generate data in R, just create a chunk then write iris then run the chunk, and data will appear on your R editor. After that you can equate them to another name.
+::: callout
+### Normality formula.
 
+In the case of measuring normality of data distributions we refer to the
+formula that...
+
+-   When P value = \> 0.05 then you Accept the Null.
+-   When P value = \< 0.05 then you Reject the Null.
+:::
+
+### Test Normality in R.
+
+In R, we test the distributions of the data by using the function
+(shapiro), the below example is how you can test the distribution of the
+data in R analysis. The data we are using is auto generated from R data
+base. In R you can find some data to help you improve your analysis
+practice, in case you don't have access to acquire data from other
+source. to generate data in R, just create a chunk then write iris then
+run the chunk, and data will appear on your R editor. After that you can
+equate them to another name.
 
 ```{r}
 require(tidyverse)
 ```
-
 
 ```{r}
 sample.iris=iris
@@ -160,8 +291,11 @@ ggplot(data = sample.iris, aes(x = Sepal.Length))+
    theme(panel.grid.major.x = element_line(color = "lightgrey", linetype = "dashed"), panel.grid.major.y = element_line(color = "lightgrey", linetype = "dashed"), panel.grid = element_line(color = "white"), axis.title = element_text(color = "darkred", size = 12), axis.text = element_text(color = "darkred"), axis.line.x = element_line(linewidth = 1), axis.line.y = element_line(linewidth = 1))
   
 ```
-we have tested Sepal.L data normality in R, and results shows that they are not normal distributed. Then we have tried to plot in order to observe visual distribution, and results still shows that Sepal.Length are not normal distributed. 
 
+we have tested Sepal.L data normality in R, and results shows that they
+are not normal distributed. Then we have tried to plot in order to
+observe visual distribution, and results still shows that Sepal.Length
+are not normal distributed.
 
 ```{r}
 sample.iris$Sepal.Width %>% shapiro.test()
@@ -173,25 +307,45 @@ ggplot(data = sample.iris, aes(x = Sepal.Width))+
   theme_bw()+
   theme(panel.grid.major.x = element_line(color = "lightgrey", linetype = "dashed"), panel.grid.major.y = element_line(color = "lightgrey", linetype = "dashed"), panel.grid = element_line(color = "white"), axis.title = element_text(color = "darkred", size = 12), axis.text = element_text(color = "darkred"), axis.line.x = element_line(linewidth = 1), axis.line.y = element_line(linewidth = 1))
 ```
-we have tested Sepal.Width data normality in R, and results shows that they are normal distributed. Then we have tried to plot in order to observe visual distribution, and results still shows that Sepal.Width are normal distributed. 
 
-This is how we test data in R programming language, it is easier and clear as we have seen. S o working your data in R, is not only a recommended tool but also facilitate mass data solutions. 
+we have tested Sepal.Width data normality in R, and results shows that
+they are normal distributed. Then we have tried to plot in order to
+observe visual distribution, and results still shows that Sepal.Width
+are normal distributed.
 
+This is how we test data in R programming language, it is easier and
+clear as we have seen. S o working your data in R, is not only a
+recommended tool but also facilitate mass data solutions.
 
 ### CENTRAL LIMIT THEORY (CLT)
 
-In statistics the central limit theory means the value on which majority of population falls. It simply states that The distribution approaches normal, as the samples get larger. therefor it is recommended that to attain doubtless results you are required to collect at least >/= of 30% samples of the population.
+In statistics the central limit theory means the value on which majority
+of population falls. It simply states that The distribution approaches
+normal, as the samples get larger. therefor it is recommended that to
+attain doubtless results you are required to collect at least \>/= of
+30% samples of the population.
 
-This theory of central limit usually shown through continuous plots such as Histogram and density. This is due to their nature. On the figure below we are going to see the example of central limit theory in visualization.
+This theory of central limit usually shown through continuous plots such
+as Histogram and density. This is due to their nature. On the figure
+below we are going to see the example of central limit theory in
+visualization.
 
-In this study we will see how statistics works in real life, and how useful it is in every day's decision making. By applying a proper and correct method in collecting/recording samples, analyzing, interpreting and sharing of findings is always a best way to reach the right decisions, especially for decision makers, weather in family level.
+In this study we will see how statistics works in real life, and how
+useful it is in every day's decision making. By applying a proper and
+correct method in collecting/recording samples, analyzing, interpreting
+and sharing of findings is always a best way to reach the right
+decisions, especially for decision makers, weather in family level.
 
 #### What is the purpose of dispersion
 
-The purpose is to find out how spread out the data values are, on the number line, the deference between the maximum and the minimum value is the formula to measure dispersion (Measure of spread).
+The purpose is to find out how spread out the data values are, on the
+number line, the deference between the maximum and the minimum value is
+the formula to measure dispersion (Measure of spread).
 
 #### What does it mean by Measure of central tendency
 
-Simply is defined as A measure that identifies a single value as representative of the entire distribution. It is the single value that is most typical/representative of the collected data.
+Simply is defined as A measure that identifies a single value as
+representative of the entire distribution. It is the single value that
+is most typical/representative of the collected data.
 
 **Related pots**
