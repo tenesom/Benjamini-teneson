@@ -7,82 +7,96 @@ categories: [Skills]
 
 ### INTRODUCTION.
 
-I might be correct if i say you have heard about R programming language as well as many good tips concerning R experience but i want to share with you some other interesting part of R, Another good news for beginners in R language is that, in your progress toward mastering R, you will get a wonderful experience, Imagine the simplicity of preparing a single document on R editor, yet allows you to share it in multiple format such as **Pdf, Word or html**. Yet with R it is not an imaginations **it is what it is**. And good example is this post you are reading it's also the product of R.
+::: columns
+:::: {.column width="50%"}
 
-![](R_base.jpg)
+It's possible that you're aware of the R programming language and have come across useful tips for improving your R experience. However, I'd like to introduce another intriguing aspect of R. For beginners delving into R, there's a delightful feature that allows you to effortlessly create a single document within the R editor, which can then be shared in various formats like PDF, Word, or HTML. This isn't just an imagination. it's the reality of using R. In fact, the very post you're currently reading was generated using R. R is a truly remarkable tool that empowers users with coding skills, enhances writing abilities, facilitates the generation of diverse document formats.Promotes standardization and visualization, strengthens data analysis skills, expands statistical knowledge, and offers a multitude of other advantages for individuals working with data and research.
 
-### R MIRACULOUS.
+:::
+:::: {.column width="50%"}
 
-- Coding skills
-- Writing skills
-- Generation of multiple extension from a single document
-- Document standard/visualization 
-- Data analysis skills
-- Statistical knowledge and many others.
+
+![](world_pop1.jpg)
+::: 
+:::: 
  
-In almost every book i read concerning R Programming, they all make you courageous and ambitious, well that is what exactly the authors want you be, so that you might start with hope. Although it is good to read, especially when you love to, in my personal experience i think is also good to have a **Mentor** rather than relying on **Roll model(s) alone.**
 
-I am not discouraging one from rely and spend time in books, no!, but what  i am trying to advice is that, through reading or searching online contents you can find best solutions, but for beginners in R Programming Language, it is better to have someone who can take you through obstacles, someone who can spend sometimes with you, introducing obvious expected challenges and prepare you to tackle them. 
+### R Mentor
 
-#### R Mentor vs R Roll model
+By having a mentor, you can benefit from their expertise, ask questions, and receive direct assistance tailored to your specific needs. They can help you understand complex concepts, provide examples and exercises, and ensure that you grasp the fundamental principles of R effectively. While books and online content are excellent resources for expanding your knowledge, having a mentor complements those resources by providing personalized guidance and support. It creates a dynamic learning environment where you can actively engage with someone experienced in R, fostering a deeper understanding and faster progress.
 
-**A Mentor** is a person well equipped/advanced in respect of this topic **(with R knowledge)** a person either present in your environment or who you can have direct access to find in case you get stack or need more technique in your learning process.
+In conclusion, while reading books and searching online resources are valuable components of learning R,for beginners, having a mentor can offer significant advantages. They can provide individualized guidance, help you navigate challenges, and accelerate your learning journey. So, consider seeking a mentor who can dedicate time and effort to support you as you delve into the intricacies of R programming.
 
-On the other hand a **Roll model** is a person well equipped/advanced in R knowledge but the only help you can get from him/her is information through their writings or documentaries, though they may be usefully but also they may not solve all of your quick concerns.
+###  RStudio INSTALATION & MODERN R.
 
-### MODERN R.
+To start your journey with the R programming language, the first step is to install R and RStudio on your computer. R is the programming language itself, while RStudio provides a comprehensive working environment that enhances your R experience.
 
-To get started with R programming language, you must firstly install R and Rstudio on your computer, You might wonder, **What is R and Rstudio?**. Well R is a programming language and Rstudio is a working platform where you find working environment, but together provides you a great experience.
+Here's a breakdown of what R and RStudio are:
 
-After the installation of R and RStudio, then you will nee to install packages which support R and RStudio to work/function. These packages provide functions which will be required in performance of your daily activities. So once you have installed All necessary packages, come automatically with their the functions.
+R is a programming language and software environment designed for statistical computing and graphics. It provides a wide range of statistical and graphical techniques and is widely used in various fields such as data analysis, research, and machine learning.
 
-To download R, go to CRAN, the comprehensive R archive network. CRAN is composed of a set of mirror servers distributed around the world and is used to distribute R and R packages. Don’t try and pick a mirror that’s close to you: instead use the cloud mirror, https://
-cloud.r-project.org, which automatically figures it out for you.
+RStudio is an integrated development environment (IDE) for R. It provides a user-friendly interface with powerful tools and features that streamline your coding workflow. RStudio offers a code editor, console, data viewer, and a variety of helpful features like code completion, debugging tools, and project management.
 
-A new major version of R comes out once a year, and there are 2–3 minor releases each year. It’s a good idea to update regularly. Upgrading can be a bit of a hassle, especially for major versions, which require you to re install all your packages, but putting it off only makes it worse.
+Once you have installed R and RStudio, you'll need to install packages that support the functionality of R and RStudio. Packages in R are collections of functions, data, and documentation that extend the capabilities of the base R system. These packages provide additional functions that are necessary for performing various tasks in your daily coding activities.
 
-### RStudio INSTALATION.
+To download R, you can visit the Comprehensive R Archive Network (CRAN) website. CRAN is a network of mirror servers worldwide that distribute R and R packages. It's recommended to use the cloud mirror, which automatically selects the appropriate mirror for you. You can access it at https://cloud.r-project.org.
 
-RStudio is an integrated development environment, or IDE, for R programming. Download and install it from http://WWW.rstudio.com/download. 
+It's worth noting that a new major version of R is released annually, with minor releases occurring 2-3 times a year. It's generally recommended to update R regularly to benefit from the latest features and improvements. Upgrading R can sometimes require reinstalling your packages, which may take some effort, particularly for major version upgrades. However, it's advisable to keep your R installation up to date to ensure compatibility and access to the latest functionalities.
 
-![](r_studio.jpg)
+By installing R, setting up RStudio, and regularly updating your software, you'll be well-equipped to begin your R programming journey and explore the vast possibilities the language has to offer.
 
-#### R Package installation.
+### R Package installation.
 
-In R, as i have explained here above, packages are very fundamental instrument, therefor you need to install all the necessary packages before getting further. One main package is (**"tidyverse"**). tidyverse is an ecosystem of packages that focus on data entry, data manipulation, data modelling, data visualization(plot) and sharing of finding/insight derived from data analysis.
+In R, packages are fundamental in R, and installing the necessary packages is crucial for expanding the capabilities of your R environment. One highly popular and powerful package ecosystem in R is called the "tidyverse". The tidyverse is a collection of packages that work together seamlessly to provide a cohesive and efficient workflow for data entry, manipulation, modeling, visualization, and sharing insights derived from data analysis. Some of the key packages within the tidyverse include dplyr for data manipulation, ggplot2 for data visualization, tidyr for data tidying, readr for data import, and many more.
 
-Install tidyverse through this command and any other packages as you will find fit for your own focused area.
+To install the tidyverse package, you can use the following command in R:
                     
                              [ install.packages("tidyverse") ]
   
                       
-Packages in the tidyverse change fairly frequently. You can see if updates are available, and optionally install them, by running tidy verse_update().
-
 ### INTRODUCTION TO DATA SCIENCE IN R PROGRAMME.
 
 Data science is a huge field, and there’s no way you can master it by reading a single book, so as i explained above it is more helpful if you get a mentor to lead you through obstacles. Also is an exciting knowledge that allows you to turn raw data into understanding, insight, and knowledge. The goal of R for Data Science is to help you to learn the most important tools in R that will allow you to do data science.
 
-#### Data importation
+### Data importation
 
-First you must import your data into R. This means that you take data stored in a file, database, or web API, and load it into a data frame in R first. If you can’t put your data into R, you can’t do data science on it!.
+Importing data into R is an essential step in performing data analysis. Data can be stored in various formats such as files (e.g., CSV, Excel), databases, or web APIs, and loading it into R allows you to manipulate, analyze, and visualize the data. To import data into R, you typically use functions or packages specifically designed for each data source or format. 
 
-#### Tyding
+### Tyding
+
+::: columns
+:::: {.column width="50%"}
 
 Once you’ve imported your data, it is required to tidy your data. Tidying your data means storing it in a consistent form that matches the semantics of the data set with the way it is stored. In brief, when your data is tidy, **each column is a variable, and each row is an observation.** Tidy data is important because the consistent structure allows you to focus your struggle on questions about the data, and not fighting the data into the right form for different functions.
 
+::: 
+:::: {.column width="50%"}
+
 Once you have tidy data, a first step is to transform it. Transformation includes narrowing in on observations of interest eg.(all people in one city, or all data from the last year), creating new variables that are functions of existing variables Together, tidying and transforming are called wrangling, this is because, getting your data in a form that’s natural to work with often, it usually feels like a fight!.
+
+::: 
+:::: 
 
 Once you have tidy your data with the variables you need, there are two main engines of knowledge generation: **visualization and modeling**. These have complementary strengths and weaknesses, so any real analysis will iterate between them many times.
 
-#### Visualization
+::: columns
+:::: {.column width="50%"}
+
+### Visualization
 
 Visualization is a fundamentally human activity. A good visualization will show you things that you did not expect, or raise new questions about the data. A good visualization might also hint that you’re asking the wrong question, or you need to collect different data. Visualizations can surprise you, because they require a human to interpret them.
 
-#### Models
+::: 
+:::: {.column width="50%"}
+
+### Models
 
 Models are complementary tools to visualization. Once you have made your questions sufficiently precise, you can use a model to answer them. Models are a fundamentally mathematical or computational tool, so they generally scale well. Even when they don’t, every model can make assumptions, and by its very nature a model cannot question its own assumptions. That means a model cannot fundamentally surprise you.
 
-#### Communication
+::: 
+:::: 
+
+### Communication
 
 The last step of data science is communication, an absolutely critical part of any data analysis project. It doesn’t matter how well your models and visualization have led you to understand the data unless you can also communicate your results to others.
 
@@ -110,9 +124,18 @@ flowchart LR
 
 ### RULES OF THE GAME IN R
 
+::: columns
+:::: {.column width="50%"}
+
 Like any other game or language, in order to perform or being grammatical correct you have to apply the correct verb for a particular tense. As well as correct action for a specific environment. The same applies to R programming language, for the better result of your data analysis you have to apply the correct package for a specific task, every package contains functions in which there are verbs that act to perform a particular task.
 
+::: 
+:::: {.column width="50%"}
+
 This will provides an introduction to data science and the R programming language. The goal here is to get your hands dirty right from the start!, We will walk through an entire data analysis, and along the way introduce different types of data analysis question, some fundamental programming concepts in R, and the basics of loading, cleaning, and visualizing data. we will dig into each of these steps in much more detail.
+
+::: 
+:::: 
 
 ### DATA TRANSFORMATION WITH DPLYR.
 
@@ -131,32 +154,32 @@ There are five key dplyr functions, which allow you to solve the vast majority o
 - (summarize()).
 - (group_by()).
 
-#### Filter
+### Filter
 
 Filter is one of the verb in tidyverse which usually deals with **rows(records)** only in your data frame,the main thing it does is to pick observations by their volume depends on the result you intend to achieve.
 **(==,>,<)**.
 
-#### Select
+### Select
 
-Select is one of the verb in tidyverse which usually deals with **coll um (variables)** only in your table data frame,what it does is to select the variables by their names depends on the result you intend to achieve.**(=)**.
+Select is one of the verb in tidyverse which usually deals with **collumn (variables)** only in your table data frame,what it does is to select the variables by their names depends on the result you intend to achieve.**(=)**.
 
-#### Arrange
+### Arrange
 
 Arrange is one of the verb in tidyverse which usually Reorder the **rows(Records)** of your data frame to allow you get result you intend.
 
-#### Summarize
+### Summarize
 
 Summarize is one of the verb in tidyverse which Collapse many values down to a single summary
 
-#### Group by
+### Group by
 
 Group by  is one of the verb in tidyverse used in  changes of the scope of each function from operating on the entire data frame to operating on it group-by-group.
 
-#### Mutate
+### Mutate
 
 Mutate is one of the verb in tidyverse Create new variables with functions of existing variables.
 
-> **NOTE**: All data frame contain Row and Column, therefore rows have to contains Records in it, while column have to contain variables in it (names). to successfully implement the above said verbs, you will have to ensure the following..
+> NOTE: All data frame contain Row and Column, therefore rows have to contains Records in it, while column have to contain variables in it (names). to successfully implement the above said verbs, you will have to ensure the following..
 
 - firstly you will have to be very clear on What kind of result you need, this depends on the questions.
 - Secondly is to understand data provided before importing it to R, for analysis. (To peruse them and see if they are tidy data or messy data).
@@ -210,7 +233,7 @@ lets try a to create a vector of 5 kids, include their names, age, food habit, a
 1. ` date
 1. ` logical
 
-#### character vector (NAMES).
+### character vector (NAMES).
 
 ```{r}
 names = c("grace", "daniel", "collins", "ethan", "benjunior")
@@ -226,7 +249,7 @@ is.character(names); is.vector(names); is.factor(names);class(names)
 names[2:5]
 ```
 
-#### integer vector (FOOD)
+### integer vector (FOOD)
 
 ```{r}
 food = c(1,2,3,4,5)
@@ -248,7 +271,7 @@ food
 is.integer(food)
 ```
 
-#### Numeric vector (AGE)
+### Numeric vector (AGE)
 
 ```{r}
 age = c(11.5, 5.2, 5.3, 3.2, 1.2)
@@ -261,7 +284,7 @@ let's test our numeric vector
 is.numeric(age); is.integer(age); is.character(age); class(age)
 ```
 
-#### factor vector (GENDER)
+### factor vector (GENDER)
 
 ```{r}
 gender = c("female", "male", "male", "male", "male")
@@ -290,7 +313,7 @@ class(gender); is.integer(gender); is.factor(gender); is.character(gender)
 levels(gender)
 ```
 
-#### date vector (BIRTH DATE)
+### date vector (BIRTH DATE)
 
 ```{r}
 birth = c(dmy(01022011), dmy(01062017), dmy(01052017), dmy(01062019), dmy(01062021))
@@ -302,7 +325,7 @@ As we can see our date vector shows date, month and year, now let's test it.
 class(birth); is.integer(birth);is.numeric(birth);is.Date(birth);is.vector(birth)
 ```
 
-#### Sequence
+### Sequence
 
 ```{r}
 seq(0:100)
@@ -318,13 +341,13 @@ number
 length(number)
 ```
 
-#### Index
+### Index
 
 ```{r}
 number[51]
 ```
 
-#### Repeat an element in a vector
+### Repeat an element in a vector
 
 ```{r}
 rep(names,each = 3)
@@ -334,14 +357,14 @@ rep(names,each = 3)
 rep(names,times = 3)
 ```
 
-#### Adding an index in a vector
+### Adding an index in a vector
 
 ```{r}
 names [6] = "amani"
 names
 ```
 
-#### removing an index in vector
+### removing an index in vector
 
 ```{r}
 names = names[1:5]
@@ -360,7 +383,7 @@ Now that we have created our vector. Let us see how we turn our vector to data f
 data.frame(names, birth, age, food, gender )
 ```
 
-#### Equate the data frame
+### Equate the data frame
 
 ```{r}
 watoto = data.frame(names, birth, age, food, gender)
@@ -379,7 +402,7 @@ watoto
 - (group_by()).
 
 
-#### fillter
+### fillter
 
 ```{r}
 watoto %>% filter(gender == "male")
@@ -395,7 +418,7 @@ watoto %>% filter(birth == dmy(01022011) | birth == dmy(01062019))
 watoto %>% filter(birth == dmy(01022011) & gender == "female")
 ```
 
-#### Select
+### Select
 
 ```{r}
 watoto %>% select(names,gender)
@@ -405,7 +428,7 @@ watoto %>% select(names,gender)
 watoto %>% select(1:4)
 ```
 
-#### arrange
+### arrange
 
 ```{r}
 watoto %>% arrange(watoto)
@@ -415,7 +438,7 @@ watoto %>% arrange(watoto)
 watoto %>% arrange(desc(food))
 ```
 
-#### Mutate
+### Mutate
 
 ```{r}
 watoto %>% mutate(sport = c("footbal", "footbal","voleybal", "basketbal", "netbal"))
@@ -425,11 +448,11 @@ watoto %>% mutate(sport = c("footbal", "footbal","voleybal", "basketbal", "netba
 
 As we have seen in the beginning of this book,in order to do activities in R,you need data, without data R is like meaningless  application in your computer.So since data work as a fuel in R, step one you need to know how to import data into it. Data importation in R reefers to the process of calling your data from the directory (file) in your computer into the R studio where you intend to do your analysis.
 
-#### Step 1.
+### Step 1.
 
 You have to know what kind of data you have before importing it in R. Data are usually in different extension, so you have to ensure you put your data in the right extension in your local directory.  **Eg. xls, csv etc.......**
   
-#### Step 2.
+### Step 2.
 
 On your computer open R studio, programming is usually done on console. But in the bellow demo i will work on the editor.
 
@@ -440,13 +463,13 @@ My data names is (Tamisemi Primary Enrollment by Age and Sex,2021.xls"). So open
 how do we call our data from our directory?
 
 ```{r}
-read_csv("e:/Mystafs/blogswebsite/teneson/posts/R-introduction/BUDGET DAUDI HEALTH CENTRE 2022.csv")
+read_csv("e:/MY_STAFFS/Minning__Folder/Blogs/teneson/posts/R-introduction/BUDGET DAUDI HEALTH CENTRE 2022.csv")
 ```
 
 the above data frame are showing the importation of data from your directory into R, using csv extension.
 
 ```{r}
-read_xlsx("e:/Mystafs/blogswebsite/teneson/posts/R-introduction/BUDGET DAUDI HEALTH CENTRE 2022.xlsx")
+read_xlsx("e:/MY_STAFFS/Minning__Folder/Blogs/teneson/posts/R-introduction/BUDGET DAUDI HEALTH CENTRE 2022.xlsx")
 ```
 
 the above tables are showing the importation of data from your directory into R, using Xlsx extension.

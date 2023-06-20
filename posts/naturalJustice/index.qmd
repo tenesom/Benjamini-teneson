@@ -6,23 +6,23 @@ categories: [legal]
 ---
 ### Common laws
 
-This principles are some of the basic laws,they are older than 600 years ago.these laws are world wide recognized.are the fundamental rights to everyone and every situation.
+This principles are some of the basic laws,they are older than 600 years ago.these laws are world wide recognized.are the fundamental rights to everyone and every situation. Actio Personalis Mortiur Corn Persona: A person right of action dies with a parson.
 
-![](court.jpg)
 
-**Actio Personalis Mortiur Corn Persona**: A person right of action dies with a parson.
+![](natural_justice.jpg)
+
+::: columns
+:::: {.column width="50%"}
 
 **Actus Nonfacit Reum Nisimens Sit Rea:** A conviction of a crime requires proof of a guilt mind/no criminal conviction until mind is guilt.
-
-**Audi Alterm Parterm**: Justice must heard both/other side.
-
-**Causa Proxima Et Non Renota Spectatur**: The immediate not the remote cause is to be considered.
-
-**Caveat Emptor:** Let the buyer be aware/without consideration no action arise.
+ 
+ **Audi Alterm Parterm**: Justice must heard both/other side.
+ 
+ **Causa Proxima Et Non Renota Spectatur**: The immediate not the remote cause is to be considered.
+ 
+ **Caveat Emptor:** Let the buyer be aware/without consideration no action arise.
 
 **Deminimus Non Curat Lex:** The law does not concern itself with trials.
-   
-**Deligatus Non Post Deligare:** A delegate can not delegate.
 
 **Ex NudoPacto Non Oritur Actio:** An agreement without consideration does notarize.
 
@@ -33,6 +33,9 @@ This principles are some of the basic laws,they are older than 600 years ago.the
 **Lex Non Cogit Ad Imposibilia:** A law can not compel one to do what he can not possibly do.
 
 **Nasciturus Projam Nato Habetur:** The unborn is deemed to have been born to the extend.
+
+::: 
+:::: {.column width="50%"}
 
 **Nemo Debt Esse Judex In Propria:** No one ought to be judge in his own cause.
 
@@ -50,13 +53,18 @@ This principles are some of the basic laws,they are older than 600 years ago.the
 
 **Res Ipsa Loquitur:** Things speak for themselves.
 
-**Respondent Superior:** Master liable.
+**Respondent Superior:** Master is always liable.
 
 **Solus Populi Supreme Lex:** A welfare of the people shall be supreme law.
 
 **Ubi Jus Ubi Remedium:** For every wrong act the law provide remedy.
 
 **Volent Non Fit Injuria:** To one who is willing no harm is done.
+
+**Deligatus Non Post Deligare:** A delegate can not delegate.
+
+::: 
+:::: 
 
 
 

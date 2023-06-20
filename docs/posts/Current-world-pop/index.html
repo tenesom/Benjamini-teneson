@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.3.319">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Benjamini Mpinga">
-<meta name="dcterms.date" content="2023-04-02">
+<meta name="dcterms.date" content="2023-04-15">
 
 <title>Benjamini Mpinga - R Programming: World pupulation and most popular countries.</title>
 <style>
@@ -19,9 +19,10 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -48,43 +49,13 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
-    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -155,8 +126,8 @@ cookieconsent.run({
 
 
 <meta name="twitter:title" content="Benjamini Mpinga - R Programming: World pupulation and most popular countries.">
-<meta name="twitter:description" content="WORLD POPULATION DATA: This post is the result of R programming analysis, which basically demonstrate the most current world population of each continent and most popular countries within a…">
-<meta name="twitter:image" content="https://benjamini-mpinga.netlify.app/posts\Current-world-pop\thumbnail_blog.png">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://benjamini-mpinga.netlify.app/posts/Current-world-pop/thumbnail_blog.png">
 <meta name="twitter:creator" content="@rappa753">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -172,76 +143,76 @@ cookieconsent.run({
     <span class="navbar-title">Benjamini Mpinga</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../blog.html">
+    <a class="nav-link" href="../../blog.html" rel="" target="">
  <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/tenesom/"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/tenesom/" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/benjamini20"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/benjamini20" rel="" target=""><i class="bi bi-twitter" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.facebook.com/benjamini.mpinga?mibextid=ZbWKwL"><i class="bi bi-facebook" role="img">
+    <a class="nav-link" href="http://www.linkedin.com/in/benjamini-mpinga" rel="" target=""><i class="bi bi-linkedIn" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.tiktok.com/@mstandrew7?_t=8aghm52NTok&amp;_r=1"><i class="bi bi-tiktok" role="img">
+    <a class="nav-link" href="https://www.tiktok.com/@mstandrew7?_t=8aghm52NTok&amp;_r=1" rel="" target=""><i class="bi bi-tiktok" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.youtube.com/@benjamini_mpinga"><i class="bi bi-youtube" role="img">
+    <a class="nav-link" href="https://www.youtube.com/@benjamini_mpinga" rel="" target=""><i class="bi bi-youtube" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ressources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ressources" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Ressources</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-ressources">    
         <li>
-    <a class="dropdown-item" href="https://rweekly.org/">
+    <a class="dropdown-item" href="https://rweekly.org/" rel="" target="">
  <span class="dropdown-text">R Weekly</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://www.r-bloggers.com/">
+    <a class="dropdown-item" href="https://www.r-bloggers.com/" rel="" target="">
  <span class="dropdown-text">R Bloggers</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://tenesom.github.io/benjamini-mpinga/blog.html">
+    <a class="dropdown-item" href="https://tenesom.github.io/benjamini-mpinga/blog.html" rel="" target="">
  <span class="dropdown-text">benjamini-blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://semba.netlify.app/">
+    <a class="dropdown-item" href="https://semba.netlify.app/" rel="" target="">
  <span class="dropdown-text">Semba-blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://nyamisi.github.io/nyamisi/">
+    <a class="dropdown-item" href="https://nyamisi.github.io/nyamisi/" rel="" target="">
  <span class="dropdown-text">Michi-blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../archive.html">
+    <a class="dropdown-item" href="../../archive.html" rel="" target="">
  <span class="dropdown-text">Archive</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -258,12 +229,6 @@ cookieconsent.run({
   <li><a href="#world-population-data." id="toc-world-population-data." class="nav-link active" data-scroll-target="#world-population-data.">WORLD POPULATION DATA.</a></li>
   <li><a href="#data-summary." id="toc-data-summary." class="nav-link" data-scroll-target="#data-summary.">Data Summary.</a></li>
   <li><a href="#continents-population." id="toc-continents-population." class="nav-link" data-scroll-target="#continents-population.">CONTINENTS POPULATION.</a></li>
-  <li><a href="#asia" id="toc-asia" class="nav-link" data-scroll-target="#asia">ASIA</a></li>
-  <li><a href="#africa" id="toc-africa" class="nav-link" data-scroll-target="#africa">AFRICA</a></li>
-  <li><a href="#north-america" id="toc-north-america" class="nav-link" data-scroll-target="#north-america">NORTH AMERICA</a></li>
-  <li><a href="#europe" id="toc-europe" class="nav-link" data-scroll-target="#europe">EUROPE</a></li>
-  <li><a href="#south-america." id="toc-south-america." class="nav-link" data-scroll-target="#south-america.">SOUTH AMERICA.</a></li>
-  <li><a href="#oceania." id="toc-oceania." class="nav-link" data-scroll-target="#oceania.">OCEANIA.</a></li>
   </ul>
 </nav>
     </div>
@@ -272,7 +237,7 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">R Programming lesson 3.</h1>
+<h1 class="title">R Programming: World pupulation and most popular countries.</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Skills</div>
   </div>
@@ -292,7 +257,7 @@ cookieconsent.run({
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 2, 2023</p>
+      <p class="date">April 15, 2023</p>
     </div>
   </div>
   
@@ -302,17 +267,21 @@ cookieconsent.run({
 
 </header>
 
-<p><strong>WORLD POPULATION DATA: </strong>This post is the result of R programming analysis, which basically demonstrate the most current world population of each continent and most popular countries within a continental level. R is a powerful language when it comes to analysis and documentation, this post is the one of R’s multiple way of communication. i have also generated pdf and word documents through from R Studio editor.</p>
-<p><img src="benjaa.jpg" class="img-fluid"></p>
 <section id="world-population-data." class="level3">
 <h3 class="anchored" data-anchor-id="world-population-data.">WORLD POPULATION DATA.</h3>
-<p><strong>Questions.</strong></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>WORLD POPULATION DATA: </strong>This post is the result of R programming analysis, which basically demonstrate the most current world population of each continent and most popular countries within a continental level. R is a powerful language when it comes to analysis and documentation, this post is the one of R’s multiple way of communication. i have also generated pdf and word documents through from R Studio editor. <strong>Questions.</strong></p>
 <ol type="1">
 <li>Find the world’s most popular continent.</li>
 <li>The most popular country in every continent.</li>
 <li>The trend of the world population based on data given.</li>
 </ol>
 <p>The data given is from reliable source, consist of the world’s population data from 1970 to 2022.</p>
+</div><div class="column" style="width:50%;">
+<p><img src="dunia1.jpg" class="img-fluid"></p>
+</div>
+</div>
 </section>
 <section id="data-summary." class="level3">
 <h3 class="anchored" data-anchor-id="data-summary.">Data Summary.</h3>
@@ -338,9 +307,9 @@ cookieconsent.run({
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
-v dplyr     1.1.0     v readr     2.1.4
+v dplyr     1.1.1     v readr     2.1.4
 v forcats   1.0.0     v stringr   1.5.0
-v ggplot2   3.4.1     v tibble    3.1.8
+v ggplot2   3.4.2     v tibble    3.2.1
 v lubridate 1.9.2     v tidyr     1.3.0
 v purrr     1.0.1     
 -- Conflicts ------------------------------------------ tidyverse_conflicts() --
@@ -386,7 +355,7 @@ The following object is masked from 'package:tidyr':
 <section id="data-entry." class="level4">
 <h4 class="anchored" data-anchor-id="data-entry.">Data Entry.</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>world <span class="ot">=</span> <span class="fu">read_csv</span>(<span class="st">"e:/Mystafs/blogswebsite/teneson/posts/Current-world-pop/The world population data/world_population.csv"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>world <span class="ot">=</span> <span class="fu">read_csv</span>(<span class="st">"e:/MY_STAFFS/Minning__Folder/Blogs/teneson/posts/Current-world-pop/The world population data/world_population.csv"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 234 Columns: 17
 -- Column specification --------------------------------------------------------
@@ -442,14 +411,13 @@ i Please use the `linewidth` argument instead.</code></pre>
 </div>
 <p><strong><em>Finally a graph above demonstrate the world population by continent, the most to miner populated continent on Earth. Asia is leading the chart followed by Africa.</em></strong></p>
 </section>
+<div class="columns">
+<div class="column" style="width:50%;">
 <section id="asia" class="level3">
 <h3 class="anchored" data-anchor-id="asia">ASIA</h3>
 <p>The graphs below show Asian continent population from high to low level, graph number one is not well arranged, sample were entered to the database the way they were collected, in fact without consideration of proper arrangement from the highest to the lowest number, it shows the original data, so we had to arranged it in an order that can be proper viewed In graph number two in ascending order. We use the function reorder() of the package tidyverse.</p>
 <p>Therefor The Red graph shows countries with population more than Fifty millions, The Blue graph shows countries with population between Ten to Fifty millions, While the green graph shows the countries with less than Ten millions.</p>
 <p>The first graph doesn’t allow eyes of the reader to relax when reading, So we have to generate another graph by flip our graph so that the names of the countries can be well viewed, we use the function Coord_flip() of the package tidyverse.</p>
-<div class="cell">
-
-</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>asia</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -466,10 +434,9 @@ i Please use the `linewidth` argument instead.</code></pre>
  8 Cambodia    Asia        16767842
  9 China       Asia      1425887337
 10 Georgia     Asia         3744385
-# ... with 40 more rows</code></pre>
+# i 40 more rows</code></pre>
 </div>
 </div>
-<p>Tidy and Untidy graph.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>asia <span class="sc">%&gt;%</span> </span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> country, <span class="at">y =</span> population))<span class="sc">+</span></span>
@@ -535,14 +502,12 @@ i Please use the `linewidth` argument instead.</code></pre>
 </div>
 </div>
 </section>
+</div><div class="column" style="width:50%;">
 <section id="africa" class="level3">
 <h3 class="anchored" data-anchor-id="africa">AFRICA</h3>
 <p>The graphs below show Africa continent population from high to low level, graph number one is not well arranged, sample were entered to the database the way they were collected, in fact without consideration of proper arrangement from the highest to the lowest number, it shows the original data, so we had to arranged it in an order that can be proper viewed In graph number two in ascending order. We use the function reorder() of the package tidyverse.</p>
 <p>Therefor The Red graph shows countries with population more than Fifty millions, The Blue graph shows countries with population between Ten to Fifty millions, While the green graph shows the countries with less than Ten millions.</p>
 <p>The first graph doesn’t allow eyes of the reader to relax when reading, So we have to generate another graph by flip our graph so that the names of the countries can be well viewed, we use the function Coord_flip() of the package tidyverse.</p>
-<div class="cell">
-
-</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>africa</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -559,7 +524,7 @@ i Please use the `linewidth` argument instead.</code></pre>
  8 Cape Verde               Africa        593149
  9 Central African Republic Africa       5579144
 10 Chad                     Africa      17723315
-# ... with 47 more rows</code></pre>
+# i 47 more rows</code></pre>
 </div>
 </div>
 <div class="cell">
@@ -627,14 +592,15 @@ i Please use the `linewidth` argument instead.</code></pre>
 </div>
 </div>
 </section>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
 <section id="north-america" class="level3">
 <h3 class="anchored" data-anchor-id="north-america">NORTH AMERICA</h3>
 <p>The graphs below show North America continent population from high to low level, graph number one is not well arranged, sample were entered to the database the way they were collected, in fact without consideration of proper arrangement from the highest to the lowest number, it shows the original data, so we had to arranged it in an order that can be proper viewed In graph number two in ascending order. We use the function reorder() of the package tidyverse.</p>
 <p>Therefor The Red graph shows countries with population more than Fifty millions, The Blue graph shows countries with population between Ten to Fifty millions, While the green graph shows the countries with less than Ten millions.</p>
 <p>The first graph doesn’t allow eyes of the reader to relax when reading, So we have to generate another graph by flip our graph so that the names of the countries can be well viewed, we use the function Coord_flip() of the package tidyverse.</p>
-<div class="cell">
-
-</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>notame</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -651,7 +617,7 @@ i Please use the `linewidth` argument instead.</code></pre>
  8 British Virgin Islands North America      31305
  9 Canada                 North America   38454327
 10 Cayman Islands         North America      68706
-# ... with 30 more rows</code></pre>
+# i 30 more rows</code></pre>
 </div>
 </div>
 <div class="cell">
@@ -719,14 +685,12 @@ i Please use the `linewidth` argument instead.</code></pre>
 </div>
 </div>
 </section>
+</div><div class="column" style="width:50%;">
 <section id="europe" class="level3">
 <h3 class="anchored" data-anchor-id="europe">EUROPE</h3>
 <p>The graphs below show Europe continent population from high to low level, graph number one is not well arranged, sample were entered to the database the way they were collected, in fact without consideration of proper arrangement from the highest to the lowest number, it shows the original data, so we had to arranged it in an order that can be proper viewed In graph number two in ascending order. We use the function reorder() of the package tidyverse.</p>
 <p>Therefor The Red graph shows countries with population more than Fifty millions, The Blue graph shows countries with population between Ten to Fifty millions, While the green graph shows the countries with less than Ten millions.</p>
 <p>The first graph doesn’t allow eyes of the reader to relax when reading, So we have to generate another graph by flip our graph so that the names of the countries can be well viewed, we use the function Coord_flip() of the package tidyverse.</p>
-<div class="cell">
-
-</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>europe</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -743,7 +707,7 @@ i Please use the `linewidth` argument instead.</code></pre>
  8 Croatia                Europe       4030358
  9 Cyprus                 Europe       1251488
 10 Czech Republic         Europe      10493986
-# ... with 40 more rows</code></pre>
+# i 40 more rows</code></pre>
 </div>
 </div>
 <div class="cell">
@@ -811,14 +775,15 @@ i Please use the `linewidth` argument instead.</code></pre>
 </div>
 </div>
 </section>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
 <section id="south-america." class="level3">
 <h3 class="anchored" data-anchor-id="south-america.">SOUTH AMERICA.</h3>
 <p>The graphs below show South America continent population from high to low level, graph number one is not well arranged, sample were entered to the database the way they were collected, in fact without consideration of proper arrangement from the highest to the lowest number, it shows the original data, so we had to arranged it in an order that can be proper viewed In graph number two in ascending order. We use the function reorder() of the package tidyverse.</p>
 <p>Therefor The Red graph shows countries with population more than Fifty millions, The Blue graph shows countries with population between Ten to Fifty millions, While the green graph shows the countries with less than Ten millions.</p>
 <p>The first graph doesn’t allow eyes of the reader to relax when reading, So we have to generate another graph by flip our graph so that the names of the countries can be well viewed, we use the function Coord_flip() of the package tidyverse.</p>
-<div class="cell">
-
-</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>sotame</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -906,14 +871,12 @@ i Please use the `linewidth` argument instead.</code></pre>
 </div>
 </div>
 </section>
+</div><div class="column" style="width:50%;">
 <section id="oceania." class="level3">
 <h3 class="anchored" data-anchor-id="oceania.">OCEANIA.</h3>
 <p>The graphs below show Oceania continent population from high to low level, graph number one is not well arranged, sample were entered to the database the way they were collected, in fact without consideration of proper arrangement from the highest to the lowest number, it shows the original data, so we had to arranged it in an order that can be proper viewed In graph number two in ascending order. We use the function reorder() of the package tidyverse.</p>
 <p>Therefor The Red graph shows countries with population more than Fifty millions, The Blue graph shows countries with population between Ten to Fifty millions, While the green graph shows the countries with less than Ten millions.</p>
 <p>The first graph doesn’t allow eyes of the reader to relax when reading, So we have to generate another graph by flip our graph so that the names of the countries can be well viewed, we use the function Coord_flip() of the package tidyverse.</p>
-<div class="cell">
-
-</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>ocean</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -930,7 +893,7 @@ i Please use the `linewidth` argument instead.</code></pre>
  8 Marshall Islands Oceania        41569
  9 Micronesia       Oceania       114164
 10 Nauru            Oceania        12668
-# ... with 13 more rows</code></pre>
+# i 13 more rows</code></pre>
 </div>
 </div>
 <div class="cell">
@@ -997,9 +960,11 @@ i Please use the `linewidth` argument instead.</code></pre>
 <p><img src="index_files/figure-html/unnamed-chunk-24-5.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-
-
 </section>
+</div>
+</div>
+
+
 
 </main> <!-- /main -->
 <div>
@@ -1164,9 +1129,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1231,6 +1210,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -1273,7 +1338,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

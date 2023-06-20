@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.3.319">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,9 +19,10 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -48,43 +49,13 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
-    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -155,8 +126,8 @@ cookieconsent.run({
 
 
 <meta name="twitter:title" content="Benjamini Mpinga - Statistics in R Programming: How to make analysis in R, by usising statistical evidance.">
-<meta name="twitter:description" content="Statistics is a branch of Maths that deals with every aspect of the data/ Also Statistics can be refereed as a knowledge for collecting, analyzing and interpreting data.">
-<meta name="twitter:image" content="https://benjamini-mpinga.netlify.app/posts\R_introduction_statistics_leson.2\thumbnail_blog.png">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://benjamini-mpinga.netlify.app/posts/R_introduction_statistics_leson.2/thumbnail_blog.png">
 <meta name="twitter:creator" content="@rappa753">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -172,76 +143,76 @@ cookieconsent.run({
     <span class="navbar-title">Benjamini Mpinga</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../blog.html">
+    <a class="nav-link" href="../../blog.html" rel="" target="">
  <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/tenesom/"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/tenesom/" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/benjamini20"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/benjamini20" rel="" target=""><i class="bi bi-twitter" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.facebook.com/benjamini.mpinga?mibextid=ZbWKwL"><i class="bi bi-facebook" role="img">
+    <a class="nav-link" href="http://www.linkedin.com/in/benjamini-mpinga" rel="" target=""><i class="bi bi-linkedIn" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.tiktok.com/@mstandrew7?_t=8aghm52NTok&amp;_r=1"><i class="bi bi-tiktok" role="img">
+    <a class="nav-link" href="https://www.tiktok.com/@mstandrew7?_t=8aghm52NTok&amp;_r=1" rel="" target=""><i class="bi bi-tiktok" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.youtube.com/@benjamini_mpinga"><i class="bi bi-youtube" role="img">
+    <a class="nav-link" href="https://www.youtube.com/@benjamini_mpinga" rel="" target=""><i class="bi bi-youtube" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ressources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ressources" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Ressources</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-ressources">    
         <li>
-    <a class="dropdown-item" href="https://rweekly.org/">
+    <a class="dropdown-item" href="https://rweekly.org/" rel="" target="">
  <span class="dropdown-text">R Weekly</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://www.r-bloggers.com/">
+    <a class="dropdown-item" href="https://www.r-bloggers.com/" rel="" target="">
  <span class="dropdown-text">R Bloggers</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://tenesom.github.io/benjamini-mpinga/blog.html">
+    <a class="dropdown-item" href="https://tenesom.github.io/benjamini-mpinga/blog.html" rel="" target="">
  <span class="dropdown-text">benjamini-blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://semba.netlify.app/">
+    <a class="dropdown-item" href="https://semba.netlify.app/" rel="" target="">
  <span class="dropdown-text">Semba-blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://nyamisi.github.io/nyamisi/">
+    <a class="dropdown-item" href="https://nyamisi.github.io/nyamisi/" rel="" target="">
  <span class="dropdown-text">Michi-blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../archive.html">
+    <a class="dropdown-item" href="../../archive.html" rel="" target="">
  <span class="dropdown-text">Archive</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -257,13 +228,21 @@ cookieconsent.run({
   <ul>
   <li><a href="#statistics-leson-1." id="toc-statistics-leson-1." class="nav-link active" data-scroll-target="#statistics-leson-1.">Statistics Leson 1.</a></li>
   <li><a href="#descriptive-statistics." id="toc-descriptive-statistics." class="nav-link" data-scroll-target="#descriptive-statistics.">Descriptive Statistics.</a></li>
+  <li><a href="#how-to-find-median." id="toc-how-to-find-median." class="nav-link" data-scroll-target="#how-to-find-median.">How to find Median.</a></li>
+  <li><a href="#how-to-find-mean." id="toc-how-to-find-mean." class="nav-link" data-scroll-target="#how-to-find-mean.">How to find mean.</a></li>
+  <li><a href="#the-different-between-mean-and-median" id="toc-the-different-between-mean-and-median" class="nav-link" data-scroll-target="#the-different-between-mean-and-median">The different between Mean and Median</a></li>
   <li><a href="#statistics-lesson-2." id="toc-statistics-lesson-2." class="nav-link" data-scroll-target="#statistics-lesson-2.">Statistics lesson 2.</a></li>
   <li><a href="#inferential-statistics-for-numeric-data." id="toc-inferential-statistics-for-numeric-data." class="nav-link" data-scroll-target="#inferential-statistics-for-numeric-data.">Inferential Statistics for numeric data.</a></li>
   <li><a href="#data-collection-theory." id="toc-data-collection-theory." class="nav-link" data-scroll-target="#data-collection-theory.">Data collection theory.</a></li>
   <li><a href="#hypothesis-theory." id="toc-hypothesis-theory." class="nav-link" data-scroll-target="#hypothesis-theory.">Hypothesis Theory.</a></li>
+  <li><a href="#test-significance-and-insignificance." id="toc-test-significance-and-insignificance." class="nav-link" data-scroll-target="#test-significance-and-insignificance.">Test significance and Insignificance.</a></li>
+  <li><a href="#formula-to-measure-significance-of-data-results." id="toc-formula-to-measure-significance-of-data-results." class="nav-link" data-scroll-target="#formula-to-measure-significance-of-data-results.">Formula to measure significance of data results.</a></li>
   <li><a href="#test-normality-formula." id="toc-test-normality-formula." class="nav-link" data-scroll-target="#test-normality-formula.">Test Normality Formula.</a></li>
+  <li><a href="#normality-formula." id="toc-normality-formula." class="nav-link" data-scroll-target="#normality-formula.">Normality formula.</a></li>
   <li><a href="#test-normality-in-r." id="toc-test-normality-in-r." class="nav-link" data-scroll-target="#test-normality-in-r.">Test Normality in R.</a></li>
   <li><a href="#central-limit-theory-clt" id="toc-central-limit-theory-clt" class="nav-link" data-scroll-target="#central-limit-theory-clt">CENTRAL LIMIT THEORY (CLT)</a></li>
+  <li><a href="#what-is-the-purpose-of-dispersion" id="toc-what-is-the-purpose-of-dispersion" class="nav-link" data-scroll-target="#what-is-the-purpose-of-dispersion">What is the purpose of dispersion</a></li>
+  <li><a href="#what-does-it-mean-by-measure-of-central-tendency" id="toc-what-does-it-mean-by-measure-of-central-tendency" class="nav-link" data-scroll-target="#what-does-it-mean-by-measure-of-central-tendency">What does it mean by Measure of central tendency</a></li>
   </ul>
 </nav>
     </div>
@@ -302,18 +281,23 @@ cookieconsent.run({
 
 </header>
 
-<p>Statistics is a branch of Maths that deals with every aspect of the data/ Also Statistics can be refereed as a knowledge for collecting, analyzing and interpreting data. Statistics can be used to predict the future, determine the probability that a specific event will happen, or help answer questions about a survey. Statistics is used in many different fields such as business, medicine, biology, psychology and social sciences.</p>
-<p><img src="control-.jpg" class="img-fluid"></p>
 <section id="statistics-leson-1." class="level3">
 <h3 class="anchored" data-anchor-id="statistics-leson-1.">Statistics Leson 1.</h3>
-<p>Statistical knowledge helps to choose the proper method of collecting data and employ those samples in the correct analysis process in order to effectively produce the results. In short, statistics is a crucial process which helps to make the decision based on the data.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Statistics is a branch of Maths that deals with every aspect of the data/ Also Statistics can be refereed as a knowledge for collecting, analyzing and interpreting data. Statistics can be used to predict the future, determine the probability that a specific event will happen, or help answer questions about a survey. Statistics is used in many different fields such as business, medicine, biology, psychology and social sciences. Statistical knowledge helps to choose the proper method of collecting data and employ those samples in the correct analysis process in order to effectively produce the results. In short, statistics is a crucial process which helps to make the decision based on the data.</p>
+</div><div class="column" style="width:50%;">
+<p><img src="world_pop2.jpg" class="img-fluid"></p>
+</div>
+</div>
 <p><strong>What is Statistics in Programming?</strong></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p>In Mathematics, statistics concerns the collection of data, organisation, interpretation, analysis and data presentation. An example of statistical analysis is when we have to determine the number of people in a town who watch TV out of the total population in the town. The small group of people is called the sample, which data is taken from them.</p>
-<ul>
-<li><strong>descriptive, which focuses on summarizing data.</strong></li>
-<li><strong>Inferential, which focuses on making conclusions based on samples.</strong></li>
-</ul>
-<p>Inferential Statistics – Based on the data sample taken from the population, inferential statistics makes the predictions and inferences. Both types of statistics are equally employed in the field of statistical analysis..</p>
+</div><div class="column" style="width:50%;">
+<p>descriptive, which focuses on summarizing data. Inferential, which focuses on making conclusions based on samples and Inferential Statistics Based on the data sample taken from the population, inferential statistics makes the predictions and inferences. Both types of statistics are equally employed in the field of statistical analysis..</p>
+</div>
+</div>
 <p><strong>The characteristics of Statistics are a:</strong></p>
 <ul>
 <li>Statistics are numerically expressed.</li>
@@ -322,6 +306,8 @@ cookieconsent.run({
 <li>It should be comparable to each other</li>
 <li>Data are collected for a planned purpose</li>
 </ul>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p><strong>The importance of statistics are…</strong></p>
 <ul>
 <li>Statistics helps in gathering information about the appropriate quantitative data</li>
@@ -331,48 +317,31 @@ cookieconsent.run({
 <li>It gives valid inferences with the reliability measures about the population parameters from the sample data</li>
 <li>It helps to understand the variability pattern through the quantitative observations</li>
 </ul>
+</div><div class="column" style="width:50%;">
 <p><strong>Why is statistics vital?</strong></p>
-<p>Statistics is an important field because it helps us understand the general trends and patterns in a given data set. Statistics can be used for analyzing data and drawing conclusions from it. It can also be used for making predictions about future events and behaviors. Statistics also help us understand how things are changing over time.</p>
-<p>The main purpose of using statistics is to plan the collected data in terms of experimental designs and statistical surveys. Statistics is considered a mathematical science that works with numerical data.</p>
+<p>Statistics is an important field because it helps us understand the general trends and patterns in a given data set. Statistics can be used for analyzing data and drawing conclusions from it. It can also be used for making predictions about future events and behaviors. Statistics also help us understand how things are changing over time. The main purpose of using statistics is to plan the collected data in terms of experimental designs and statistical surveys. Statistics is considered a mathematical science that works with numerical data.</p>
+</div>
+</div>
 <p><strong>What are the uses of statistics in real life?</strong></p>
 <p>Statistics is an integral part of our lives. It is used in the workplace and everyday life. In the workplace, statistics are often used to analyse what works best for a company’s marketing strategy or how to distribute work among employees. In daily life, statistics can be used to analyse what food you should buy at the grocery store or how much money you spend on purchasing each week. Statistics are everywhere, and they help us make sense of the world around us.</p>
 <p><strong>Concept covered in Statistics.</strong></p>
-<p>The most important concepts covered in Statistics include - mean, - median - mode - range<br>
-- standard deviation - Normality and - Significance.</p>
-<p>Mean and Median in statistics usually measure the median/mean value, but their application depend on the sample’s nature.</p>
+<p>The most important concepts covered in Statistics include - mean, - median - mode - range - standard deviation - Normality and - Significance. Mean and Median in statistics usually measure the median/mean value, but their application depend on the sample’s nature.</p>
 </section>
 <section id="descriptive-statistics." class="level3">
 <h3 class="anchored" data-anchor-id="descriptive-statistics.">Descriptive Statistics.</h3>
-<p>Descriptive statistics usually used to describe type of data, by describe Median, Mean, Mode and Range in a particular data.</p>
-<ol type="1">
-<li><strong>The mean is the average of the data set.</strong></li>
-<li><strong>The median is the middle of the set of numbers.</strong></li>
-<li><strong>The mode is the most common number in a data set.</strong></li>
-</ol>
-<p>In these three the mean is the only one that requires formula. Mean in math is what called Average, they are synonym.</p>
-<div class="callout callout callout-style-simple no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-How to find Median.
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>To calculate median value when your data values are mostly alike but some few values have big difference from the other either High or Low. The purpose is to avoid the high or low values to affect the result. Basically for numeric data.</p>
-<p>(1,2,3,4,5,6,7) to find median ……. you arrange your numbers from the lowest to the highest or from highest to the lowest then you pick the centered number. So in the set 1, 2, 3, 4, 5, 6, 7 the middle number is 4.</p>
-<p>But what happens if the data set is like (1, 2, 3, 4, 5, 6, 7, 8)? in that case you arrange your data set and then you add the two middle numbers and then you them divide by 2, (4 + 5 = 9/2 = 4.5).</p>
-<p>In most cases the median and the mean are likely to have the same value, even when they differ, it’s not in significance gap.</p>
-<section id="how-to-find-mean." class="level4">
-<h4 class="anchored" data-anchor-id="how-to-find-mean.">How to find mean.</h4>
-<p>There are mainly two ways to find mean in a data set, One is by finding the sum of the values by adding them all up, dividing the sum by the number of values in the data set.</p>
-<p>Eg. (1, 2, 3, 4, 5, 6, 7) to find mean …… 1 + 2+ 3 + 4 + 5 + 6 + 7= 28/7 = 4 therefor the mean is 4. Remember the mean in a data set does not have to appear in the data set.**</p>
+<p>Descriptive statistics usually used to describe type of data, by describe Median, Mean, Mode and Range in a particular data. <strong>The mean is the average of the data set. The median is the middle of the set of numbers, The mode is the most common number in a data set.</strong> In these three the mean is the only one that requires formula. Mean in math is what called Average, they are synonym.</p>
 </section>
-</div>
-</div>
-<section id="the-different-between-mean-and-median" class="level4">
-<h4 class="anchored" data-anchor-id="the-different-between-mean-and-median">The different between Mean and Median</h4>
+<section id="how-to-find-median." class="level3">
+<h3 class="anchored" data-anchor-id="how-to-find-median.">How to find Median.</h3>
+<p>To calculate median value when your data values are mostly alike but some few values have big difference from the other either High or Low. The purpose is to avoid the high or low values to affect the result. Basically for numeric data. (1,2,3,4,5,6,7) to find median. you arrange your numbers from the lowest to the highest or from highest to the lowest then you pick the centered number. So in the set 1, 2, 3, 4, 5, 6, 7 the middle number is 4.</p>
+<p>But what happens if the data set is like (1, 2, 3, 4, 5, 6, 7, 8)? in that case you arrange your data set and then you add the two middle numbers and then you them divide by 2, (4 + 5 = 9/2 = 4.5). In most cases the median and the mean are likely to have the same value, even when they differ, it’s not in ignificance gap.</p>
+</section>
+<section id="how-to-find-mean." class="level3">
+<h3 class="anchored" data-anchor-id="how-to-find-mean.">How to find mean.</h3>
+<p>There are mainly two ways to find mean in a data set, One is by finding the sum of the values by adding them all up, dividing the sum by the number of values in the data set. Eg. (1, 2, 3, 4, 5, 6, 7) to find mean …… 1 + 2+ 3 + 4 + 5 + 6 + 7= 28/7 = 4 therefor the mean is 4. Remember the mean in a data set does not have to appear in the data set.**</p>
+</section>
+<section id="the-different-between-mean-and-median" class="level3">
+<h3 class="anchored" data-anchor-id="the-different-between-mean-and-median">The different between Mean and Median</h3>
 <ol type="1">
 <li>The median is less affected by outliers and skewed data, is used for skewed distributions.</li>
 <li>Median is Usually the preferred measure of central tendency, when distribution is not symmetrical.</li>
@@ -383,11 +352,9 @@ How to find Median.
 <li>You have to calculate the deviation in order to measure where your data deviate from the normal value.</li>
 </ul>
 </section>
-</section>
 <section id="statistics-lesson-2." class="level3">
 <h3 class="anchored" data-anchor-id="statistics-lesson-2.">Statistics lesson 2.</h3>
-<p>As we have seen in previous lesson, statistics plays major roll to daily life activities, therefor knowing how to apply statistics in analysis, is not only basic knowledge to acquire but also essential tool to approach and solve some analytic data based questions.</p>
-<p>So in this lesson we shall focus on the second type of statistics, which often used to transform, analyze and give analytic results, to support decision making. Inferential statistics help to solve many problems which require analytics approach, and scientific based evidence. So if you want to become a data analyst or a good researcher, then this angle is where you should focus attentively.</p>
+<p>As we have seen in previous lesson, statistics plays major roll to daily life activities, therefor knowing how to apply statistics in analysis, is not only basic knowledge to acquire but also essential tool to approach and solve some analytic data based questions. So in this lesson we shall focus on the second type of statistics, which often used to transform, analyze and give analytic results, to support decision making. Inferential statistics help to solve many problems which require analytics approach, and scientific based evidence. So if you want to become a data analyst or a good researcher, then this angle is where you should focus attentively.</p>
 </section>
 <section id="inferential-statistics-for-numeric-data." class="level3">
 <h3 class="anchored" data-anchor-id="inferential-statistics-for-numeric-data.">Inferential Statistics for numeric data.</h3>
@@ -395,61 +362,33 @@ How to find Median.
 </section>
 <section id="data-collection-theory." class="level3">
 <h3 class="anchored" data-anchor-id="data-collection-theory.">Data collection theory.</h3>
-<p>Begin with sample collection, it is advise to collect at least 10 to 30 percent samples of general population, this is to ensure samples can provide accurate results. This is due to fact that, the less ample you collect the less efficient result you may get, also the more sample you collect might be unnecessary sometimes, this means it might not make any different in results. So it is advice to collect a reasonable sample size for better utilization of resources and time management.</p>
+<p>Begin with sample collection, it is advise to collect at least 10 to 30 percent samples of general population, this is to ensure samples can provide accurate results. This is due to fact that, the less ample you collect the less efficient result you may get, also the more sample you collect might be unnecessary sometimes, this means it might not make any different in results. So it is advice to collect a reasonable samplesize for better utilization of resources and time management.</p>
 </section>
 <section id="hypothesis-theory." class="level3">
 <h3 class="anchored" data-anchor-id="hypothesis-theory.">Hypothesis Theory.</h3>
 <p>Hypothesis means the basic assumptions rouse by a researcher or a data annalist, which support or give reasons for Him/Her to conduct a research, or to collect a particular data to clear His/Her doubt. So every researcher always have most common expected result in His/Her assumptions, But whatever results which are assumed to be true or false, are what called Hypothesis.</p>
-<div class="callout callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
 <p>There are two types Hypothesis.</p>
 <ol type="1">
 <li><strong>Null Hypothesis – Ho – Negative.</strong></li>
-<li><strong>Alternative Hypothesis – Ha – Positive</strong></li>
+<li><strong>Alternative Hypothesis – Ha – Positive</strong> :::</li>
 </ol>
-</div>
-</div>
-</div>
-<p>Often data are collected by researcher(s), who focus on a specific matter or subject, So there are some steps to consider before going field for data collection. Begin by setting your project plan, including project tile and objectives, then finally to rise hypothesis. Now in professional standard, the Hypothesis which used to finalize the research conclusions is <strong>Null Hypothesis – Ho – Negative.</strong></p>
-<p>In statistic analysis, we use different approach to address solutions to our questions, A requires standard approach in statistical analysis, is to test the significance and Insignificance of the data results, and the normality of data distributions. Therefor to be sure about data conclusions, then you have to <strong>test data normality, and the significance and Insignificance of the results.</strong></p>
-<div class="callout callout callout-style-simple no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Test significance and Insignificance.
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p>Often data are collected by researcher(s), who focus on a specific matter or subject, So there are some steps to consider before going field for data collection. Begin by setting your project plan, including project tile and objectives, then finally to rise hypothesis. Now in professional standard, the Hypothesis which used to finalize the research conclusions is <strong>Null Hypothesis – Ho – Negative.</strong> In statistic analysis, we use different approach to address solutions to our questions, A requires standard approach in statistical analysis, is to test the significance and Insignificance of the data results, and the normality of data distributions. Therefor to be sure about data conclusions, then you have to <strong>test data normality, and the significance and Insignificance of the results.</strong></p>
+</section>
+<section id="test-significance-and-insignificance." class="level3">
+<h3 class="anchored" data-anchor-id="test-significance-and-insignificance.">Test significance and Insignificance.</h3>
 <ol type="1">
 <li>Null hypothesis theory = No significant difference.</li>
 <li>Alternative Hypothesis Theory = There is significant difference.</li>
 </ol>
-</div>
-</div>
 <p>Null hypothesis theory, is usually used to conclude results of the research, and to measure the significance of the results, as well as to measure the normality of data distributions, so many research conclusions are made by using this theory. So the significant level and Normality both are measured by P value.</p>
-<div class="callout callout callout-style-simple no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Formula to measure significance of data results.
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>In the case of measuring significance of the results we refer to the formula that…</p>
+</section>
+<section id="formula-to-measure-significance-of-data-results." class="level3">
+<h3 class="anchored" data-anchor-id="formula-to-measure-significance-of-data-results.">Formula to measure significance of data results.</h3>
+<p>In the case of measuring significance of the results we refer to the formula…</p>
 <ul>
 <li>when the P value = &gt; 0.05 then it’s considered There is No significant difference. And</li>
 <li>when the P value = &lt; 0.05 then it’s considered There is significant difference.</li>
 </ul>
-</div>
-</div>
 </section>
 <section id="test-normality-formula." class="level3">
 <h3 class="anchored" data-anchor-id="test-normality-formula.">Test Normality Formula.</h3>
@@ -458,27 +397,18 @@ Formula to measure significance of data results.
 <li>Alternative Hypothesis - Ha = Is not normal distributed.</li>
 </ol>
 <p>Normality refers to the distribution of your collected data, this means after you have describe your data in descriptive type of statistics, then you have to test them, if they are normal distributed or not normal distributed. In normality formula we prescribe the P level formula other way round, which means,</p>
-<div class="callout callout callout-style-simple no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Normality formula.
-</div>
-</div>
-<div class="callout-body-container callout-body">
+</section>
+<section id="normality-formula." class="level3">
+<h3 class="anchored" data-anchor-id="normality-formula.">Normality formula.</h3>
 <p>In the case of measuring normality of data distributions we refer to the formula that…</p>
 <ul>
 <li>When P value = &gt; 0.05 then you Accept the Null.</li>
 <li>When P value = &lt; 0.05 then you Reject the Null.</li>
 </ul>
-</div>
-</div>
 </section>
 <section id="test-normality-in-r." class="level3">
 <h3 class="anchored" data-anchor-id="test-normality-in-r.">Test Normality in R.</h3>
-<p>In R, we test the distributions of the data by using the function (shapiro), the below example is how you can test the distribution of the data in R analysis. The data we are using is auto generated from R data base. In R you can find some data to help you improve your analysis practice, in case you don’t have access to acquire data from other source. to generate data in R, just create a chunk then write iris then run the chunk, and data will appear on your R editor. After that you can equate them to another name.</p>
+<p>In R, we test the distributions of the data by using the function (shapiro), the below example is how you can test the distribution of the data in R analysis. The data we are using is auto generated from R database. In R you can find some data to help you improve your analysis practice, in case you don’t have access to acquire data from other source. to generate data in R, just create a chunk then write iris then run the chunk, and data will appear on your R editor. After that you can equate them to another name.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -486,9 +416,9 @@ Normality formula.
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
-v dplyr     1.1.0     v readr     2.1.4
+v dplyr     1.1.1     v readr     2.1.4
 v forcats   1.0.0     v stringr   1.5.0
-v ggplot2   3.4.1     v tibble    3.1.8
+v ggplot2   3.4.2     v tibble    3.2.1
 v lubridate 1.9.2     v tidyr     1.3.0
 v purrr     1.0.1     
 -- Conflicts ------------------------------------------ tidyverse_conflicts() --
@@ -500,6 +430,8 @@ i Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sample.iris<span class="ot">=</span>iris</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sample.iris<span class="sc">$</span>Sepal.Length <span class="sc">%&gt;%</span>  <span class="fu">shapiro.test</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -519,7 +451,8 @@ W = 0.97609, p-value = 0.01018</code></pre>
 <p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>we have tested Sepal.L data normality in R, and results shows that they are not normal distributed. Then we have tried to plot in order to observe visual distribution, and results still shows that Sepal.Length are not normal distributed.</p>
+<p>we have tested Sepal.L data normality in R, and results shows that the are not normal distributed. Then we have tried to plot in order to observe visual distribution, and results still shows that Sepal.Length are not normal distributed.</p>
+</div><div class="column" style="width:50%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>sample.iris<span class="sc">$</span>Sepal.Width <span class="sc">%&gt;%</span> <span class="fu">shapiro.test</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -540,24 +473,25 @@ W = 0.98492, p-value = 0.1012</code></pre>
 </div>
 </div>
 <p>we have tested Sepal.Width data normality in R, and results shows that they are normal distributed. Then we have tried to plot in order to observe visual distribution, and results still shows that Sepal.Width are normal distributed.</p>
+</div>
+</div>
 <p>This is how we test data in R programming language, it is easier and clear as we have seen. S o working your data in R, is not only a recommended tool but also facilitate mass data solutions.</p>
 </section>
 <section id="central-limit-theory-clt" class="level3">
 <h3 class="anchored" data-anchor-id="central-limit-theory-clt">CENTRAL LIMIT THEORY (CLT)</h3>
-<p>In statistics the central limit theory means the value on which majority of population falls. It simply states that The distribution approaches normal, as the samples get larger. therefor it is recommended that to attain doubtless results you are required to collect at least &gt;/= of 30% samples of the population.</p>
-<p>This theory of central limit usually shown through continuous plots such as Histogram and density. This is due to their nature. On the figure below we are going to see the example of central limit theory in visualization.</p>
+<p>In statistics the central limit theory means the value on which majority of population falls. It simply states that The distribution approaches normal, as the samples get larger. therefor it is recommended that to attain doubtless results you are required to collect at least &gt;= of 30% samples of the population. This theory of central limit usually shown through continuous plots such as Histogram and density. This is due to their nature. On the figure below we are going to see the example of central limit theory in visualization.</p>
 <p>In this study we will see how statistics works in real life, and how useful it is in every day’s decision making. By applying a proper and correct method in collecting/recording samples, analyzing, interpreting and sharing of findings is always a best way to reach the right decisions, especially for decision makers, weather in family level.</p>
-<section id="what-is-the-purpose-of-dispersion" class="level4">
-<h4 class="anchored" data-anchor-id="what-is-the-purpose-of-dispersion">What is the purpose of dispersion</h4>
+</section>
+<section id="what-is-the-purpose-of-dispersion" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-the-purpose-of-dispersion">What is the purpose of dispersion</h3>
 <p>The purpose is to find out how spread out the data values are, on the number line, the deference between the maximum and the minimum value is the formula to measure dispersion (Measure of spread).</p>
 </section>
-<section id="what-does-it-mean-by-measure-of-central-tendency" class="level4">
-<h4 class="anchored" data-anchor-id="what-does-it-mean-by-measure-of-central-tendency">What does it mean by Measure of central tendency</h4>
+<section id="what-does-it-mean-by-measure-of-central-tendency" class="level3">
+<h3 class="anchored" data-anchor-id="what-does-it-mean-by-measure-of-central-tendency">What does it mean by Measure of central tendency</h3>
 <p>Simply is defined as A measure that identifies a single value as representative of the entire distribution. It is the single value that is most typical/representative of the collected data.</p>
 <p><strong>Related pots</strong></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -723,9 +657,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -790,6 +738,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -832,7 +866,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

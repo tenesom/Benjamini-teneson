@@ -4,13 +4,19 @@ author: "Benjamini Mpinga"
 date: "2023-04-25"
 categories: [Skills]
 ---
+::: columns
+:::: {.column width="50%"}
 
 R without data is just an Application. So to enjoy R programming then you need to deal with data. So in most cases you will  be given data from outsource. And most  of outsource data are not tidy, therefor you will need to tidy them before manipulation. Then you have to save them in your computer, tidy them, then model them, then share your findings. In R we use different approach when it comes to data manipulation, different from other languages, so once given data, the first thing to understand is its type.
 
-![](r_studio.jpg)
-
-
 The data below are not in tidy form, therefor we have to tidy them firstly. We will not write every step of the process because i believe you have already got the concept from the last lesson, but you can see the function in the chunk, we have equated our data by giving it a name raw. And followed by the name of extension, then my local directory and the name of the data.
+
+::: 
+:::: {.column width="50%"}
+
+![](world-pop.jpg)
+::: 
+:::: 
 
 ```{r}
 require(tidyverse)
@@ -29,14 +35,14 @@ require(readxl)
 **world population data before tidying.**
 
 ```{r}
-popul=read.csv("e:/Mystafs/blogswebsite/teneson/posts/R-2nd-leson/The world population data/world_population.csv")
+popul=read.csv("e:/MY_STAFFS/Minning__Folder/Blogs/teneson/posts/R-2nd-leson/The world population data/world_population.csv")
 ```
 
 **world population data after tidying.**
 
 
 ```{r}
-popul=read.csv("e:/Mystafs/blogswebsite/teneson/posts/R-2nd-leson/The world population data/world_population.csv") %>%
+popul=read.csv("e:/MY_STAFFS/Minning__Folder/Blogs/teneson/posts/R-2nd-leson/The world population data/world_population.csv") %>%
  clean_names() %>% 
   select(-c(2,4)) %>% 
  pivot_longer(cols = 4:11, names_to = "years", values_to = "populations") %>% 
@@ -66,7 +72,7 @@ The data above show the raw data given from the original source which was collec
 ### How to tidy data 2nd example.
 
 ```{r}
-raw = read_excel("e:/Mystafs/blogswebsite/teneson/posts/R-2nd-leson/Tamisemi/Primary Enrolment by Age and Sex,2021.xls")
+raw = read_excel("e:/MY_STAFFS/Minning__Folder/Blogs/teneson/posts/R-2nd-leson/Tamisemi/Primary Enrolment by Age and Sex,2021.xls")
 ```
 
 So step 2, we are going to equate our data again and rename column, then remove column 1,28 and 29, because they provide no necessary information therefor we shall remain with 26 column. ***Now our data is called moja***.We shall use function *"clean names"* of *"Janitor package"*.
@@ -140,6 +146,9 @@ Now that our data are saved in our local directory, then to use it we must impor
 supa = read_csv("datasample.csv")
 ```
 
+::: columns
+:::: {.column width="50%"}
+
 ```{r}
 supa %>% 
   ggplot(aes(x = value, colour = sample, fill = sample))+
@@ -150,6 +159,9 @@ supa %>%
 ```
 
 above figure show all sample's result together, it is easier to present samples result in one figure, but the main purpose is to be understandable. Therefor it may be a bit harder for a viewer to understand the above figure. So in such situation we can opt to present our figure in separate samples. 
+
+:::
+:::: {.column width="50%"}
 
 
 ```{r}
@@ -162,6 +174,9 @@ supa %>% ggplot(aes(x = value, colour = sample, fill =sample))+
 
 The above figure samples now are clearly observed. Also proves the concept that "you are in good position to get right result when you have enough sample". Therefor you will need to consider the sample size before rushing to analysis.
 
+::: 
+:::: 
+
 ### R Studio AUTO GENERATED DATA 2.
 
 ```{r}
@@ -170,29 +185,44 @@ trial = iris %>%
   janitor::clean_names() 
 ```
 
-```{r}
 
+::: columns
+:::: {.column width="50%"}
+
+```{r}
 trial %$% max(sepal_length, na.rm = TRUE) 
 ```
+
+
+::: 
+:::: {.column width="50%"}
 
 ```{r}
 
 trial %$% min(sepal_length, na.rm = TRUE) 
 ```
+::: 
+:::: 
 
+
+::: columns
+:::: {.column width="50%"}
 
 ```{r}
 trial %$% median(sepal_length, na.rm = TRUE) 
 ```
-
-
+::: 
+:::: {.column width="50%"}
 
 ```{r}
-
-
 trial %$% mean(sepal_length, na.rm = TRUE) 
 ```
 
+::: 
+:::: 
+
+::: columns
+:::: {.column width="50%"}
 
  
 ```{r}
@@ -202,6 +232,9 @@ trial.longer = iris %>%
   pivot_longer(names_to = "variable", values_to = "value", cols = 1:4)
 ```
 
+::: 
+:::: {.column width="50%"}
+
 
 ```{r}
 trial.longer %>% 
@@ -210,11 +243,21 @@ trial.longer %>%
 ```
 
 
+::: 
+::::
+
+
+::: columns
+:::: {.column width="50%"}
+
 ```{r}
 trial.longer %>% 
   ggplot(aes(x = species, y = value, fill = variable)) +
   geom_boxplot()
 ```
+
+::: 
+:::: {.column width="50%"}
 
 ```{r}
 trial.longer %>% 
@@ -222,6 +265,12 @@ trial.longer %>%
   geom_boxplot() +
   facet_wrap(~variable)
 ```
+
+:::
+::::
+
+::: columns
+:::: {.column width="50%"}
 
 ```{r}
 trial.longer %>% 
@@ -240,6 +289,9 @@ trial.longer %>%
   labs(x = "Species", y = "Length (cm)")
 ```
 
+::: 
+:::: {.column width="50%"}
+
 ```{r}
 trial.longer %>% 
   ggplot(aes(x = species, y = value, fill = variable)) +
@@ -256,5 +308,7 @@ trial.longer %>%
   labs(x = "Species", y = "Length (cm)")
 ```
 
+::: 
+:::: 
 
 **Related pots**

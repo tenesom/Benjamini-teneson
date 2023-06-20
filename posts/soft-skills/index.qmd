@@ -4,60 +4,68 @@ author: "Benjamini Mpinga"
 date: "2023-04-10"
 categories: [Skills]
 ---
+::: columns
+:::: {.column width="50%"}
 
-The modern world is dominated by people with potential contribution in a community, this is to say that, there are few individual will contribute and many will benefit from their contribution, being a part of beneficiaries in a sense of learning new knowledge is not a bad thing, but being among ignorant individuals is indeed a serious problem. In millennium era, learning is an inevitable task. As long the knowledge is available in our hand though modern tech.
+In today's society, the majority of people have the potential to make significant contributions to their communities. This means that there are only a few individuals who actively contribute while many others benefit from their contributions. While it is beneficial to be part of the group that gains knowledge, being surrounded by ignorant individuals poses a serious problem. In the modern era, learning has become an essential responsibility, thanks to the availability of knowledge at our fingertips through technological advancements.
 
-![](no-rules.jpg)
+::: 
+:::: {.column width="50%"}
 
-## Soft skills.
+![](oceanLandIntera.jpg)
+:::
+:::: 
 
-Talking of soft skills, remind me of my past few years when i was total unaware of online contents and some staffs like Google, i am saying this intentionally because it was so hard for me to search for solutions to my disturbing questions on Google or other online platforms. This held me to remain with what i learned from books or at school  only, i was in the mid of tech solutions but not benefiting from it at all. By saying i was only relying on books i don't mean one should not rely on books, but what i am trying to encourage is that, there millions of relevant online free source solutions, that may get you out of your dark vision and become enlightened. 
+### Soft skills.
 
-Soft skills basically means additional knowledge you acquire through different methods including online open source, always soft skills are more relevant for solutions to the current community challenges, also keep you up to date with rapid change of the modern tech. Therefor there no excuses for self knowledge at individual level, as long as there enough contributors with readiness to held you from your angle of interest.
+Reflecting on my past few years, I recall a time when I was completely unaware of online resources and tools like Google. I deliberately mention this because it was incredibly challenging for me to search for solutions to my pressing questions on platforms like Google or other online sources. As a result, I was limited to relying solely on information from books or what I had learned in school. Let me clarify that I'm not suggesting that relying on books is inadequate. However, I aim to emphasize the abundance of relevant and freely available online resources that can shed light on various subjects and expand one's knowledge.
 
-Having share my personal experience, today i want to share with you one of the ways to store your soft properties online, i write this because many of us have many ideas as well as soft properties on our computers, but don't know where to store them safely and they get lost we stand looser with no backup means. Today's lesson can help you to safe store your writings ideas and findings.
+::: columns
+:::: {.column width="50%"}
 
-## About GitHub.
+Soft skills, in essence, encompass the additional knowledge one acquires through various means, including open-source online platforms. These skills prove highly relevant in addressing the current challenges faced by communities and enable individuals to stay updated with the rapid changes in modern technology. Therefore, there are no excuses for individuals not to pursue self-improvement, considering the wealth of contributors ready to support and guide them in their areas of interest.
 
-GitHub is one of the few leading and trusted online repository (storage), github will surprise you with its offer, apart from storing your soft properties, also it has an option to create **URL** address for any of your file with **.HTML extension** and make it accessible as web link. This will provide a room for you to share knowledge with others. So here i will share with you steps to follow to create a **GitHub repository** and procedures to push your soft properties from your computer to your GitHub repository.
+::: 
+:::: {.column width="50%"}
 
-GitHub repository help to keep your soft properties safe even in an event your computer get lost or damage beyond repair, so as a contributor in a society, you need to have a backup means, although it's better to have some other means to safeguard your soft properties, but having them online is the best recommend way. So let's start with how to create a **GitHub account.**
+Drawing from my personal experience, today I would like to share a method for safely storing your digital assets online. I mention this because many of us possess numerous ideas and valuable digital content on our computers but are unsure where to store them securely, thus risking loss without proper backup measures. Today's lesson will provide you with guidance on how to securely store your written work, ideas, and discoveries.
 
-## Procedures to create/sign up to GitHub. 
+::: 
+:::: 
 
-1. On browser, download **GitBash,** then follow onscreen instructions to install.
+### About GitHub.
 
-1. On browser, Create a GitHub account by following onscreen instructions.
+GitHub is indeed one of the leading and trusted online repositories for storing digital assets. In addition to its storage capabilities, GitHub offers a surprising feature: the ability to create URL addresses for your files with the .HTML extension, making them accessible as web links. This provides an excellent opportunity for you to share your knowledge with others. Now, let me guide you through the steps of creating a GitHub repository and the procedures for pushing your digital assets from your computer to your GitHub repository.
 
-1. After creating a GitHub account, on the top right angle of your screen, click a button (NEW) to create New repository.
+To ensure the safety of your software projects and protect them even in the event of a lost or irreparably damaged computer, it is advisable to have a backup solution in place. One highly recommended approach is to utilize a GitHub repository, which allows you to store your software assets online. As an active contributor in the software community, it's crucial to have a reliable backup method for your valuable work.
 
-1. New window will popup an instruction to fill a repository name, always remember name(s) are very essential when it comes to public content, so you have to create a suitable and informative username depend on your area of interest.
+To get started with creating a GitHub account, you can follow the steps outlined below:
 
-1. Then after you have done with filling all steps, by click the button **create repository,** your repository is made.
+Visit the GitHub website at https://github.com/. On the GitHub homepage, click on the "Sign up" button located at the top right corner of the page. You will be prompted to enter your desired username, email address, and password for your GitHub account. Fill in the required information accordingly. Choose an appropriate plan based on your needs. GitHub offers both free and paid plans, with different features and benefits. For most individuals, the free plan is sufficient to get started. Once you've filled in the necessary details and selected a plan, click on the "Create account" button. GitHub may require you to verify your email address to complete the registration process. Check your email inbox for a verification message from GitHub and follow the instructions provided. After verifying your email address, you'll be directed to the GitHub website where you can further customize your profile and explore the various features and settings available.
 
-## Procedures to push properties to GitHub repository.
+Congratulations! You've successfully created a GitHub account. Now you can start utilizing GitHub repositories to store and manage your software projects, collaborate with others, and benefit from the version control capabilities it offers.
 
-Before proceeding to steps to push your properties to **GitHub** Firstly make sure folders are well arranged on your local repository (Computer). This means you need to ensure all the necessary folders you plan to push them to GitHub are in the same folder. Also avoid putting space in your folder's name(s), this is due to fact that programming doesn't cop well with spaces.
+### Procedures to push properties to GitHub repository.
 
-You can arrange folders in your computer in **(My_computer/local disc e/github_files/specific folder.).** This will help you find your folder easier on **GitBash.**  For example in my local directory my properties are in **local disc e/my_properties/teneson ),** therefor my first and second command lines on GitBash shall begin with **<cd e:, then cd/my_properties/teneson>**,
+Before you proceed with pushing your properties to GitHub, it is important to ensure that your local repository on your computer is well-organized. Follow these steps to prepare your folders for pushing to GitHub. Ensure that all the necessary folders and files you intend to push to GitHub are organized within the same parent folder on your computer. This parent folder will serve as the root of your local repository.
 
-## Command lines at first commit.
+Avoid using spaces in the names of your folders and files. While some programming languages can handle spaces in file and folder names, it is generally recommended to use underscores (_) or hyphens (-) instead. This helps to maintain compatibility and ensures smooth operation across different programming tools and platforms. Once you have organized your folders and files, you can proceed with the installation of Git Bash and follow these steps to push your properties to GitHub:
 
-Here below, the first and second lines here under, are examples due to my folders arrangement in my computer, so you as well shall write depending on the folder arrangement on your computer. But from **line 3 to 7, shall be written as they are, only during the first commit to GitHub. Line 5, within a quotation marks, you are advised to write a comment message concerning your properties.** 
+### Command lines at first commit.
 
 Open the GitBash then write the following command lines. 
 
 - cd e:
-- cd e/my_properties/teneson
+- cd e:/my_properties/teneson
 - **git init**
 - **git add .** 
 - **git commit -m "comment"**
 - **git remote add origin**
 - **git push -u origin main**
 
-## Command lines at second+ commit.
+### Command lines at second+ commit.
 
-The first and second lines here under, are examples due to my folders arrangement in my computer, so you should not refer to them exactly as they are, instead you shall write depending on the folder arrangement on your computer. But from **line 3 to 5, should be written as they are, only during the first commit to GitHub. Line 4, within a quotation marks, you are advised to write a comment message concerning your properties.** 
+The first and second lines here under, are examples due to my folders arrangement in my computer, so you should not refer to them exactly as they are, instead you shall write depending on the folder arrangement on your computer. But from line 3 to 5, should be written as they are, only during the first commit to GitHub. Line 4, within a quotation marks, you are advised to write a comment message concerning your properties.
 
 Open the GitBash then write the following command lines. 
 
@@ -66,8 +74,6 @@ Open the GitBash then write the following command lines.
 - **git add .**
 - **git commit -m "comment on changes you have made"**
 - **git push**
-    
-![](court.jpg)
 
 
 **Related Posts:**

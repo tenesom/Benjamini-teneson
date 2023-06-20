@@ -5,11 +5,19 @@ date: "2023-04-15"
 categories: [Skills]
 ---
 
-**WORLD POPULATION DATA: **This post is the result of R programming analysis, which basically demonstrate the most current world population of each continent and most popular countries within a continental level. R is a powerful language when it comes to analysis and documentation, this post is the one of R's multiple way of communication. i have also generated pdf and word documents through from R Studio editor. 
-
-![](r_studio.jpg)
-
 ### WORLD POPULATION DATA.
+
+::: columns
+:::: {.column width="50%"}
+
+**WORLD POPULATION DATA: **This post is the result of R programming analysis, which basically demonstrate the most current world population of each continent and most popular countries within a continental level. R is a powerful language when it comes to analysis and documentation, this post is the one of R's multiple way of communication. i have also generated pdf and word documents through from R Studio editor. 
+::: 
+:::: {.column width="50%"}
+
+![](dunia1.jpg)
+
+::: 
+:::: 
 
 **Questions.**
 
@@ -17,7 +25,8 @@ categories: [Skills]
 1. The most popular country in every continent.
 1. The trend of the world population based on data given. 
 
-The data given is from reliable source, consist of the world's population data from 1970 to 2022.
+world's population data from 1970 to 2022.
+
 
 ### Data Summary.
 
@@ -59,7 +68,7 @@ require(readxl)
 #### Data Entry.
 
 ```{r}
-world = read_csv("e:/Mystafs/blogswebsite/teneson/posts/Current-world-pop/The world population data/world_population.csv") 
+world = read_csv("e:/MY_STAFFS/Minning__Folder/Blogs/teneson/posts/Current-world-pop/The world population data/world_population.csv") 
 ```
 
 The table above has some input that can not be proper managed with R language, so we must clean them and left with what we are going to use to answer the question asked. 
@@ -108,6 +117,9 @@ ggplot(data = cont, aes(x = continent, y = population))+
 
 ***Finally a graph above demonstrate the world population by continent, the most to miner populated continent on Earth. Asia is leading the chart followed by Africa.***
 
+::: columns
+:::: {.column width="50%"}
+
 ### ASIA
 
 The graphs below show Asian continent population from high to low level, graph number one is not well arranged, sample were entered to the database the way they were collected, in fact without consideration of proper arrangement from the highest to the lowest number, it shows the original data, so we had to arranged it in an order that can be proper viewed In graph number two in ascending order. We use the function reorder() of the package tidyverse.
@@ -125,9 +137,6 @@ asia = cont %>% filter(continent == "Asia")
 ```{r}
 asia
 ```
-
-
-Tidy and Untidy graph.
 
 
 ```{r}
@@ -185,6 +194,9 @@ asia %>%
 
 
 ```
+
+::: 
+:::: {.column width="50%"}
 
 ### AFRICA
 
@@ -262,6 +274,12 @@ africa %>%
 
 ```
 
+::: 
+:::: 
+
+::: columns
+:::: {.column width="50%"}
+
 ### NORTH AMERICA
 
 The graphs below show North America continent population from high to low level, graph number one is not well arranged, sample were entered to the database the way they were collected, in fact without consideration of proper arrangement from the highest to the lowest number, it shows the original data, so we had to arranged it in an order that can be proper viewed In graph number two in ascending order. We use the function reorder() of the package tidyverse.
@@ -334,6 +352,9 @@ notame %>%
          legend.position = "non")
 
 ```
+
+::: 
+:::: {.column width="50%"}
 
 ### EUROPE
 
@@ -409,6 +430,12 @@ europe %>%
 
 ```
 
+::: 
+:::: 
+
+::: columns
+:::: {.column width="50%"}
+
 ### SOUTH AMERICA.
 
 The graphs below show South America continent population from high to low level, graph number one is not well arranged, sample were entered to the database the way they were collected, in fact without consideration of proper arrangement from the highest to the lowest number, it shows the original data, so we had to arranged it in an order that can be proper viewed In graph number two in ascending order. We use the function reorder() of the package tidyverse.
@@ -481,6 +508,9 @@ sotame %>%
          legend.position = "non")
 
 ```
+
+::: 
+:::: {.column width="50%"}
 
 ### OCEANIA.
 
@@ -558,5 +588,6 @@ ocean %>%
 
 ```
 
-
+::: 
+:::: 
 

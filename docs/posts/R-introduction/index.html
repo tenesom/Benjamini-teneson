@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.3.319">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,9 +19,10 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -48,43 +49,13 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
-    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -158,8 +129,8 @@ cookieconsent.run({
 
 
 <meta name="twitter:title" content="Benjamini Mpinga - R Programming: Biginner’s introduction Leson 1.">
-<meta name="twitter:description" content="I might be correct if i say you have heard about R programming language as well as many good tips concerning R experience but i want to share with you some other interesting part of R, Another good…">
-<meta name="twitter:image" content="https://benjamini-mpinga.netlify.app/posts\R-introduction\thumbnail_blog.png">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://benjamini-mpinga.netlify.app/posts/R-introduction/thumbnail_blog.png">
 <meta name="twitter:creator" content="@rappa753">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -175,76 +146,76 @@ cookieconsent.run({
     <span class="navbar-title">Benjamini Mpinga</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../blog.html">
+    <a class="nav-link" href="../../blog.html" rel="" target="">
  <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/tenesom/"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/tenesom/" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/benjamini20"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/benjamini20" rel="" target=""><i class="bi bi-twitter" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.facebook.com/benjamini.mpinga?mibextid=ZbWKwL"><i class="bi bi-facebook" role="img">
+    <a class="nav-link" href="http://www.linkedin.com/in/benjamini-mpinga" rel="" target=""><i class="bi bi-linkedIn" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.tiktok.com/@mstandrew7?_t=8aghm52NTok&amp;_r=1"><i class="bi bi-tiktok" role="img">
+    <a class="nav-link" href="https://www.tiktok.com/@mstandrew7?_t=8aghm52NTok&amp;_r=1" rel="" target=""><i class="bi bi-tiktok" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.youtube.com/@benjamini_mpinga"><i class="bi bi-youtube" role="img">
+    <a class="nav-link" href="https://www.youtube.com/@benjamini_mpinga" rel="" target=""><i class="bi bi-youtube" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ressources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ressources" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Ressources</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-ressources">    
         <li>
-    <a class="dropdown-item" href="https://rweekly.org/">
+    <a class="dropdown-item" href="https://rweekly.org/" rel="" target="">
  <span class="dropdown-text">R Weekly</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://www.r-bloggers.com/">
+    <a class="dropdown-item" href="https://www.r-bloggers.com/" rel="" target="">
  <span class="dropdown-text">R Bloggers</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://tenesom.github.io/benjamini-mpinga/blog.html">
+    <a class="dropdown-item" href="https://tenesom.github.io/benjamini-mpinga/blog.html" rel="" target="">
  <span class="dropdown-text">benjamini-blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://semba.netlify.app/">
+    <a class="dropdown-item" href="https://semba.netlify.app/" rel="" target="">
  <span class="dropdown-text">Semba-blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://nyamisi.github.io/nyamisi/">
+    <a class="dropdown-item" href="https://nyamisi.github.io/nyamisi/" rel="" target="">
  <span class="dropdown-text">Michi-blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../archive.html">
+    <a class="dropdown-item" href="../../archive.html" rel="" target="">
  <span class="dropdown-text">Archive</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -259,16 +230,42 @@ cookieconsent.run({
    
   <ul>
   <li><a href="#introduction." id="toc-introduction." class="nav-link active" data-scroll-target="#introduction.">INTRODUCTION.</a></li>
-  <li><a href="#r-miraculous." id="toc-r-miraculous." class="nav-link" data-scroll-target="#r-miraculous.">R MIRACULOUS.</a></li>
-  <li><a href="#modern-r." id="toc-modern-r." class="nav-link" data-scroll-target="#modern-r.">MODERN R.</a></li>
-  <li><a href="#rstudio-instalation." id="toc-rstudio-instalation." class="nav-link" data-scroll-target="#rstudio-instalation.">RStudio INSTALATION.</a></li>
+  <li><a href="#r-mentor" id="toc-r-mentor" class="nav-link" data-scroll-target="#r-mentor">R Mentor</a></li>
+  <li><a href="#rstudio-instalation-modern-r." id="toc-rstudio-instalation-modern-r." class="nav-link" data-scroll-target="#rstudio-instalation-modern-r.">RStudio INSTALATION &amp; MODERN R.</a></li>
+  <li><a href="#r-package-installation." id="toc-r-package-installation." class="nav-link" data-scroll-target="#r-package-installation.">R Package installation.</a></li>
   <li><a href="#introduction-to-data-science-in-r-programme." id="toc-introduction-to-data-science-in-r-programme." class="nav-link" data-scroll-target="#introduction-to-data-science-in-r-programme.">INTRODUCTION TO DATA SCIENCE IN R PROGRAMME.</a></li>
+  <li><a href="#data-importation" id="toc-data-importation" class="nav-link" data-scroll-target="#data-importation">Data importation</a></li>
+  <li><a href="#tyding" id="toc-tyding" class="nav-link" data-scroll-target="#tyding">Tyding</a></li>
+  <li><a href="#communication" id="toc-communication" class="nav-link" data-scroll-target="#communication">Communication</a></li>
   <li><a href="#rules-of-the-game-in-r" id="toc-rules-of-the-game-in-r" class="nav-link" data-scroll-target="#rules-of-the-game-in-r">RULES OF THE GAME IN R</a></li>
   <li><a href="#data-transformation-with-dplyr." id="toc-data-transformation-with-dplyr." class="nav-link" data-scroll-target="#data-transformation-with-dplyr.">DATA TRANSFORMATION WITH DPLYR.</a></li>
+  <li><a href="#filter" id="toc-filter" class="nav-link" data-scroll-target="#filter">Filter</a></li>
+  <li><a href="#select" id="toc-select" class="nav-link" data-scroll-target="#select">Select</a></li>
+  <li><a href="#arrange" id="toc-arrange" class="nav-link" data-scroll-target="#arrange">Arrange</a></li>
+  <li><a href="#summarize" id="toc-summarize" class="nav-link" data-scroll-target="#summarize">Summarize</a></li>
+  <li><a href="#group-by" id="toc-group-by" class="nav-link" data-scroll-target="#group-by">Group by</a></li>
+  <li><a href="#mutate" id="toc-mutate" class="nav-link" data-scroll-target="#mutate">Mutate</a></li>
   <li><a href="#r-and-tidyverse." id="toc-r-and-tidyverse." class="nav-link" data-scroll-target="#r-and-tidyverse.">R AND TIDYVERSE.</a></li>
+  <li><a href="#character-vector-names." id="toc-character-vector-names." class="nav-link" data-scroll-target="#character-vector-names.">character vector (NAMES).</a></li>
+  <li><a href="#integer-vector-food" id="toc-integer-vector-food" class="nav-link" data-scroll-target="#integer-vector-food">integer vector (FOOD)</a></li>
+  <li><a href="#numeric-vector-age" id="toc-numeric-vector-age" class="nav-link" data-scroll-target="#numeric-vector-age">Numeric vector (AGE)</a></li>
+  <li><a href="#factor-vector-gender" id="toc-factor-vector-gender" class="nav-link" data-scroll-target="#factor-vector-gender">factor vector (GENDER)</a></li>
+  <li><a href="#date-vector-birth-date" id="toc-date-vector-birth-date" class="nav-link" data-scroll-target="#date-vector-birth-date">date vector (BIRTH DATE)</a></li>
+  <li><a href="#sequence" id="toc-sequence" class="nav-link" data-scroll-target="#sequence">Sequence</a></li>
+  <li><a href="#index" id="toc-index" class="nav-link" data-scroll-target="#index">Index</a></li>
+  <li><a href="#repeat-an-element-in-a-vector" id="toc-repeat-an-element-in-a-vector" class="nav-link" data-scroll-target="#repeat-an-element-in-a-vector">Repeat an element in a vector</a></li>
+  <li><a href="#adding-an-index-in-a-vector" id="toc-adding-an-index-in-a-vector" class="nav-link" data-scroll-target="#adding-an-index-in-a-vector">Adding an index in a vector</a></li>
+  <li><a href="#removing-an-index-in-vector" id="toc-removing-an-index-in-vector" class="nav-link" data-scroll-target="#removing-an-index-in-vector">removing an index in vector</a></li>
   <li><a href="#data-frame." id="toc-data-frame." class="nav-link" data-scroll-target="#data-frame.">DATA FRAME.</a></li>
+  <li><a href="#equate-the-data-frame" id="toc-equate-the-data-frame" class="nav-link" data-scroll-target="#equate-the-data-frame">Equate the data frame</a></li>
   <li><a href="#application-of-r-verbs." id="toc-application-of-r-verbs." class="nav-link" data-scroll-target="#application-of-r-verbs.">APPLICATION OF R VERBS.</a></li>
+  <li><a href="#fillter" id="toc-fillter" class="nav-link" data-scroll-target="#fillter">fillter</a></li>
+  <li><a href="#select-1" id="toc-select-1" class="nav-link" data-scroll-target="#select-1">Select</a></li>
+  <li><a href="#arrange-1" id="toc-arrange-1" class="nav-link" data-scroll-target="#arrange-1">arrange</a></li>
+  <li><a href="#mutate-1" id="toc-mutate-1" class="nav-link" data-scroll-target="#mutate-1">Mutate</a></li>
   <li><a href="#data-impotation." id="toc-data-impotation." class="nav-link" data-scroll-target="#data-impotation.">DATA IMPOTATION.</a></li>
+  <li><a href="#step-1." id="toc-step-1." class="nav-link" data-scroll-target="#step-1.">Step 1.</a></li>
+  <li><a href="#step-2." id="toc-step-2." class="nav-link" data-scroll-target="#step-2.">Step 2.</a></li>
   </ul>
 </nav>
     </div>
@@ -309,76 +306,77 @@ cookieconsent.run({
 
 <section id="introduction." class="level3">
 <h3 class="anchored" data-anchor-id="introduction.">INTRODUCTION.</h3>
-<p>I might be correct if i say you have heard about R programming language as well as many good tips concerning R experience but i want to share with you some other interesting part of R, Another good news for beginners in R language is that, in your progress toward mastering R, you will get a wonderful experience, Imagine the simplicity of preparing a single document on R editor, yet allows you to share it in multiple format such as <strong>Pdf, Word or html</strong>. Yet with R it is not an imaginations <strong>it is what it is</strong>. And good example is this post you are reading it’s also the product of R.</p>
-<p><img src="R_base.jpg" class="img-fluid"></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>It’s possible that you’re aware of the R programming language and have come across useful tips for improving your R experience. However, I’d like to introduce another intriguing aspect of R. For beginners delving into R, there’s a delightful feature that allows you to effortlessly create a single document within the R editor, which can then be shared in various formats like PDF, Word, or HTML. This isn’t just an imagination. it’s the reality of using R. In fact, the very post you’re currently reading was generated using R. R is a truly remarkable tool that empowers users with coding skills, enhances writing abilities, facilitates the generation of diverse document formats.Promotes standardization and visualization, strengthens data analysis skills, expands statistical knowledge, and offers a multitude of other advantages for individuals working with data and research.</p>
+</div><div class="column" style="width:50%;">
+<p><img src="world_pop1.jpg" class="img-fluid"></p>
+</div>
+</div>
 </section>
-<section id="r-miraculous." class="level3">
-<h3 class="anchored" data-anchor-id="r-miraculous.">R MIRACULOUS.</h3>
-<ul>
-<li>Coding skills</li>
-<li>Writing skills</li>
-<li>Generation of multiple extension from a single document</li>
-<li>Document standard/visualization</li>
-<li>Data analysis skills</li>
-<li>Statistical knowledge and many others.</li>
-</ul>
-<p>In almost every book i read concerning R Programming, they all make you courageous and ambitious, well that is what exactly the authors want you be, so that you might start with hope. Although it is good to read, especially when you love to, in my personal experience i think is also good to have a <strong>Mentor</strong> rather than relying on <strong>Roll model(s) alone.</strong></p>
-<p>I am not discouraging one from rely and spend time in books, no!, but what i am trying to advice is that, through reading or searching online contents you can find best solutions, but for beginners in R Programming Language, it is better to have someone who can take you through obstacles, someone who can spend sometimes with you, introducing obvious expected challenges and prepare you to tackle them.</p>
-<section id="r-mentor-vs-r-roll-model" class="level4">
-<h4 class="anchored" data-anchor-id="r-mentor-vs-r-roll-model">R Mentor vs R Roll model</h4>
-<p><strong>A Mentor</strong> is a person well equipped/advanced in respect of this topic <strong>(with R knowledge)</strong> a person either present in your environment or who you can have direct access to find in case you get stack or need more technique in your learning process.</p>
-<p>On the other hand a <strong>Roll model</strong> is a person well equipped/advanced in R knowledge but the only help you can get from him/her is information through their writings or documentaries, though they may be usefully but also they may not solve all of your quick concerns.</p>
+<section id="r-mentor" class="level3">
+<h3 class="anchored" data-anchor-id="r-mentor">R Mentor</h3>
+<p>By having a mentor, you can benefit from their expertise, ask questions, and receive direct assistance tailored to your specific needs. They can help you understand complex concepts, provide examples and exercises, and ensure that you grasp the fundamental principles of R effectively. While books and online content are excellent resources for expanding your knowledge, having a mentor complements those resources by providing personalized guidance and support. It creates a dynamic learning environment where you can actively engage with someone experienced in R, fostering a deeper understanding and faster progress.</p>
+<p>In conclusion, while reading books and searching online resources are valuable components of learning R,for beginners, having a mentor can offer significant advantages. They can provide individualized guidance, help you navigate challenges, and accelerate your learning journey. So, consider seeking a mentor who can dedicate time and effort to support you as you delve into the intricacies of R programming.</p>
 </section>
+<section id="rstudio-instalation-modern-r." class="level3">
+<h3 class="anchored" data-anchor-id="rstudio-instalation-modern-r.">RStudio INSTALATION &amp; MODERN R.</h3>
+<p>To start your journey with the R programming language, the first step is to install R and RStudio on your computer. R is the programming language itself, while RStudio provides a comprehensive working environment that enhances your R experience.</p>
+<p>Here’s a breakdown of what R and RStudio are:</p>
+<p>R is a programming language and software environment designed for statistical computing and graphics. It provides a wide range of statistical and graphical techniques and is widely used in various fields such as data analysis, research, and machine learning.</p>
+<p>RStudio is an integrated development environment (IDE) for R. It provides a user-friendly interface with powerful tools and features that streamline your coding workflow. RStudio offers a code editor, console, data viewer, and a variety of helpful features like code completion, debugging tools, and project management.</p>
+<p>Once you have installed R and RStudio, you’ll need to install packages that support the functionality of R and RStudio. Packages in R are collections of functions, data, and documentation that extend the capabilities of the base R system. These packages provide additional functions that are necessary for performing various tasks in your daily coding activities.</p>
+<p>To download R, you can visit the Comprehensive R Archive Network (CRAN) website. CRAN is a network of mirror servers worldwide that distribute R and R packages. It’s recommended to use the cloud mirror, which automatically selects the appropriate mirror for you. You can access it at https://cloud.r-project.org.</p>
+<p>It’s worth noting that a new major version of R is released annually, with minor releases occurring 2-3 times a year. It’s generally recommended to update R regularly to benefit from the latest features and improvements. Upgrading R can sometimes require reinstalling your packages, which may take some effort, particularly for major version upgrades. However, it’s advisable to keep your R installation up to date to ensure compatibility and access to the latest functionalities.</p>
+<p>By installing R, setting up RStudio, and regularly updating your software, you’ll be well-equipped to begin your R programming journey and explore the vast possibilities the language has to offer.</p>
 </section>
-<section id="modern-r." class="level3">
-<h3 class="anchored" data-anchor-id="modern-r.">MODERN R.</h3>
-<p>To get started with R programming language, you must firstly install R and Rstudio on your computer, You might wonder, <strong>What is R and Rstudio?</strong>. Well R is a programming language and Rstudio is a working platform where you find working environment, but together provides you a great experience.</p>
-<p>After the installation of R and RStudio, then you will nee to install packages which support R and RStudio to work/function. These packages provide functions which will be required in performance of your daily activities. So once you have installed All necessary packages, come automatically with their the functions.</p>
-<p>To download R, go to CRAN, the comprehensive R archive network. CRAN is composed of a set of mirror servers distributed around the world and is used to distribute R and R packages. Don’t try and pick a mirror that’s close to you: instead use the cloud mirror, https:// cloud.r-project.org, which automatically figures it out for you.</p>
-<p>A new major version of R comes out once a year, and there are 2–3 minor releases each year. It’s a good idea to update regularly. Upgrading can be a bit of a hassle, especially for major versions, which require you to re install all your packages, but putting it off only makes it worse.</p>
-</section>
-<section id="rstudio-instalation." class="level3">
-<h3 class="anchored" data-anchor-id="rstudio-instalation.">RStudio INSTALATION.</h3>
-<p>RStudio is an integrated development environment, or IDE, for R programming. Download and install it from http://WWW.rstudio.com/download.</p>
-<p><img src="r_studio.jpg" class="img-fluid"></p>
-<section id="r-package-installation." class="level4">
-<h4 class="anchored" data-anchor-id="r-package-installation.">R Package installation.</h4>
-<p>In R, as i have explained here above, packages are very fundamental instrument, therefor you need to install all the necessary packages before getting further. One main package is (<strong>“tidyverse”</strong>). tidyverse is an ecosystem of packages that focus on data entry, data manipulation, data modelling, data visualization(plot) and sharing of finding/insight derived from data analysis.</p>
-<p>Install tidyverse through this command and any other packages as you will find fit for your own focused area.</p>
+<section id="r-package-installation." class="level3">
+<h3 class="anchored" data-anchor-id="r-package-installation.">R Package installation.</h3>
+<p>In R, packages are fundamental in R, and installing the necessary packages is crucial for expanding the capabilities of your R environment. One highly popular and powerful package ecosystem in R is called the “tidyverse”. The tidyverse is a collection of packages that work together seamlessly to provide a cohesive and efficient workflow for data entry, manipulation, modeling, visualization, and sharing insights derived from data analysis. Some of the key packages within the tidyverse include dplyr for data manipulation, ggplot2 for data visualization, tidyr for data tidying, readr for data import, and many more.</p>
+<p>To install the tidyverse package, you can use the following command in R:</p>
 <pre><code>                         [ install.packages("tidyverse") ]</code></pre>
-<p>Packages in the tidyverse change fairly frequently. You can see if updates are available, and optionally install them, by running tidy verse_update().</p>
-</section>
 </section>
 <section id="introduction-to-data-science-in-r-programme." class="level3">
 <h3 class="anchored" data-anchor-id="introduction-to-data-science-in-r-programme.">INTRODUCTION TO DATA SCIENCE IN R PROGRAMME.</h3>
 <p>Data science is a huge field, and there’s no way you can master it by reading a single book, so as i explained above it is more helpful if you get a mentor to lead you through obstacles. Also is an exciting knowledge that allows you to turn raw data into understanding, insight, and knowledge. The goal of R for Data Science is to help you to learn the most important tools in R that will allow you to do data science.</p>
-<section id="data-importation" class="level4">
-<h4 class="anchored" data-anchor-id="data-importation">Data importation</h4>
-<p>First you must import your data into R. This means that you take data stored in a file, database, or web API, and load it into a data frame in R first. If you can’t put your data into R, you can’t do data science on it!.</p>
 </section>
-<section id="tyding" class="level4">
-<h4 class="anchored" data-anchor-id="tyding">Tyding</h4>
+<section id="data-importation" class="level3">
+<h3 class="anchored" data-anchor-id="data-importation">Data importation</h3>
+<p>Importing data into R is an essential step in performing data analysis. Data can be stored in various formats such as files (e.g., CSV, Excel), databases, or web APIs, and loading it into R allows you to manipulate, analyze, and visualize the data. To import data into R, you typically use functions or packages specifically designed for each data source or format.</p>
+</section>
+<section id="tyding" class="level3">
+<h3 class="anchored" data-anchor-id="tyding">Tyding</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p>Once you’ve imported your data, it is required to tidy your data. Tidying your data means storing it in a consistent form that matches the semantics of the data set with the way it is stored. In brief, when your data is tidy, <strong>each column is a variable, and each row is an observation.</strong> Tidy data is important because the consistent structure allows you to focus your struggle on questions about the data, and not fighting the data into the right form for different functions.</p>
+</div><div class="column" style="width:50%;">
 <p>Once you have tidy data, a first step is to transform it. Transformation includes narrowing in on observations of interest eg.(all people in one city, or all data from the last year), creating new variables that are functions of existing variables Together, tidying and transforming are called wrangling, this is because, getting your data in a form that’s natural to work with often, it usually feels like a fight!.</p>
+</div>
+</div>
 <p>Once you have tidy your data with the variables you need, there are two main engines of knowledge generation: <strong>visualization and modeling</strong>. These have complementary strengths and weaknesses, so any real analysis will iterate between them many times.</p>
 </section>
-<section id="visualization" class="level4">
-<h4 class="anchored" data-anchor-id="visualization">Visualization</h4>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="visualization" class="level3">
+<h3 class="anchored" data-anchor-id="visualization">Visualization</h3>
 <p>Visualization is a fundamentally human activity. A good visualization will show you things that you did not expect, or raise new questions about the data. A good visualization might also hint that you’re asking the wrong question, or you need to collect different data. Visualizations can surprise you, because they require a human to interpret them.</p>
 </section>
-<section id="models" class="level4">
-<h4 class="anchored" data-anchor-id="models">Models</h4>
+</div><div class="column" style="width:50%;">
+<section id="models" class="level3">
+<h3 class="anchored" data-anchor-id="models">Models</h3>
 <p>Models are complementary tools to visualization. Once you have made your questions sufficiently precise, you can use a model to answer them. Models are a fundamentally mathematical or computational tool, so they generally scale well. Even when they don’t, every model can make assumptions, and by its very nature a model cannot question its own assumptions. That means a model cannot fundamentally surprise you.</p>
 </section>
-<section id="communication" class="level4">
-<h4 class="anchored" data-anchor-id="communication">Communication</h4>
+</div>
+</div>
+<section id="communication" class="level3">
+<h3 class="anchored" data-anchor-id="communication">Communication</h3>
 <p>The last step of data science is communication, an absolutely critical part of any data analysis project. It doesn’t matter how well your models and visualization have led you to understand the data unless you can also communicate your results to others.</p>
 <div class="cell" data-fig-width="6">
 <div class="cell-output-display">
 <div id="fig-mermaid" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p>
-</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-mermaid">flowchart LR
  A[(Import)] --&gt; B[Tidy]
  B --&gt; C(Transform)
  C --&gt; D(Visualize) 
@@ -393,21 +391,22 @@ cookieconsent.run({
  
 
 </pre>
-<div id="mermaid-tooltip-1" class="mermaidTooltip">
-
 </div>
-<p></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;1: How R programming work in analysis.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-</section>
 <section id="rules-of-the-game-in-r" class="level3">
 <h3 class="anchored" data-anchor-id="rules-of-the-game-in-r">RULES OF THE GAME IN R</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p>Like any other game or language, in order to perform or being grammatical correct you have to apply the correct verb for a particular tense. As well as correct action for a specific environment. The same applies to R programming language, for the better result of your data analysis you have to apply the correct package for a specific task, every package contains functions in which there are verbs that act to perform a particular task.</p>
+</div><div class="column" style="width:50%;">
 <p>This will provides an introduction to data science and the R programming language. The goal here is to get your hands dirty right from the start!, We will walk through an entire data analysis, and along the way introduce different types of data analysis question, some fundamental programming concepts in R, and the basics of loading, cleaning, and visualizing data. we will dig into each of these steps in much more detail.</p>
+</div>
+</div>
 </section>
 <section id="data-transformation-with-dplyr." class="level3">
 <h3 class="anchored" data-anchor-id="data-transformation-with-dplyr.">DATA TRANSFORMATION WITH DPLYR.</h3>
@@ -423,31 +422,32 @@ cookieconsent.run({
 <li>(summarize()).</li>
 <li>(group_by()).</li>
 </ul>
-<section id="filter" class="level4">
-<h4 class="anchored" data-anchor-id="filter">Filter</h4>
+</section>
+<section id="filter" class="level3">
+<h3 class="anchored" data-anchor-id="filter">Filter</h3>
 <p>Filter is one of the verb in tidyverse which usually deals with <strong>rows(records)</strong> only in your data frame,the main thing it does is to pick observations by their volume depends on the result you intend to achieve. <strong>(==,&gt;,&lt;)</strong>.</p>
 </section>
-<section id="select" class="level4">
-<h4 class="anchored" data-anchor-id="select">Select</h4>
-<p>Select is one of the verb in tidyverse which usually deals with <strong>coll um (variables)</strong> only in your table data frame,what it does is to select the variables by their names depends on the result you intend to achieve.<strong>(=)</strong>.</p>
+<section id="select" class="level3">
+<h3 class="anchored" data-anchor-id="select">Select</h3>
+<p>Select is one of the verb in tidyverse which usually deals with <strong>collumn (variables)</strong> only in your table data frame,what it does is to select the variables by their names depends on the result you intend to achieve.<strong>(=)</strong>.</p>
 </section>
-<section id="arrange" class="level4">
-<h4 class="anchored" data-anchor-id="arrange">Arrange</h4>
+<section id="arrange" class="level3">
+<h3 class="anchored" data-anchor-id="arrange">Arrange</h3>
 <p>Arrange is one of the verb in tidyverse which usually Reorder the <strong>rows(Records)</strong> of your data frame to allow you get result you intend.</p>
 </section>
-<section id="summarize" class="level4">
-<h4 class="anchored" data-anchor-id="summarize">Summarize</h4>
+<section id="summarize" class="level3">
+<h3 class="anchored" data-anchor-id="summarize">Summarize</h3>
 <p>Summarize is one of the verb in tidyverse which Collapse many values down to a single summary</p>
 </section>
-<section id="group-by" class="level4">
-<h4 class="anchored" data-anchor-id="group-by">Group by</h4>
+<section id="group-by" class="level3">
+<h3 class="anchored" data-anchor-id="group-by">Group by</h3>
 <p>Group by is one of the verb in tidyverse used in changes of the scope of each function from operating on the entire data frame to operating on it group-by-group.</p>
 </section>
-<section id="mutate" class="level4">
-<h4 class="anchored" data-anchor-id="mutate">Mutate</h4>
+<section id="mutate" class="level3">
+<h3 class="anchored" data-anchor-id="mutate">Mutate</h3>
 <p>Mutate is one of the verb in tidyverse Create new variables with functions of existing variables.</p>
 <blockquote class="blockquote">
-<p><strong>NOTE</strong>: All data frame contain Row and Column, therefore rows have to contains Records in it, while column have to contain variables in it (names). to successfully implement the above said verbs, you will have to ensure the following..</p>
+<p>NOTE: All data frame contain Row and Column, therefore rows have to contains Records in it, while column have to contain variables in it (names). to successfully implement the above said verbs, you will have to ensure the following..</p>
 </blockquote>
 <ul>
 <li><p>firstly you will have to be very clear on What kind of result you need, this depends on the questions.</p></li>
@@ -473,7 +473,6 @@ cookieconsent.run({
 </ul>
 <p>R provides the standard suite: &gt;, &gt;=, &lt;, &lt;=, != (not equal), and == (equal). When you’re new in R, the easiest mistake to make is to use = instead of == when testing for equality.</p>
 </section>
-</section>
 <section id="r-and-tidyverse." class="level3">
 <h3 class="anchored" data-anchor-id="r-and-tidyverse.">R AND TIDYVERSE.</h3>
 <div class="cell">
@@ -483,9 +482,9 @@ cookieconsent.run({
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
-v dplyr     1.1.0     v readr     2.1.4
+v dplyr     1.1.1     v readr     2.1.4
 v forcats   1.0.0     v stringr   1.5.0
-v ggplot2   3.4.1     v tibble    3.1.8
+v ggplot2   3.4.2     v tibble    3.2.1
 v lubridate 1.9.2     v tidyr     1.3.0
 v purrr     1.0.1     
 -- Conflicts ------------------------------------------ tidyverse_conflicts() --
@@ -535,8 +534,9 @@ The following object is masked from 'package:tidyr':
 <li>` date</li>
 <li>` logical</li>
 </ol>
-<section id="character-vector-names." class="level4">
-<h4 class="anchored" data-anchor-id="character-vector-names.">character vector (NAMES).</h4>
+</section>
+<section id="character-vector-names." class="level3">
+<h3 class="anchored" data-anchor-id="character-vector-names.">character vector (NAMES).</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>names <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"grace"</span>, <span class="st">"daniel"</span>, <span class="st">"collins"</span>, <span class="st">"ethan"</span>, <span class="st">"benjunior"</span>)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>names</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -567,8 +567,8 @@ The following object is masked from 'package:tidyr':
 </div>
 </div>
 </section>
-<section id="integer-vector-food" class="level4">
-<h4 class="anchored" data-anchor-id="integer-vector-food">integer vector (FOOD)</h4>
+<section id="integer-vector-food" class="level3">
+<h3 class="anchored" data-anchor-id="integer-vector-food">integer vector (FOOD)</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>food <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>)</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>food</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -608,8 +608,8 @@ The following object is masked from 'package:tidyr':
 </div>
 </div>
 </section>
-<section id="numeric-vector-age" class="level4">
-<h4 class="anchored" data-anchor-id="numeric-vector-age">Numeric vector (AGE)</h4>
+<section id="numeric-vector-age" class="level3">
+<h3 class="anchored" data-anchor-id="numeric-vector-age">Numeric vector (AGE)</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>age <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">11.5</span>, <span class="fl">5.2</span>, <span class="fl">5.3</span>, <span class="fl">3.2</span>, <span class="fl">1.2</span>)</span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>age</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -634,8 +634,8 @@ The following object is masked from 'package:tidyr':
 </div>
 </div>
 </section>
-<section id="factor-vector-gender" class="level4">
-<h4 class="anchored" data-anchor-id="factor-vector-gender">factor vector (GENDER)</h4>
+<section id="factor-vector-gender" class="level3">
+<h3 class="anchored" data-anchor-id="factor-vector-gender">factor vector (GENDER)</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>gender <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"female"</span>, <span class="st">"male"</span>, <span class="st">"male"</span>, <span class="st">"male"</span>, <span class="st">"male"</span>)</span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>gender</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -690,8 +690,8 @@ Levels: female male</code></pre>
 </div>
 </div>
 </section>
-<section id="date-vector-birth-date" class="level4">
-<h4 class="anchored" data-anchor-id="date-vector-birth-date">date vector (BIRTH DATE)</h4>
+<section id="date-vector-birth-date" class="level3">
+<h3 class="anchored" data-anchor-id="date-vector-birth-date">date vector (BIRTH DATE)</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>birth <span class="ot">=</span> <span class="fu">c</span>(<span class="fu">dmy</span>(<span class="dv">01022011</span>), <span class="fu">dmy</span>(<span class="dv">01062017</span>), <span class="fu">dmy</span>(<span class="dv">01052017</span>), <span class="fu">dmy</span>(<span class="dv">01062019</span>), <span class="fu">dmy</span>(<span class="dv">01062021</span>))</span>
 <span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>birth</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -719,8 +719,8 @@ Levels: female male</code></pre>
 </div>
 </div>
 </section>
-<section id="sequence" class="level4">
-<h4 class="anchored" data-anchor-id="sequence">Sequence</h4>
+<section id="sequence" class="level3">
+<h3 class="anchored" data-anchor-id="sequence">Sequence</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -748,8 +748,8 @@ Levels: female male</code></pre>
 </div>
 </div>
 </section>
-<section id="index" class="level4">
-<h4 class="anchored" data-anchor-id="index">Index</h4>
+<section id="index" class="level3">
+<h3 class="anchored" data-anchor-id="index">Index</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>number[<span class="dv">51</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -757,8 +757,8 @@ Levels: female male</code></pre>
 </div>
 </div>
 </section>
-<section id="repeat-an-element-in-a-vector" class="level4">
-<h4 class="anchored" data-anchor-id="repeat-an-element-in-a-vector">Repeat an element in a vector</h4>
+<section id="repeat-an-element-in-a-vector" class="level3">
+<h3 class="anchored" data-anchor-id="repeat-an-element-in-a-vector">Repeat an element in a vector</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb72"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rep</span>(names,<span class="at">each =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -776,8 +776,8 @@ Levels: female male</code></pre>
 </div>
 </div>
 </section>
-<section id="adding-an-index-in-a-vector" class="level4">
-<h4 class="anchored" data-anchor-id="adding-an-index-in-a-vector">Adding an index in a vector</h4>
+<section id="adding-an-index-in-a-vector" class="level3">
+<h3 class="anchored" data-anchor-id="adding-an-index-in-a-vector">Adding an index in a vector</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb76"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a>names [<span class="dv">6</span>] <span class="ot">=</span> <span class="st">"amani"</span></span>
 <span id="cb76-2"><a href="#cb76-2" aria-hidden="true" tabindex="-1"></a>names</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -786,8 +786,8 @@ Levels: female male</code></pre>
 </div>
 </div>
 </section>
-<section id="removing-an-index-in-vector" class="level4">
-<h4 class="anchored" data-anchor-id="removing-an-index-in-vector">removing an index in vector</h4>
+<section id="removing-an-index-in-vector" class="level3">
+<h3 class="anchored" data-anchor-id="removing-an-index-in-vector">removing an index in vector</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb78"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a>names <span class="ot">=</span> names[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>]</span>
 <span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a>names</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -811,7 +811,6 @@ Levels: female male</code></pre>
 </div>
 </div>
 </section>
-</section>
 <section id="data-frame." class="level3">
 <h3 class="anchored" data-anchor-id="data-frame.">DATA FRAME.</h3>
 <p>Now that we have created our vector. Let us see how we turn our vector to data frame. We shall use the function data.frame(), then we put our vectors within the function.</p>
@@ -826,8 +825,9 @@ Levels: female male</code></pre>
 5 benjunior 2021-06-01  1.2    5   male</code></pre>
 </div>
 </div>
-<section id="equate-the-data-frame" class="level4">
-<h4 class="anchored" data-anchor-id="equate-the-data-frame">Equate the data frame</h4>
+</section>
+<section id="equate-the-data-frame" class="level3">
+<h3 class="anchored" data-anchor-id="equate-the-data-frame">Equate the data frame</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb87"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a>watoto <span class="ot">=</span> <span class="fu">data.frame</span>(names, birth, age, food, gender)</span>
 <span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a>watoto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -841,7 +841,6 @@ Levels: female male</code></pre>
 </div>
 </div>
 </section>
-</section>
 <section id="application-of-r-verbs." class="level3">
 <h3 class="anchored" data-anchor-id="application-of-r-verbs.">APPLICATION OF R VERBS.</h3>
 <p><strong>VERBS</strong></p>
@@ -853,8 +852,9 @@ Levels: female male</code></pre>
 <li>(summarize()).</li>
 <li>(group_by()).</li>
 </ul>
-<section id="fillter" class="level4">
-<h4 class="anchored" data-anchor-id="fillter">fillter</h4>
+</section>
+<section id="fillter" class="level3">
+<h3 class="anchored" data-anchor-id="fillter">fillter</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb89"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a>watoto <span class="sc">%&gt;%</span> <span class="fu">filter</span>(gender <span class="sc">==</span> <span class="st">"male"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -881,8 +881,8 @@ Levels: female male</code></pre>
 </div>
 </div>
 </section>
-<section id="select-1" class="level4">
-<h4 class="anchored" data-anchor-id="select-1">Select</h4>
+<section id="select-1" class="level3">
+<h3 class="anchored" data-anchor-id="select-1">Select</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb95"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a>watoto <span class="sc">%&gt;%</span> <span class="fu">select</span>(names,gender)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -906,8 +906,8 @@ Levels: female male</code></pre>
 </div>
 </div>
 </section>
-<section id="arrange-1" class="level4">
-<h4 class="anchored" data-anchor-id="arrange-1">arrange</h4>
+<section id="arrange-1" class="level3">
+<h3 class="anchored" data-anchor-id="arrange-1">arrange</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb99"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a>watoto <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(watoto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -931,8 +931,8 @@ Levels: female male</code></pre>
 </div>
 </div>
 </section>
-<section id="mutate-1" class="level4">
-<h4 class="anchored" data-anchor-id="mutate-1">Mutate</h4>
+<section id="mutate-1" class="level3">
+<h3 class="anchored" data-anchor-id="mutate-1">Mutate</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb103"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a>watoto <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">sport =</span> <span class="fu">c</span>(<span class="st">"footbal"</span>, <span class="st">"footbal"</span>,<span class="st">"voleybal"</span>, <span class="st">"basketbal"</span>, <span class="st">"netbal"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -945,22 +945,22 @@ Levels: female male</code></pre>
 </div>
 </div>
 </section>
-</section>
 <section id="data-impotation." class="level3">
 <h3 class="anchored" data-anchor-id="data-impotation.">DATA IMPOTATION.</h3>
 <p>As we have seen in the beginning of this book,in order to do activities in R,you need data, without data R is like meaningless application in your computer.So since data work as a fuel in R, step one you need to know how to import data into it. Data importation in R reefers to the process of calling your data from the directory (file) in your computer into the R studio where you intend to do your analysis.</p>
-<section id="step-1." class="level4">
-<h4 class="anchored" data-anchor-id="step-1.">Step 1.</h4>
+</section>
+<section id="step-1." class="level3">
+<h3 class="anchored" data-anchor-id="step-1.">Step 1.</h3>
 <p>You have to know what kind of data you have before importing it in R. Data are usually in different extension, so you have to ensure you put your data in the right extension in your local directory. <strong>Eg. xls, csv etc…….</strong></p>
 </section>
-<section id="step-2." class="level4">
-<h4 class="anchored" data-anchor-id="step-2.">Step 2.</h4>
+<section id="step-2." class="level3">
+<h3 class="anchored" data-anchor-id="step-2.">Step 2.</h3>
 <p>On your computer open R studio, programming is usually done on console. But in the bellow demo i will work on the editor.</p>
 <p><strong>Procedures.</strong></p>
 <p>My data names is (Tamisemi Primary Enrollment by Age and Sex,2021.xls”). So open a chunk then within a chunk call a required package then run the chunk. Then Open another chunk then within the chunk call your data from your local/external directory. Example, If your data are in Excel or csv extension, so i will use the package <strong>(tidyverse, read_excel and read_csv).</strong></p>
 <p>how do we call our data from our directory?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb105"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb105-1"><a href="#cb105-1" aria-hidden="true" tabindex="-1"></a><span class="fu">read_csv</span>(<span class="st">"e:/Mystafs/blogswebsite/teneson/posts/R-introduction/BUDGET DAUDI HEALTH CENTRE 2022.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb105"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb105-1"><a href="#cb105-1" aria-hidden="true" tabindex="-1"></a><span class="fu">read_csv</span>(<span class="st">"e:/MY_STAFFS/Minning__Folder/Blogs/teneson/posts/R-introduction/BUDGET DAUDI HEALTH CENTRE 2022.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>New names:
 Rows: 18 Columns: 11
@@ -975,55 +975,53 @@ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 18 x 11
-   TARGET    ACTIV~1 GSF C~2 Unit ~3 Quant~4 frequ~5 unit ~6 TOTAL Sourc~7 ...10
-   &lt;chr&gt;     &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;     &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;   &lt;lgl&gt;
- 1 Shortage~ To sup~ Medica~ Kits          6       5  1.27e4 380,~ OC      NA   
- 2 &lt;NA&gt;      &lt;NA&gt;    Drugs ~ Kits          6       5  4.23e4 1,26~ &lt;NA&gt;    NA   
- 3 &lt;NA&gt;      &lt;NA&gt;    Hospit~ Kits          6       5  8.45e3 253,~ &lt;NA&gt;    NA   
- 4 &lt;NA&gt;      &lt;NA&gt;    PPMof ~ Kits          6       5  4.23e3 126,~ &lt;NA&gt;    NA   
- 5 &lt;NA&gt;      &lt;NA&gt;    Dental~ Kits          6       5  8.45e3 253,~ &lt;NA&gt;    NA   
- 6 &lt;NA&gt;      &lt;NA&gt;    Labora~ Kits          6       5  8.45e3 253,~ &lt;NA&gt;    NA   
- 7 &lt;NA&gt;      &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;         NA      NA NA      2,53~ &lt;NA&gt;    NA   
- 8 &lt;NA&gt;      To sup~ wire    metre         1       1  1.31e6 1309~ &lt;NA&gt;    NA   
- 9 Organiza~ To pro~ extra ~ Person        0       1  1.65e5 -     OC      NA   
-10 &lt;NA&gt;      &lt;NA&gt;    Leave ~ Person        3       1  1.2 e5 360,~ &lt;NA&gt;    NA   
-11 &lt;NA&gt;      &lt;NA&gt;    Medica~ Person        2       4  1   e5 800,~ &lt;NA&gt;    NA   
-12 &lt;NA&gt;      &lt;NA&gt;    Unifor~ Person        2       1  1.2 e5 240,~ &lt;NA&gt;    NA   
-13 &lt;NA&gt;      &lt;NA&gt;    Burial~ Person        2       1  1   e6 2000~ &lt;NA&gt;    NA   
-14 &lt;NA&gt;      &lt;NA&gt;    Statio~ Each          0       4  1.61e4 0     &lt;NA&gt;    NA   
-15 &lt;NA&gt;      &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;         NA      NA NA      3,40~ &lt;NA&gt;    NA   
-16 &lt;NA&gt;      &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;         NA      NA NA      7,24~ &lt;NA&gt;    NA   
-17 &lt;NA&gt;      &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;         NA      NA NA      &lt;NA&gt;  &lt;NA&gt;    NA   
-18 &lt;NA&gt;      &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;         NA      NA NA      -     &lt;NA&gt;    NA   
-# ... with 1 more variable: ...11 &lt;dbl&gt;, and abbreviated variable names
-#   1: ACTIVITY, 2: `GSF CODE`, 3: `Unit of measure`, 4: Quantity,
-#   5: frequencer, 6: `unit price`, 7: `Source of Fund`</code></pre>
+   TARGET ACTIVITY `GSF CODE` `Unit of measure` Quantity frequencer `unit price`
+   &lt;chr&gt;  &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;                &lt;dbl&gt;      &lt;dbl&gt;        &lt;dbl&gt;
+ 1 Short~ To supp~ Medical e~ Kits                     6          5       12679.
+ 2 &lt;NA&gt;   &lt;NA&gt;     Drugs and~ Kits                     6          5       42262.
+ 3 &lt;NA&gt;   &lt;NA&gt;     Hospital ~ Kits                     6          5        8452.
+ 4 &lt;NA&gt;   &lt;NA&gt;     PPMof med~ Kits                     6          5        4226.
+ 5 &lt;NA&gt;   &lt;NA&gt;     Dental eq~ Kits                     6          5        8452.
+ 6 &lt;NA&gt;   &lt;NA&gt;     Laborator~ Kits                     6          5        8452.
+ 7 &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;       &lt;NA&gt;                    NA         NA          NA 
+ 8 &lt;NA&gt;   To supp~ wire       metre                    1          1     1309250 
+ 9 Organ~ To prov~ extra duty Person                   0          1      165000 
+10 &lt;NA&gt;   &lt;NA&gt;     Leave tra~ Person                   3          1      120000 
+11 &lt;NA&gt;   &lt;NA&gt;     Medical r~ Person                   2          4      100000 
+12 &lt;NA&gt;   &lt;NA&gt;     Uniform a~ Person                   2          1      120000 
+13 &lt;NA&gt;   &lt;NA&gt;     Burial Ex~ Person                   2          1     1000000 
+14 &lt;NA&gt;   &lt;NA&gt;     Stationary Each                     0          4       16125 
+15 &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;       &lt;NA&gt;                    NA         NA          NA 
+16 &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;       &lt;NA&gt;                    NA         NA          NA 
+17 &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;       &lt;NA&gt;                    NA         NA          NA 
+18 &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;       &lt;NA&gt;                    NA         NA          NA 
+# i 4 more variables: TOTAL &lt;chr&gt;, `Source of Fund` &lt;chr&gt;, ...10 &lt;lgl&gt;,
+#   ...11 &lt;dbl&gt;</code></pre>
 </div>
 </div>
 <p>the above data frame are showing the importation of data from your directory into R, using csv extension.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb108"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="fu">read_xlsx</span>(<span class="st">"e:/Mystafs/blogswebsite/teneson/posts/R-introduction/BUDGET DAUDI HEALTH CENTRE 2022.xlsx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb108"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="fu">read_xlsx</span>(<span class="st">"e:/MY_STAFFS/Minning__Folder/Blogs/teneson/posts/R-introduction/BUDGET DAUDI HEALTH CENTRE 2022.xlsx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>New names:
 * `` -&gt; `...10`</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 32 x 10
-   TARGET   ACTIV~1 GSF C~2 Unit ~3 Quant~4 frequ~5 unit ~6  TOTAL Sourc~7 ...10
-   &lt;chr&gt;    &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;     &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;
- 1 Shortag~ To sup~ Medica~ Kits          6       5   52500 1.58e6 USER F~    NA
- 2 &lt;NA&gt;     &lt;NA&gt;    Drugs ~ Kits          6       5  175000 5.25e6 &lt;NA&gt;       NA
- 3 &lt;NA&gt;     &lt;NA&gt;    Hospit~ Kits          6       5   35000 1.05e6 &lt;NA&gt;       NA
- 4 &lt;NA&gt;     &lt;NA&gt;    PPMof ~ Kits          6       5   50000 5.25e5 &lt;NA&gt;       NA
- 5 &lt;NA&gt;     &lt;NA&gt;    Dental~ Kits          6       5   35000 1.05e6 &lt;NA&gt;       NA
- 6 &lt;NA&gt;     &lt;NA&gt;    Labora~ Kits          6       5   35000 1.05e6 &lt;NA&gt;       NA
- 7 &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;         NA      NA      NA 1.05e7 &lt;NA&gt;       NA
- 8 Organiz~ To pro~ Water ~ bills        64      12    2500 1.92e6 USER F~    NA
- 9 &lt;NA&gt;     &lt;NA&gt;    Electr~ bills      1200       6     400 2.88e6 &lt;NA&gt;       NA
-10 &lt;NA&gt;     &lt;NA&gt;    Per di~ person        5       5   80000 2   e6 &lt;NA&gt;       NA
-# ... with 22 more rows, and abbreviated variable names 1: ACTIVITY,
-#   2: `GSF CODE`, 3: `Unit of measure`, 4: Quantity, 5: frequencer,
-#   6: `unit price`, 7: `Source of Fund`</code></pre>
+   TARGET ACTIVITY `GSF CODE` `Unit of measure` Quantity frequencer `unit price`
+   &lt;chr&gt;  &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;                &lt;dbl&gt;      &lt;dbl&gt;        &lt;dbl&gt;
+ 1 Short~ To supp~ Medical e~ Kits                     6          5        52500
+ 2 &lt;NA&gt;   &lt;NA&gt;     Drugs and~ Kits                     6          5       175000
+ 3 &lt;NA&gt;   &lt;NA&gt;     Hospital ~ Kits                     6          5        35000
+ 4 &lt;NA&gt;   &lt;NA&gt;     PPMof med~ Kits                     6          5        50000
+ 5 &lt;NA&gt;   &lt;NA&gt;     Dental eq~ Kits                     6          5        35000
+ 6 &lt;NA&gt;   &lt;NA&gt;     Laborator~ Kits                     6          5        35000
+ 7 &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;       &lt;NA&gt;                    NA         NA           NA
+ 8 Organ~ To prov~ Water cha~ bills                   64         12         2500
+ 9 &lt;NA&gt;   &lt;NA&gt;     Electrici~ bills                 1200          6          400
+10 &lt;NA&gt;   &lt;NA&gt;     Per diem   person                   5          5        80000
+# i 22 more rows
+# i 3 more variables: TOTAL &lt;dbl&gt;, `Source of Fund` &lt;chr&gt;, ...10 &lt;dbl&gt;</code></pre>
 </div>
 </div>
 <p>the above tables are showing the importation of data from your directory into R, using Xlsx extension.</p>
@@ -1031,7 +1029,6 @@ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 <p><strong>Related post.</strong></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1197,9 +1194,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1264,6 +1275,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -1306,7 +1403,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 
