@@ -68,7 +68,7 @@ require(readxl)
 #### Data Entry.
 
 ```{r}
-world = read_csv("e:/MY_STAFFS/Minning__Folder/Blogs/teneson/posts/Current-world-pop/The world population data/world_population.csv") 
+world = read_csv("e:/my_staffs/Blogs/teneson/posts/Current-world-pop/The world population data/world_population.csv") 
 ```
 
 The table above has some input that can not be proper managed with R language, so we must clean them and left with what we are going to use to answer the question asked. 

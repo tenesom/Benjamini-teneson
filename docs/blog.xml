@@ -1090,11 +1090,11 @@ font-style: inherit;">"e:/MY_STAFFS/Minning__Folder/Blogs/teneson/posts/R-introd
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>R without data is just an Application. So to enjoy R programming then you need to deal with data. So in most cases you will be given data from outsource. And most of outsource data are not tidy, therefor you will need to tidy them before manipulation. Then you have to save them in your computer, tidy them, then model them, then share your findings. In R we use different approach when it comes to data manipulation, different from other languages, so once given data, the first thing to understand is its type.</p>
-<p>The data below are not in tidy form, therefor we have to tidy them firstly. We will not write every step of the process because i believe you have already got the concept from the last lesson, but you can see the function in the chunk, we have equated our data by giving it a name raw. And followed by the name of extension, then my local directory and the name of the data.</p>
 </div><div class="column" style="width:50%;">
 <p><img src="https://benjamini-mpinga.netlify.app/posts/R-2nd-leson/world-pop.jpg" class="img-fluid"></p>
 </div>
 </div>
+<p>The data below are not in tidy form, therefor we have to tidy them firstly. We will not write every step of the process because i believe you have already got the concept from the last lesson, but you can see the function in the chunk, we have equated our data by giving it a name raw. And followed by the name of extension, then my local directory and the name of the data.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1174,7 +1174,7 @@ font-style: inherit;">=</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">read.csv</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"e:/MY_STAFFS/Minning__Folder/Blogs/teneson/posts/R-2nd-leson/The world population data/world_population.csv"</span>)</span></code></pre></div>
+font-style: inherit;">"e:/my_staffs/Blogs/teneson/posts/R-2nd-leson/The world population data/world_population.csv"</span>)</span></code></pre></div>
 </div>
 <p><strong>world population data after tidying.</strong></p>
 <div class="cell">
@@ -1184,7 +1184,7 @@ font-style: inherit;">=</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">read.csv</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"e:/MY_STAFFS/Minning__Folder/Blogs/teneson/posts/R-2nd-leson/The world population data/world_population.csv"</span>) <span class="sc" style="color: #5E5E5E;
+font-style: inherit;">"e:/my_staffs/Blogs/teneson/posts/R-2nd-leson/The world population data/world_population.csv"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
 <span id="cb12-2"> <span class="fu" style="color: #4758AB;
@@ -1366,7 +1366,7 @@ font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">read_excel</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"e:/MY_STAFFS/Minning__Folder/Blogs/teneson/posts/R-2nd-leson/Tamisemi/Primary Enrolment by Age and Sex,2021.xls"</span>)</span></code></pre></div>
+font-style: inherit;">"e:/my_staffs/Blogs/teneson/posts/R-2nd-leson/Tamisemi/Primary Enrolment by Age and Sex,2021.xls"</span>)</span></code></pre></div>
 </div>
 <p>So step 2, we are going to equate our data again and rename column, then remove column 1,28 and 29, because they provide no necessary information therefor we shall remain with 26 column. <strong><em>Now our data is called moja</em></strong>.We shall use function <em>“clean names”</em> of <em>“Janitor package”</em>.</p>
 <div class="cell">
@@ -2894,17 +2894,18 @@ font-style: inherit;">1</span>))</span></code></pre></div>
 <h3 class="anchored" data-anchor-id="world-population-data.">WORLD POPULATION DATA.</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>WORLD POPULATION DATA: </strong>This post is the result of R programming analysis, which basically demonstrate the most current world population of each continent and most popular countries within a continental level. R is a powerful language when it comes to analysis and documentation, this post is the one of R’s multiple way of communication. i have also generated pdf and word documents through from R Studio editor. <strong>Questions.</strong></p>
+<p><strong>WORLD POPULATION DATA: </strong>This post is the result of R programming analysis, which basically demonstrate the most current world population of each continent and most popular countries within a continental level. R is a powerful language when it comes to analysis and documentation, this post is the one of R’s multiple way of communication. i have also generated pdf and word documents through from R Studio editor.</p>
+</div><div class="column" style="width:50%;">
+<p><img src="https://benjamini-mpinga.netlify.app/posts/Current-world-pop/dunia1.jpg" class="img-fluid"></p>
+</div>
+</div>
+<p><strong>Questions.</strong></p>
 <ol type="1">
 <li>Find the world’s most popular continent.</li>
 <li>The most popular country in every continent.</li>
 <li>The trend of the world population based on data given.</li>
 </ol>
-<p>The data given is from reliable source, consist of the world’s population data from 1970 to 2022.</p>
-</div><div class="column" style="width:50%;">
-<p><img src="https://benjamini-mpinga.netlify.app/posts/Current-world-pop/dunia1.jpg" class="img-fluid"></p>
-</div>
-</div>
+<p>world’s population data from 1970 to 2022.</p>
 </section>
 <section id="data-summary." class="level3">
 <h3 class="anchored" data-anchor-id="data-summary.">Data Summary.</h3>
@@ -3002,7 +3003,7 @@ font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"e:/MY_STAFFS/Minning__Folder/Blogs/teneson/posts/Current-world-pop/The world population data/world_population.csv"</span>) </span></code></pre></div>
+font-style: inherit;">"e:/my_staffs/Blogs/teneson/posts/Current-world-pop/The world population data/world_population.csv"</span>) </span></code></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 234 Columns: 17
 -- Column specification --------------------------------------------------------

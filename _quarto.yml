@@ -57,9 +57,9 @@ website:
 format:
   html:
     highlight-style: arrow  
-    theme: 
-     light: flatly
-     dark: darkly
+    theme: solar
+     # light: flatly
+     # dark: darkly
      
       
      
